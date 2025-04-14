@@ -1,11 +1,12 @@
 .footer {
-    background-color: #6d8196;
-    color: white;
+    background-color: var(--secondary-accent-color);
+    color: black;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 20px;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
 }
 
 .footer-section {
@@ -21,10 +22,13 @@
 
 .company-info {
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
 }
 
-.logo {
-    width: 50px;
+.footerLogos {
+    width: 30px;
     height: auto;
     margin-bottom: 10px;
 }
@@ -71,30 +75,6 @@
 .social-icons img {
     width: 25px;
     margin-right: 10px;
-}
-
-.newsletter {
-    display: flex;
-    border: 1px solid white;
-    border-radius: 0 15px 15px 0;
-    background-color: white;
-    max-width: fit-content;
-}
-
-.newsletter input {
-    padding: 5px 10px;
-    border: none;
-    width: 150px;
-}
-
-.newsletter button {
-    background-color: white;
-    color: blue;
-    border: none;
-    border-radius: 0 15px 15px 0;
-    cursor: pointer;
-    margin-right: 10px;
-    width: 70px;
 }
 
 .footer-bottom {

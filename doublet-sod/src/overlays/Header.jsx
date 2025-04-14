@@ -13,16 +13,9 @@ function Header() {
                 <ul className="nav-links">
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/about">About Us</Link></li>
-                    <li><Link to="/services">Services</Link></li>
-                    <li><Link to="/finacing">Finances</Link></li>
-                    <li><Link to="/book">Contact Us</Link></li>
-                    <li>
-                        <Link to="/book" className="bookNowLink">
-                            <button className='bookNowButton'>
-                                <p>Book Now</p>
-                            </button>
-                        </Link>
-                    </li>
+                    <li><Link to="/products">Our Products</Link></li>
+                    <li><Link to="/gallery">Gallery</Link></li>
+                    <li><Link to="/contact">Contact Us</Link></li>
                 </ul>
             </nav>
         </div>
