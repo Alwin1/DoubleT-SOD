@@ -1,0 +1,103 @@
+.footer {
+    background-color: #6d8196;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+}
+
+.company-logo-container {
+    display: flex;
+    gap: 20px;
+}
+
+.company-info {
+    text-align: left;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.company-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.quick-links ul,
+.legal ul {
+    list-style: none;
+    padding: 0;
+}
+
+.quick-links li,
+.legal li {
+    margin: 5px 0;
+}
+
+.quick-links li a,
+.legal li a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.quick-links li a:hover,
+.legal li a:hover{
+    text-decoration: underline;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.social-media-connections,
+.social-newsletter {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-icons img {
+    width: 25px;
+    margin-right: 10px;
+}
+
+.newsletter {
+    display: flex;
+    border: 1px solid white;
+    border-radius: 0 15px 15px 0;
+    background-color: white;
+    max-width: fit-content;
+}
+
+.newsletter input {
+    padding: 5px 10px;
+    border: none;
+    width: 150px;
+}
+
+.newsletter button {
+    background-color: white;
+    color: blue;
+    border: none;
+    border-radius: 0 15px 15px 0;
+    cursor: pointer;
+    margin-right: 10px;
+    width: 70px;
+}
+
+.footer-bottom {
+    text-align: right;
+    width: 100%;
+}
