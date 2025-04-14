@@ -7,7 +7,7 @@ function Header() {
         <div className="headerContainer">
             <div className="companyContainer">
                 <img className="companyLogo" src={Logo} alt="Company Logo" />
-                <h1 className="companyName">Company Name</h1>
+                <h1 className="companyName">Double T-SOD</h1>
             </div>
             <nav className="navBar">
                 <ul className="nav-links">

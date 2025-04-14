@@ -11,7 +11,7 @@ const Footer = () => {
       <div className="footer-section company-info">
         <div className="company-logo-container">
           <img src={Logo} alt="Company Logo" className="logo" />
-          <h2 className="company-name">CompanyName</h2>
+          <h2 className="company-name">Double T-SOD</h2>
         </div>
         <p>Call us: (555) 123-4567</p>
         <p>Email: info@hvaccompany.com</p>
@@ -54,7 +54,7 @@ const Footer = () => {
         </ul>
       </div>
       <div className="footer-bottom">
-        <p>© 2025 [Your Company Name]. All Rights Reserved.</p>
+        <p>© 2025 [Double T-SOD]. All Rights Reserved.</p>
       </div>
     </footer>
   );
