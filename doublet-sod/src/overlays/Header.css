@@ -1,128 +1,240 @@
+/* General Header Styles */
 .headerContainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--background-color);
-    color: var(--primary-color);
-    width: 100%;
-    padding: 1rem 0;
-    font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  width: 100%;
+  padding: 1rem 0;
 }
 
 .companyContainer {
-    display: flex;
-    align-items: center;
-    padding-left: 20px;
-    padding-right: 20px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .companyLogo {
-    width: 100px;
-    height: auto;
-    margin-right: 10px;
+  width: 100px;
+  height: auto;
+  margin-right: 10px;
 }
 
 .companyName {
-    font-size: 20px;
-    font-weight: bold;
-    font-family: "Source Serif 4", serif;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Source Serif 4", serif;
 }
 
 .navBar {
-    margin-left: auto; /* Pushes nav bar to the right */
-    padding-right: 20px; /* Adds a small gap from the right edge */
+  margin-left: auto;
+  padding-right: 20px;
 }
 
 .navBar .nav-links {
-    list-style: none;
-    display: flex;
-    align-items: center; /* Ensures all list items, including the button, align properly */
-    gap: 25px;
-    font-size: 15px;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-links li {
-    display: flex;
-    align-items: center; /* Ensures each list item aligns properly */
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
 
 .nav-links li a {
-    text-decoration: none; /* Removes underline */
-    font-family: "Source Serif 4", serif;
-    color: inherit; /* Ensures it takes the text color from the parent */
+  text-decoration: none;
+  font-family: "Source Serif 4", serif;
+  color: inherit;
+  font-weight: 700;
 }
 
 .nav-links li a:hover {
-    text-decoration: underline; /* Removes underline */
-    color: inherit; /* Ensures it takes the text color from the parent */
+  text-decoration: underline;
+  color: inherit;
 }
 
-/* Hamburger */
+.dropdown {
+  position: relative;
+}
+
+.dropdown > span {
+  cursor: pointer;
+  font-family: "Source Serif 4", serif; 
+  font-weight: 700;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: var(--primary-color);
+  list-style: none;
+  padding: 0px 0;
+  margin: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  width: max-content;
+  top: 100%; 
+  left: 50%; 
+  transform: translateX(-50%); 
+}
+
+.dropdown-menu li {
+  padding: 8px 20px;
+  border-bottom: 2px solid var(--background-color);
+}
+
+.dropdown-menu li:last-child {
+  border-bottom: none;
+}
+
+.dropdown-menu li a {
+  color: var(--background-color);
+  text-decoration: none;
+  font-family: "Source Serif 4", serif; 
+  font-weight: 500;
+}
+
+.dropdown-menu li a:hover {
+  text-decoration: underline;
+  color: var(--background-color);
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
 .hamburger {
-    display: none;
-    font-size: 28px;
-    background: none;
-    border: none;
-    color: var(--primary-color);
-    cursor: pointer;
-    padding-right: 20px;
+  display: none;
+  cursor: pointer;
+  padding-right: 20px;
 }
 
-/* Fullscreen overlay menu */
+.hamburger .bar {
+  width: 30px;
+  height: 4px;
+  margin: 6px 0;
+  background-color: var(--primary-color);
+  transition: 0.4s;
+}
+
+.hamburger .bar.open:nth-child(2) {
+  opacity: 0;
+}
+
 .mobileMenuOverlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: var(--background-color);
-    z-index: 999;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+  padding-top: 5rem;
 }
 
 .closeButton {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    font-size: 30px;
-    background: none;
-    border: none;
-    color: var(--primary-color);
-    cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  color: var(--primary-color);
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 .mobileNavLinks {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 25px;
-    font-size: 20px;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding-left: 0;
+  text-align: center;
+  font-size: 20px;
+  color: var(--primary-color);
+  font-family: "Source Serif 4", serif;
+  font-weight: normal;
+}
+
+.mobileNavLinks li {
+  margin: 10px 0;
 }
 
 .mobileNavLinks li a {
-    text-decoration: none;
-    color: var(--primary-color);
-    font-family: "Source Serif 4", serif;
+  color: var(--primary-color);
+  text-decoration: none;
 }
 
-/* Hide desktop nav on mobile */
-@media (max-width: 768px) {
-    .navBar {
-        display: none;
-    }
+.mobileNavLinks li a:hover {
+  text-decoration: underline;
+}
 
-    .hamburger {
-        display: block;
-        margin-left: auto;
-    }
+.mobileNavItemWithSubmenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.submenuToggle {
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+.mobileSubLinks {
+  list-style: none;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.mobileSubLinks li a {
+  font-size: 16px;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.mobileNavLinks li a {
+  font-family: "Source Serif 4", serif; /* Ensures font consistency for "Our Products" on mobile */
+}
+
+.mobileSubLinks li a:hover {
+  text-decoration: underline;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .navBar {
+    display: none; /* Hide desktop nav on mobile */
+  }
+
+  .hamburger {
+    display: block; /* Show hamburger menu */
+  }
+
+  .mobileMenuOverlay {
+    padding-top: 0;
+  }
+
+  .mobileNavLinks li:nth-child(2) {
+    margin-bottom: 5px;
+  }
+
+  .mobileNavLinks li:nth-child(3) {
+    margin-bottom: 5px;
+  }
+
+  .mobileNavLinks li:nth-child(4) {
+    margin-top: 10px;
+  }
 }
