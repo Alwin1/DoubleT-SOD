@@ -1,20 +1,28 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import Logo from '../assets/sodlogo.png';
-import './Header.css';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import Logo from "../assets/sodlogo.png";
+import "./Header.css";
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [productsSubmenuOpen, setProductsSubmenuOpen] = useState(false);
+  const [activeSubmenu, setActiveSubmenu] = useState(null); // null, 'products', etc.
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
-    if (menuOpen) setProductsSubmenuOpen(false); // close submenu when closing menu
+    if (menuOpen) setActiveSubmenu(null);
   };
 
   const closeMenu = () => {
     setMenuOpen(false);
-    setProductsSubmenuOpen(false);
+    setActiveSubmenu(null);
+  };
+
+  const openSubmenu = (submenu) => {
+    setActiveSubmenu(submenu);
+  };
+
+  const goBack = () => {
+    setActiveSubmenu(null);
   };
 
   return (
@@ -24,60 +32,114 @@ function Header() {
         <h1 className="companyName">Double T-SOD</h1>
       </div>
 
-      {/* Desktop Nav */}
+      {/* Desktop Navigation */}
       <nav className="navBar">
         <ul className="nav-links">
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">About Us</Link></li>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/about">About Us</Link>
+          </li>
           <li className="dropdown">
-            <span>Our Products</span>
+            <li>
+              <Link to="/products">
+                <span>Our Products</span>
+              </Link>
+            </li>
             <ul className="dropdown-menu">
-              <li><Link to="/products/bermuda">Bermuda</Link></li>
-              <li><Link to="/products/bescue">Bescue</Link></li>
-              <li><Link to="/products/zero-scaping">Zero-Scaping</Link></li>
+              <li>
+                <Link to="/products/bermuda">Bermuda</Link>
+              </li>
+              <li>
+                <Link to="/products/bescue">Bescue</Link>
+              </li>
+              <li>
+                <Link to="/products/zero-scaping">Zero-Scaping</Link>
+              </li>
             </ul>
           </li>
-          <li><Link to="/gallery">Gallery</Link></li>
-          <li><Link to="/contact">Contact Us</Link></li>
+          <li>
+            <Link to="/gallery">Gallery</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact Us</Link>
+          </li>
         </ul>
       </nav>
 
-      {/* Hamburger Icon (Mobile Only) */}
+      {/* Hamburger */}
       <div className="hamburger" onClick={toggleMenu}>
-        <div className={`bar ${menuOpen ? 'open' : ''}`}></div>
-        <div className={`bar ${menuOpen ? 'open' : ''}`}></div>
-        <div className={`bar ${menuOpen ? 'open' : ''}`}></div>
+        <div className={`bar ${menuOpen ? "open" : ""}`}></div>
+        <div className={`bar ${menuOpen ? "open" : ""}`}></div>
+        <div className={`bar ${menuOpen ? "open" : ""}`}></div>
       </div>
 
-      {/* Full Screen Mobile Menu */}
       {menuOpen && (
         <div className="mobileMenuOverlay">
-          <button className="closeButton" onClick={closeMenu}>×</button>
-          <ul className="mobileNavLinks">
-            <li><Link to="/" onClick={closeMenu}>Home</Link></li>
-            <li><Link to="/about" onClick={closeMenu}>About Us</Link></li>
+          <button className="closeButton" onClick={closeMenu}>
+            ×
+          </button>
 
-            {/* Custom Expandable Submenu */}
-            <li>
-              <div
-                className="mobileNavItemWithSubmenu"
-                onClick={() => setProductsSubmenuOpen(!productsSubmenuOpen)}
-              >
-                <li><Link to="/products" onClick={closeMenu}><span>Our Products</span></Link></li>
-                <span className="submenuToggle">{productsSubmenuOpen ? '▲' : '▼'}</span>
-              </div>
-              {productsSubmenuOpen && (
-                <ul className="mobileSubLinks">
-                  <li><Link to="/products/bermuda" onClick={closeMenu}>Bermuda</Link></li>
-                  <li><Link to="/products/bescue" onClick={closeMenu}>Bescue</Link></li>
-                  <li><Link to="/products/zero-scaping" onClick={closeMenu}>Zero-Scaping</Link></li>
-                </ul>
-              )}
-            </li>
+          <div
+            className={`mobileMenuContent ${activeSubmenu ? "closed" : "open"}`}
+          >
+            <ul className="mobileNavLinks">
+              <li>
+                <Link to="/" onClick={closeMenu}>
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link to="/about" onClick={closeMenu}>
+                  About Us
+                </Link>
+              </li>
+              <li onClick={() => openSubmenu("products")}>Our Products</li>
+              <li>
+                <Link to="/gallery" onClick={closeMenu}>
+                  Gallery
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact" onClick={closeMenu}>
+                  Contact Us
+                </Link>
+              </li>
+            </ul>
+          </div>
 
-            <li><Link to="/gallery" onClick={closeMenu}>Gallery</Link></li>
-            <li><Link to="/contact" onClick={closeMenu}>Contact Us</Link></li>
-          </ul>
+          <div
+            className={`mobileSubmenuContent ${
+              activeSubmenu ? "open" : "closed"
+            }`}
+          >
+            <button className="backButton" onClick={goBack}>
+              ←
+            </button>
+            <ul className="mobileSubNavLinks">
+              <li>
+                <Link to="/products/bermuda" onClick={closeMenu}>
+                  Explore All Our Products
+                </Link>
+              </li>
+              <li>
+                <Link to="/products/bermuda" onClick={closeMenu}>
+                  Bermuda
+                </Link>
+              </li>
+              <li>
+                <Link to="/products/bescue" onClick={closeMenu}>
+                  Bescue
+                </Link>
+              </li>
+              <li>
+                <Link to="/products/zero-scaping" onClick={closeMenu}>
+                  Zero-Scaping
+                </Link>
+              </li>
+            </ul>
+          </div>
         </div>
       )}
     </div>
