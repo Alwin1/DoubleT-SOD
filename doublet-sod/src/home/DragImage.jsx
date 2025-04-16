@@ -1,24 +1,70 @@
-import React, { useState } from 'react';
-import './DragImage.css';
-import Before from '../assets/before.jpg'
-import After from '../assets/after.jpg'
+import React, { useEffect, useRef, useState } from "react";
+import "./DragImage.css";
+import Before from "../assets/before.jpg";
+import After from "../assets/after.jpg";
 
 const DragImage = () => {
   const [sliderValue, setSliderValue] = useState(50);
+  const [isPaused, setIsPaused] = useState(false);
+  const directionRef = useRef(1);
+  const manualChangeRef = useRef(false);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (isPaused || manualChangeRef.current) return;
+
+      setSliderValue((prev) => {
+        let next = prev + directionRef.current * 0.5;
+        if (next >= 90 || next <= 10) {
+          directionRef.current *= -1;
+        }
+        return next;
+      });
+    }, 30);
+
+    return () => clearInterval(interval);
+  }, [isPaused]);
 
   const handleSliderChange = (e) => {
-    setSliderValue(e.target.value);
+    setSliderValue(parseFloat(e.target.value));
+    manualChangeRef.current = true;
+    setIsPaused(true)
+  };
+
+  const handleMouseUp = () => {
+    manualChangeRef.current = false;
+  };
+
+  const togglePause = () => {
+    setIsPaused(true);
   };
 
   return (
-    <div className="slider-container">
-      <div className="slider-image-wrapper">
-        <img src={After} alt="Before" className="slider-image" />
+    <div
+      className="slider-container"
+      onMouseUp={handleMouseUp}
+      onTouchEnd={handleMouseUp}
+    >
+      <div className="slider-image-wrapper" onClick={togglePause}>
+        <img src={Before} alt="Before" className="slider-image" />
         <div
           className="slider-image after"
           style={{ clipPath: `inset(0 ${100 - sliderValue}% 0 0)` }}
         >
-          <img src={Before} alt="After" className="slider-image" />
+          <img src={After} alt="After" className="slider-image" />
+        </div>
+        <div className="slider-handle" style={{ left: `${sliderValue}%` }}>
+          <div className="arrow">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 256 256"
+              class="my-icon"
+            >
+              <path d="M136,40V216a8,8,0,0,1-16,0V40a8,8,0,0,1,16,0ZM96,120H35.31l18.35-18.34A8,8,0,0,0,42.34,90.34l-32,32a8,8,0,0,0,0,11.32l32,32a8,8,0,0,0,11.32-11.32L35.31,136H96a8,8,0,0,0,0-16Zm149.66,2.34-32-32a8,8,0,0,0-11.32,11.32L220.69,120H160a8,8,0,0,0,0,16h60.69l-18.35,18.34a8,8,0,0,0,11.32,11.32l32-32A8,8,0,0,0,245.66,122.34Z"></path>
+            </svg>
+          </div>
         </div>
       </div>
       <input

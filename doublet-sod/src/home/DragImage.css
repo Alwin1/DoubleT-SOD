@@ -1,36 +1,120 @@
 .slider-container {
-    position: relative;
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    overflow: hidden;
-  }
-  
-  .slider-image-wrapper {
-    position: relative;
-    width: 100%;
-  }
-  
-  .slider-image {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-  
-  .slider-image.after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    transition: clip-path 0.1s ease-out;
-  }
-  
-  .slider-range {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80%;
-    z-index: 10;
-  }
-  
+  position: relative;
+  width: 100%;
+  max-width: 90vw;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slider-image-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.slider-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.slider-image.after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: clip-path 0.1s ease-out;
+}
+
+.slider-range {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  z-index: 10;
+  background: transparent;
+  pointer-events: auto;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 50px;
+  opacity: 0;
+}
+
+.slider-range::-webkit-slider-runnable-track {
+  background: transparent;
+  height: 4px;
+}
+.slider-range::-moz-range-track {
+  background: transparent;
+  height: 4px;
+}
+.slider-range::-ms-track {
+  background: transparent;
+  height: 4px;
+  border-color: transparent;
+  color: transparent;
+}
+
+.slider-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  background: white;
+  border: 2px solid #333;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -13px;
+}
+
+.slider-range::-moz-range-thumb {
+  width: 30px;
+  height: 30px;
+  background: white;
+  border: 2px solid #333;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-range::-ms-thumb {
+  width: 30px;
+  height: 30px;
+  background: white;
+  border: 2px solid #333;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-handle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  z-index: 5;
+  pointer-events: none;
+  transition: left 0.1s ease-out;
+}
+
+.slider-handle .arrow {
+  position: absolute;
+  top: 50%;
+  left: -16px;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 32px;
+  background: white;
+  border-radius: 50%;
+  border: 2px solid #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: auto;
+  box-sizing: border-box;
+  cursor: grab;
+}
+
+.slider-arrow {
+  width: 20px;
+  height: 20px;
+  fill: #333;
+}
