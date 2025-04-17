@@ -3,6 +3,7 @@ import Footer from '../overlays/Footer'
 import Header from '../overlays/Header'
 import DragImage from './DragImage'
 import MissionHome from './MissionHome'
+import SodVarieties from './SodVarieties'
 
 function Home() {
 
@@ -12,6 +13,7 @@ function Home() {
         <Header />
         <DragImage />
         <MissionHome />
+        <SodVarieties />
         <Footer />
       </div>
     </>

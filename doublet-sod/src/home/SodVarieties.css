@@ -1,0 +1,108 @@
+.VarietiesContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--accent-color);
+  align-items: center;
+  font-family: "Roboto", "San-Serif";
+}
+
+.VarietiesTitle {
+  font-size: 28px;
+  text-align: center;
+  color: black;
+  font-weight: 700;
+}
+
+.VarietiesImageContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 0;
+  padding-bottom: 50px;
+}
+
+.varietyCard {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.varietyCard:hover {
+  transform: scale(1.03);
+}
+
+.varietyImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+
+.varietyLabel {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: var(--background-color);
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 10px;
+  color: black;
+}
+
+.varietyDescription {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--primary-color);
+  color: var(--background-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-size: 20px;
+}
+
+.varietyCard:hover .varietyImage {
+  opacity: 0;
+}
+
+.varietyCard:hover .varietyDescription {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .VarietiesTitle {
+        font-size: 20px;
+    }
+
+    .VarietiesImageContainer {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0px;
+        padding-bottom: 50px;
+    }
+
+    .varietyCard {
+        width: 300px;
+        height: 300px;
+    }
+
+    .varietyLabel {
+        font-size: 16px;
+    }
+
+    .varietyDescription {
+        font-size: 16px;
+    }
+}
