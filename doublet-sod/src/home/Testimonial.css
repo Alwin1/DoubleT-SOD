@@ -6,6 +6,7 @@
   padding: 40px 20px;
   overflow-x: hidden;
   touch-action: pan-y;
+  font-family: "Roboto", "San-Serif";
 }
 
 .testimonial-title {

@@ -1,0 +1,299 @@
+.workingContainer {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", "San-Serif";
+}
+
+.workingTitle {
+  font-size: 28px;
+  color: var(--primary-color);
+  text-align: center;
+  font-weight: 700;
+}
+
+.stepsContainer {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  align-self: center;
+}
+
+.stepContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.stepTitleWrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.step {
+  width: 50px;
+  height: 50px;
+}
+
+.stepTitle {
+  font-size: 24px;
+  font-weight: 700;
+  color: black;
+}
+
+.stepParagraph {
+  font-size: 24px;
+  color: black;
+  padding-left: 60px;
+  margin-top: -10px;
+}
+
+.noticesContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 50px;
+  padding: 50px 0;
+  align-content: center;
+  justify-content: center;
+}
+
+.seasonsContainer {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 300px;
+  background-color: var(--accent-color);
+  border-radius: 25px;
+  align-self: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.seasonsTitleContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.seasonsPic {
+  width: 60px;
+  height: 60px;
+}
+
+.seasonsTitle {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.seasonsParagraph {
+  font-size: 24px;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.pricingContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 50px;
+  padding: 50px 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.pricingParagraphs {
+  display: flex;
+  flex-direction: column;
+}
+
+.orderParagraph {
+  display: flex;
+  flex-direction: column;
+}
+
+.pricingTitle {
+  font-size: 24px;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.pricingList {
+  font-size: 24px;
+  font-weight: 400;
+  color: black;
+  list-style-position: inside;
+  padding-left: 0;
+  margin: 0;
+}
+
+.deliveryPic {
+  max-height: 500px;
+  max-width: 100%;
+  align-self: center;
+}
+
+.savingContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+  padding: 0;
+}
+
+.savingTitle {
+  font-size: 28px;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.savingParagraph {
+  width: 70%;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  color: black;
+}
+
+.learnMoreButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: var(--primary-color);
+  outline: 2px var(--primary-color) solid;
+  outline-offset: -2px;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  height: 40px;
+}
+
+.learnMoreButton p {
+  color: var(--background-color);
+  font-weight: 700;
+  font-size: 18px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.learnMoreButton img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  transition: filter 0.3s ease;
+}
+
+.learnMoreButton:hover {
+  background-color: transparent;
+  border: 2px solid var(--primary-color);
+}
+
+.learnMoreButton:hover p {
+  color: var(--primary-color);
+}
+
+.learnMoreButton:hover img {
+  filter: brightness(0) saturate(100%) invert(39%) sepia(95%) saturate(749%)
+    hue-rotate(88deg) brightness(95%) contrast(90%);
+}
+
+.grassFooter {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .stepsContainer {
+    width: 90%;
+  }
+
+  .noticesContainer {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+  }
+
+  .pricingContainer {
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px 0;
+    align-items: center;
+  }
+
+  .pricingParagraphs {
+    width: 90%;
+    align-items: center;
+  }
+
+  .orderParagraph {
+    align-items: center;
+  }
+
+  .deliveryPic {
+    order: 1; 
+    max-width: 90%;
+  }
+
+  .seasonsContainer {
+    width: 90%;
+    height: 300px;
+    border-radius: 0px;
+  }
+
+  .seasonsTitle {
+    font-size: 20px;
+  }
+
+  .seasonsParagraph {
+    font-size: 18px;
+  }
+
+  .savingParagraph {
+    width: 90%;
+    font-size: 18px;
+  }
+
+  .learnMoreButton {
+    width: 90%;
+    justify-content: center;
+  }
+
+  .stepParagraph {
+    font-size: 18px;
+    padding-left: 0;
+  }
+
+  .stepTitleWrapper {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .stepTitle {
+    font-size: 18px;
+  }
+
+  .workingTitle,
+  .savingTitle {
+    font-size: 20px;
+  }
+
+  .pricingTitle {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .pricingList {
+    font-size: 16px;
+  }
+}
