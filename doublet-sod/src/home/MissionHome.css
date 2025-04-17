@@ -1,0 +1,133 @@
+.missionHomeContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  font-family: "Roboto", "San-Serif";
+  gap: 50px;
+}
+
+.missionTitle {
+  text-align: center;
+  color: var(--primary-color);
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.missionTitle span {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.missionParagraph {
+  text-align: center;
+  color: var(--primary-color);
+  font-size: 20px;
+}
+
+.missionPictureContainer {
+  display: flex;
+  gap: 50px;
+}
+
+.missionStatementContainer {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+}
+
+.missionPicture {
+  width: 50%;
+}
+
+.learnMoreButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: var(--primary-color);
+  outline: 2px var(--primary-color) solid;
+  outline-offset: -2px;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  height: 40px;
+}
+
+.learnMoreButton p {
+  color: var(--background-color);
+  font-weight: 700;
+  font-size: 18px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.learnMoreButton img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  transition: filter 0.3s ease;
+}
+
+/* Hover effect */
+.learnMoreButton:hover {
+  background-color: transparent;
+  border: 2px solid var(--primary-color);
+}
+
+.learnMoreButton:hover p {
+  color: var(--primary-color);
+}
+
+.learnMoreButton:hover img {
+  filter: brightness(0) saturate(100%) invert(39%) sepia(95%) saturate(749%)
+    hue-rotate(88deg) brightness(95%) contrast(90%);
+}
+
+@media (max-width: 768px) {
+    .missionHomeContainer {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        gap: 10px;
+    }
+
+    .missionTitle span{
+        font-size: 20px;
+    }
+
+    .missionTitle {
+        font-size: 18px;
+        padding: 0px 20px;
+    }
+
+    .missionParagraph {
+        font-size: 16px;
+        padding: 0px 20px;
+    }
+
+    .missionPictureContainer {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 10px;
+        padding-bottom: 20px;
+    }
+
+    .missionPicture {
+        width: 100%;
+        padding: 0;
+    }
+
+    .missionStatementContainer {
+        width: 100%;
+        margin: 0;
+    }
+
+    .learnMoreButton {
+        height: 25px;
+        padding: 10px;
+    }
+}
