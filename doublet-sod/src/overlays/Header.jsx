@@ -42,11 +42,9 @@ function Header() {
             <Link to="/about">About Us</Link>
           </li>
           <li className="dropdown">
-            <li>
               <Link to="/products">
                 <span>Our Products</span>
               </Link>
-            </li>
             <ul className="dropdown-menu">
               <li>
                 <Link to="/products/bermuda">Bermuda</Link>

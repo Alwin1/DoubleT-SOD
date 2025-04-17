@@ -6,6 +6,7 @@ import MissionHome from './MissionHome'
 import SodVarieties from './SodVarieties'
 import Offering from './Offering'
 import TestimonialSlider from './Testimonial'
+import Working from './Working'
 
 function Home() {
 
@@ -18,6 +19,7 @@ function Home() {
         <SodVarieties />
         <Offering />
         <TestimonialSlider />
+        <Working />
         <Footer />
       </div>
     </>
