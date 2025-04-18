@@ -1,83 +1,212 @@
 .footer {
-    background-color: var(--secondary-accent-color);
-    color: black;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 20px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+  background-color: var(--secondary-accent-color);
+  color: black;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px;
+  gap: 100px;
+  font-weight: 400;
+  font-family: "Source Serif 4", serif;
 }
 
 .footer-section {
-    flex: 1;
-    min-width: 250px;
-    margin: 10px;
+  flex: 1;
+  min-width: fit-content;
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
-.company-logo-container {
-    display: flex;
-    gap: 20px;
+.footer-section h3 {
+  font-size: 18px;
+  margin: 0 0 5px 0;
+  padding: 0;
+}
+
+.footer-section p {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 5px 0;
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
 }
 
 .company-info {
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-middle-row {
+  display: flex;
+  gap: 100px; 
 }
 
 .footerLogos {
-    width: 30px;
-    height: auto;
-    margin-bottom: 10px;
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  margin: 0;
 }
 
-.company-name {
-    font-size: 20px;
-    font-weight: bold;
+.quick-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.quick-links ul,
-.legal ul {
-    list-style: none;
-    padding: 0;
+.quick-links {
+  justify-content: center;
 }
 
-.quick-links li,
-.legal li {
-    margin: 5px 0;
+.quick-links li {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 5px 0;
 }
 
-.quick-links li a,
-.legal li a{
-    text-decoration: none;
-    color: inherit;
+.quick-links li a {
+  text-decoration: none;
+  color: inherit;
 }
 
-.quick-links li a:hover,
-.legal li a:hover{
-    text-decoration: underline;
+.quick-links li a:hover {
+  text-decoration: underline;
 }
 
 .social-media {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .social-media-connections,
 .social-newsletter {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .social-icons img {
-    width: 25px;
-    margin-right: 10px;
+  width: 25px;
+  margin-right: 10px;
 }
 
 .footer-bottom {
-    text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Pushes everything to the right */
+  width: 100%;
+  margin-top: 20px;
+}
+
+.legal-text {
+  font-size: 12px;
+  margin: 0;
+}
+
+.legal-text a {
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+}
+
+.legal-text a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom p {
+  font-size: 12px;
+  margin: 0;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 10px;
+  }
+
+  .footer-section {
+    margin: 10px 0;
     width: 100%;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .company-info {
+    flex: 1;  /* Allow Contact section to share space equally */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: flex-start; /* Align the Contact section to the left */
+    gap: 5px; /* Optional: Adjust space between the elements */
+  }
+
+  .quick-links {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .social-media {
+    flex: 1;  
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .social-icons {
+    width: 10px;
+    height: 10px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .footer-middle-row {
+    display: flex;
+    justify-content: space-evenly; 
+    width: 100%; 
+  }
+
+  .footer-section h3 {
+    font-size: 16px;
+  }
+
+  .footer-section p,
+  .quick-links li,
+  .footer-section a {
+    font-size: 12px;
+  }
+
+  .legal-text,
+  .legal-text a,
+  .footer-bottom p {
+    font-size: 10px;
+  }
+
+  .footerLogos {
+    width: 18px;
+    height: 18px;
+  }
+
+  .social-icons img {
+    width: 22px;
+  }
 }
