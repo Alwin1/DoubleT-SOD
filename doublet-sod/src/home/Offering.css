@@ -65,7 +65,7 @@
   padding: 40px 30px;
   color: black;
   text-align: left;
-  opacity: 0;
+  opacity: 100;
   width: 100%;
   transform: translateX(-100%);
   transition: transform 1s ease-out, opacity 0.5s ease-in;
