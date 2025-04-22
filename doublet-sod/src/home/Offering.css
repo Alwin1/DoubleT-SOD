@@ -1,12 +1,12 @@
 .offer-container {
-  padding: 40px 20px;
+  padding: 40px 0px;
   text-align: center;
   font-family: "Roboto", "San-Serif";
 }
 
 .offer-heading {
   color: var(--primary-color);
-  font-size: 28px;
+  font-size: 36px;
   font-weight: bold;
   margin-bottom: 40px;
 }
@@ -31,7 +31,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 24px;
+  font-size: 30px;
   font-weight: bold;
   margin-bottom: 10px;
   color: black;
@@ -43,19 +43,79 @@
 
 .offer-description {
   color: black;
-  font-size: 20px;
+  font-size: 24px;
   line-height: 1.4;
+}
+
+.slide-choose-container {
+  margin-top: 50px;
+  padding: 0;
+  overflow: hidden; /* To contain the sliding element */
+}
+
+.slide-in-wrapper {
+  max-width: 1000px; /* Your desired max-width */
+  margin-left: 0; /* Ensure it starts at the left edge if needed */
+  border-radius: 0px 250px 250px 0px;
+  overflow: hidden; /* Clip the sliding element */
+}
+
+.slide-in {
+  background-color: var(--accent-color);
+  padding: 40px 30px;
+  color: black;
+  text-align: left;
+  opacity: 0;
+  width: 100%;
+  transform: translateX(-100%);
+  transition: transform 1s ease-out, opacity 0.5s ease-in;
+}
+
+.slide-in.is-visible {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.slide-in .why-choose-heading {
+  color: black;
+  font-size: 36px;
+  text-align: center;
+  padding: 0;
+  font-weight: 700;
+}
+
+.slide-in .why-choose-item-inline {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 15px;
+  gap: 50px;
+}
+
+.slide-in .why-choose-item-inline h3 {
+  color: black;
+  font-size: 24px;
+  width: 200px;
+  font-weight: 700;
+}
+
+.slide-in .why-choose-item-inline p {
+  color: black;
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+  width: 60%;
+  font-weight: 400;
 }
 
 @media (max-width: 768px) {
   .offer-heading {
     font-size: 20px;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
   }
 
   .offer-flex {
     flex-direction: column;
-    gap: 20px; 
+    gap: 20px;
     max-width: 100%;
   }
 
@@ -74,6 +134,33 @@
   }
 
   .checkmark {
-    width: 30px; 
+    width: 30px;
+  }
+
+  .slide-in-wrapper {
+    border-radius: 0 50px 50px 0;
+  }
+
+  .slide-in .why-choose-heading {
+    font-size: 20px;
+    margin-left: 0; 
+    padding: 0;
+  }
+
+  .slide-in .why-choose-item-inline {
+    align-items: baseline;
+    gap: 20px; 
+  }
+
+  .slide-in .why-choose-item-inline h3 {
+    font-size: 16px;
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+
+  .slide-in .why-choose-item-inline p {
+    padding-right: 20px;
+    font-size: 16px;
+    width: 90%;
   }
 }

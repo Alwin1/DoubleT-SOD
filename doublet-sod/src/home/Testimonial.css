@@ -24,8 +24,8 @@
   background: var(--background-color);
   padding: 30px;
   border-radius: 12px;
-  max-width: 900px;
-  min-height: 300px;
+  max-width: 1000px;
+  min-height: 500px;
   margin: 0 auto;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   border: 2px solid var(--primary-color);
@@ -109,7 +109,9 @@
 
   .testimonial-card {
     padding: 0;
-    min-height: 400px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    min-height: 600px;
     border-radius: 10px;
     width: 100%;
     box-sizing: border-box;
@@ -120,15 +122,23 @@
   .testimonial-text {
     font-size: 16px;
     max-width: 90%;
-    margin: 0 auto 15px auto;
+    margin: -50px auto auto auto;
   }
 
   .testimonial-name {
     font-size: 16px;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .testimonial-location {
+    position: absolute;
     font-size: 14px;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .quoteLeft,
@@ -138,13 +148,13 @@
 
   .quoteLeft {
     position: absolute;
-    top: 50px;
+    top: 10px;
     left: 10px;
   }
 
   .quoteRight {
     position: absolute;
-    bottom: 160px;
+    bottom: 70px;
     right: 10px;
     transform: rotate(180deg);
   }

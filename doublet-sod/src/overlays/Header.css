@@ -16,6 +16,7 @@
   align-items: center;
   padding-left: 20px;
   padding-right: 20px;
+  font-family: "Source Serif 4", serif;
 }
 
 .companyLogo {
@@ -24,11 +25,6 @@
   margin-right: 10px;
 }
 
-.companyName {
-  font-size: 20px;
-  font-weight: 700;
-  font-family: "Source Serif 4", serif;
-}
 
 .navBar {
   margin-left: auto;
@@ -80,6 +76,7 @@
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
+  text-align: center;
 }
 
 .dropdown-menu li {
@@ -105,6 +102,11 @@
 
 .dropdown:hover .dropdown-menu {
   display: block;
+}
+
+.centered-dropdown li {
+  display: flex;
+  justify-content: center;
 }
 
 .hamburger {

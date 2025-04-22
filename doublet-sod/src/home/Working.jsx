@@ -77,6 +77,7 @@ const Working = () => {
             <ul className="pricingList">
               <li>Lubbock: $75 Local Delivery Fee</li>
               <li>Outside Lubbock? Contact us for a custom delivery quote.</li>
+              <p>Please note a $120 cancellation fee per pallet will be applied to any orders canceled within 48 hours of the scheduled delivery date.</p>
             </ul>
           </div>
         </div>
@@ -89,7 +90,7 @@ const Working = () => {
           Choose the perfect sod for a lush, beautiful lawn—we’ll handle the
           hard work for you!
         </p>
-        <button className="learnMoreButton">
+        <button className="freeQuoteButton">
           <p>Get a Free Quote Now</p>
           <img src={ArrowCircle} />
         </button>

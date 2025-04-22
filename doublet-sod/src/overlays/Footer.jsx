@@ -68,6 +68,7 @@ const Footer = () => {
           <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
         </p>
         <p>© 2025 [Double T-SOD]. All Rights Reserved.</p>
+        <p>Designed By: We Are A Site</p>
       </div>
     </footer>
   );

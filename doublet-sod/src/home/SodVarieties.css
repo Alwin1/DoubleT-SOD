@@ -7,7 +7,7 @@
 }
 
 .VarietiesTitle {
-  font-size: 28px;
+  font-size: 36px;
   text-align: center;
   color: black;
   font-weight: 700;
@@ -25,8 +25,8 @@
 
 .varietyCard {
   position: relative;
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
@@ -50,7 +50,7 @@
   background: var(--background-color);
   text-align: center;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 34px;
   padding: 10px;
   color: black;
 }
@@ -70,7 +70,7 @@
   text-align: center;
   opacity: 0;
   transition: opacity 0.3s ease;
-  font-size: 20px;
+  font-size: 24px;
 }
 
 .varietyCard:hover .varietyImage {

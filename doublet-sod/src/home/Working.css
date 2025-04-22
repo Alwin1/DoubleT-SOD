@@ -7,7 +7,7 @@
 }
 
 .workingTitle {
-  font-size: 28px;
+  font-size: 36px;
   color: var(--primary-color);
   text-align: center;
   font-weight: 700;
@@ -88,20 +88,21 @@
   font-size: 24px;
   font-weight: 700;
   text-align: center;
+  color: black;
 }
 
 .seasonsParagraph {
   font-size: 24px;
   text-align: center;
   padding: 0 20px;
+  color: black;
 }
 
 .pricingContainer {
   display: flex;
   flex-direction: row;
-  width: 100%;
-  gap: 50px;
-  padding: 50px 0;
+  width: fit-content;
+  padding: 50px 50px;
   align-items: center;
   justify-content: center;
 }
@@ -130,6 +131,13 @@
   list-style-position: inside;
   padding-left: 0;
   margin: 0;
+  width: 80%;
+}
+
+.pricingList p {
+  font-size: 20px;
+  text-align: left;
+  font-style: italic;
 }
 
 .deliveryPic {
@@ -148,7 +156,7 @@
 }
 
 .savingTitle {
-  font-size: 28px;
+  font-size: 36px;
   color: var(--primary-color);
   text-align: center;
 }
@@ -161,7 +169,7 @@
   color: black;
 }
 
-.learnMoreButton {
+.freeQuoteButton {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -177,32 +185,32 @@
   height: 40px;
 }
 
-.learnMoreButton p {
+.freeQuoteButton p {
   color: var(--background-color);
   font-weight: 700;
-  font-size: 18px;
+  font-size: 30px;
   margin: 0;
   display: flex;
   align-items: center;
 }
 
-.learnMoreButton img {
+.freeQuoteButton img {
   width: 24px;
   height: 24px;
   object-fit: contain;
   transition: filter 0.3s ease;
 }
 
-.learnMoreButton:hover {
+.freeQuoteButton:hover {
   background-color: transparent;
   border: 2px solid var(--primary-color);
 }
 
-.learnMoreButton:hover p {
+.freeQuoteButton:hover p {
   color: var(--primary-color);
 }
 
-.learnMoreButton:hover img {
+.freeQuoteButton:hover img {
   filter: brightness(0) saturate(100%) invert(39%) sepia(95%) saturate(749%)
     hue-rotate(88deg) brightness(95%) contrast(90%);
 }
@@ -264,7 +272,7 @@
     font-size: 18px;
   }
 
-  .learnMoreButton {
+  .freeQuoteButton {
     width: 90%;
     justify-content: center;
   }
@@ -295,5 +303,13 @@
 
   .pricingList {
     font-size: 16px;
+  }
+
+  .pricingList p {
+    font-size: 14px;
+  }
+
+  .freeQuoteButton p {
+    font-size: 18px;
   }
 }

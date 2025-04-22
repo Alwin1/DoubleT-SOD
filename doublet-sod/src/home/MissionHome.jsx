@@ -14,7 +14,7 @@ const MissionHome = () => {
           <br />serving West Texas and Eastern New Mexico since 2014
         </h2>
         <p className="missionParagraph">
-          Since 2014, Double T Sod has been committed to providing top-quality
+          Since 2014, <span>Double-T Sod</span> has been committed to providing top-quality
           sod and exceptional service to homeowners and businesses across West
           Texas and Eastern New Mexico. As a family-owned and operated company,
           we take pride in treating every customer like family. Our dedication

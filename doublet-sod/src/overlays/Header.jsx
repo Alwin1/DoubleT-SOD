@@ -29,7 +29,6 @@ function Header() {
     <div className="headerContainer">
       <div className="companyContainer">
         <img className="companyLogo" src={Logo} alt="Company Logo" />
-        <h1 className="companyName">Double T-SOD</h1>
       </div>
 
       {/* Desktop Navigation */}
@@ -45,7 +44,7 @@ function Header() {
               <Link to="/products">
                 <span>Our Products</span>
               </Link>
-            <ul className="dropdown-menu">
+            <ul className="dropdown-menu centered-dropdown">
               <li>
                 <Link to="/products/bermuda">Bermuda</Link>
               </li>
