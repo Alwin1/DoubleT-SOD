@@ -66,11 +66,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 500;
   text-align: center;
   opacity: 0;
   transition: opacity 0.3s ease;
+  
+}
+
+.varietyDescription p {
   font-size: 24px;
+  font-weight: 500;
+  padding: 0px 50px;
 }
 
 .varietyCard:hover .varietyImage {
@@ -89,7 +94,7 @@
     .VarietiesImageContainer {
         flex-direction: column;
         gap: 20px;
-        padding: 0px;
+        padding: 20px;
         padding-bottom: 50px;
     }
 
@@ -102,7 +107,9 @@
         font-size: 16px;
     }
 
-    .varietyDescription {
-        font-size: 16px;
+    .varietyDescription p {
+      font-size: 16px;
+      font-weight: 500;
+      padding: 0px 50px;
     }
 }

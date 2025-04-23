@@ -175,7 +175,6 @@
   justify-content: center;
   gap: 10px;
   background-color: var(--primary-color);
-  outline: 2px var(--primary-color) solid;
   outline-offset: -2px;
   border-radius: 5px;
   border: none;
@@ -189,7 +188,7 @@
   color: var(--background-color);
   font-weight: 700;
   font-size: 30px;
-  margin: 0;
+  margin: 20px;
   display: flex;
   align-items: center;
 }
@@ -202,18 +201,17 @@
 }
 
 .freeQuoteButton:hover {
-  background-color: transparent;
-  border: 2px solid var(--primary-color);
+  background-color: #165a01;
 }
 
 .freeQuoteButton:hover p {
-  color: var(--primary-color);
+  color: var(--background-color);
 }
 
-.freeQuoteButton:hover img {
+/* .freeQuoteButton:hover img {
   filter: brightness(0) saturate(100%) invert(39%) sepia(95%) saturate(749%)
     hue-rotate(88deg) brightness(95%) contrast(90%);
-}
+} */
 
 .grassFooter {
   width: 100%;
@@ -249,7 +247,7 @@
   }
 
   .deliveryPic {
-    order: 1; 
+    order: 1;
     max-width: 90%;
   }
 
@@ -307,6 +305,11 @@
 
   .pricingList p {
     font-size: 14px;
+  }
+
+  .freeQuoteButton {
+    height: 40px;
+    padding: 10px 10px;
   }
 
   .freeQuoteButton p {

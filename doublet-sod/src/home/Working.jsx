@@ -26,7 +26,7 @@ const Working = () => {
         <div className="stepContainer step2Container">
           <div className="stepTitleWrapper">
             <img src={Step2} className="step" />
-            <h3 className="stepTitle">We Handle the rest</h3>
+            <h3 className="stepTitle">We Handle The Rest</h3>
           </div>
           <p className="stepParagraph">
             We coordinate with local sod farms to have your order cut fresh,

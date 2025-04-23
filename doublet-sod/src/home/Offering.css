@@ -149,7 +149,7 @@
 
   .slide-in .why-choose-item-inline {
     align-items: baseline;
-    gap: 20px; 
+    gap: 10px; 
   }
 
   .slide-in .why-choose-item-inline h3 {
@@ -159,8 +159,7 @@
   }
 
   .slide-in .why-choose-item-inline p {
-    padding-right: 20px;
+    padding-right: 50px;
     font-size: 16px;
-    width: 90%;
   }
 }

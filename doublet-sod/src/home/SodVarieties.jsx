@@ -13,7 +13,7 @@ const SodVarieties = () => {
           <img src={Tifway} alt='Tifway 19 Bermuda' className='varietyImage' />
           <div className='varietyLabel'>Tifway 19 Bermuda</div>
           <div className='varietyDescription'>
-          Dense, fine-textured hybrid Bermuda with aggressive growth. Tifway 419 is soft yet durable, ideal for sports and golf, with quick recovery, good cold tolerance, and a rich green color.
+          <p>Dense, fine-textured hybrid Bermuda with aggressive growth. Tifway 419 is soft yet durable, ideal for sports and golf, with quick recovery, good cold tolerance, and a rich green color.</p>
           </div>
         </div>
 
@@ -21,7 +21,7 @@ const SodVarieties = () => {
           <img src={Celebration} alt='Celebration Bermuda' className='varietyImage' />
           <div className='varietyLabel'>Celebration Bermuda</div>
           <div className='varietyDescription'>
-          Soft texture, vibrant blue-green color, and excellent drought, heat, salt, and cold tolerance. Low-maintenance and perfect for homes, businesses, and sports fields.
+          <p>Soft texture, vibrant blue-green color, and excellent drought, heat, salt, and cold tolerance. Low-maintenance and perfect for homes, businesses, and sports fields.</p>
           </div>
         </div>
 
@@ -29,7 +29,7 @@ const SodVarieties = () => {
           <img src={Fescue} alt='Frontier Tall Fescue' className='varietyImage' />
           <div className='varietyLabel'>Frontier Tall Fescue</div>
           <div className='varietyDescription'>
-          Heat and drought-resistant grass with dark green, fine blades and upright growth. It’s ideal for various soils and offers a dense, high-quality lawn.
+          <p>Heat and drought-resistant grass with dark green, fine blades and upright growth. It’s ideal for various soils and offers a dense, high-quality lawn.</p>
           </div>
         </div>
       </div>
