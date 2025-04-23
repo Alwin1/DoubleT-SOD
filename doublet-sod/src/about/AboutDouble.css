@@ -1,0 +1,45 @@
+.aboutDoubleContainer {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  padding: 50px 50px;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.aboutMissionontainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutParagraphContainer,
+.ourMissionParagraphContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutUsTitle,
+.ourMissionTitle {
+  font-size: 24px;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.aboutUsParagraph,
+.ourMissionParagraph {
+  font-size: 24px;
+  font-weight: 400;
+  color: black;
+  list-style-position: inside;
+  padding-left: 0;
+  margin: 0;
+  width: 80%;
+}
+
+.deliveryPicAbout {
+  max-height: 500px;
+  max-width: 100%;
+  align-self: center;
+}
