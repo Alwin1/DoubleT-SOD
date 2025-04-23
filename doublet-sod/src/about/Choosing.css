@@ -57,6 +57,7 @@
 }
 
 .areasServedContainer {
+padding: 50px;
   display: flex;
   flex-direction: column;
 }
@@ -139,43 +140,43 @@
 }
 
 .freeQuoteAboutButton {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    background-color: var(--primary-color);
-    outline-offset: -2px;
-    border-radius: 5px;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    height: 40px;
-  }
-  
-  .freeQuoteAboutButton p {
-    color: var(--background-color);
-    font-weight: 700;
-    font-size: 30px;
-    margin: 20px;
-    display: flex;
-    align-items: center;
-  }
-  
-  .freeQuoteAboutButton img {
-    width: 24px;
-    height: 24px;
-    object-fit: contain;
-    transition: filter 0.3s ease;
-  }
-  
-  .freeQuoteAboutButton:hover {
-    background-color: #165a01;
-  }
-  
-  .freeQuoteAboutButton:hover p {
-    color: var(--background-color);
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: var(--primary-color);
+  outline-offset: -2px;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  height: 40px;
+}
+
+.freeQuoteAboutButton p {
+  color: var(--background-color);
+  font-weight: 700;
+  font-size: 30px;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.freeQuoteAboutButton img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  transition: filter 0.3s ease;
+}
+
+.freeQuoteAboutButton:hover {
+  background-color: #165a01;
+}
+
+.freeQuoteAboutButton:hover p {
+  color: var(--background-color);
+}
 
 @media (max-width: 768px) {
   .choosingContainer {
@@ -220,7 +221,9 @@
     display: block;
     margin: 0 auto;
   }
-
+  .areasServedContainer {
+    padding: 20px;
+  }
   .areasServedHeader {
     font-size: 20px;
   }
@@ -230,7 +233,7 @@
   }
 
   .areasServedListContainer {
-    width: 90%;
+    width: 100%;
     padding: 0px;
     margin-top: 20px;
   }

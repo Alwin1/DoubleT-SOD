@@ -64,21 +64,21 @@
 }
 
 @media (max-width: 768px) {
-    .offeringAboutContainer {
-        padding: 20px 0;
-    }
+  .offeringAboutContainer {
+    padding: 20px 0;
+  }
 
-    .offerAboutHeading {
-        font-size: 18px;
-    }
+  .offerAboutHeading {
+    font-size: 18px;
+  }
 
-    .offerAboutTitle {
-        font-size: 18px;
-    }
-    .offerAboutParagraph {
-        padding: 10px;
-    }
-    .offerAboutDescription {
-        font-size: 16px;
-      }
+  .offerAboutTitle {
+    font-size: 18px;
+  }
+  .offerAboutParagraph {
+    padding: 10px;
+  }
+  .offerAboutDescription {
+    font-size: 16px;
+  }
 }
