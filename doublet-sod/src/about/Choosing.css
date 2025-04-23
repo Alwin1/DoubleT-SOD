@@ -1,0 +1,274 @@
+.choosingContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  font-family: "Roboto", "San-Serif";
+}
+
+.choosingTextImageContainer {
+  padding: 50px;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.choosingValuesFlex {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.choosingValuesHeader {
+  color: var(--primary-color);
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.choosingValuesItem {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  text-align: left;
+  gap: 10px;
+}
+
+.choosingTitle {
+  display: flex;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--primary-color);
+  width: 300px;
+}
+
+.choosingDescription {
+  color: black;
+  font-size: 24px;
+  width: 100%;
+}
+
+.choosingTeamPic {
+  height: 500px;
+}
+
+.areasServedContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.areasServedHeader {
+  color: var(--primary-color);
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.areasServedParagraph {
+  color: black;
+  font-size: 24px;
+  width: 100%;
+  text-align: center;
+}
+
+.areasServedListContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #b8d9ae;
+  border: 4px solid var(--primary-color);
+  border-radius: 50px;
+  padding: 50px 50px 0px 50px;
+  width: 70%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.areasServedList {
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0;
+  margin: 0 auto;
+  width: fit-content;
+  column-count: 4;
+  column-gap: 50px;
+  text-align: left;
+}
+
+.areasServedList li {
+  font-size: 24px;
+  font-weight: 700;
+  color: black;
+  padding: 10px 0px;
+}
+
+.areasServedListContainer p {
+  font-size: 24px;
+  font-weight: 700;
+  color: black;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.growTogetherContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+  padding: 50px;
+}
+
+.growingTitle {
+  font-size: 36px;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.growingParagraph {
+  width: 70%;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  color: black;
+}
+
+.freeQuoteAboutButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: var(--primary-color);
+    outline-offset: -2px;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    height: 40px;
+  }
+  
+  .freeQuoteAboutButton p {
+    color: var(--background-color);
+    font-weight: 700;
+    font-size: 30px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .freeQuoteAboutButton img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    transition: filter 0.3s ease;
+  }
+  
+  .freeQuoteAboutButton:hover {
+    background-color: #165a01;
+  }
+  
+  .freeQuoteAboutButton:hover p {
+    color: var(--background-color);
+  }
+
+@media (max-width: 768px) {
+  .choosingContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    align-items: center;
+  }
+
+  .choosingTextImageContainer {
+    padding: 20px;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .choosingValuesFlex {
+    width: 100%;
+  }
+
+  .choosingValuesItem {
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .choosingValuesHeader {
+    font-size: 18px;
+  }
+
+  .choosingTitle {
+    font-size: 16px;
+  }
+  .choosingDescription {
+    font-size: 16px;
+  }
+
+  .choosingImage {
+    padding: 0;
+    margin: 0;
+    order: 1;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .areasServedHeader {
+    font-size: 20px;
+  }
+
+  .areasServedParagraph {
+    font-size: 18px;
+  }
+
+  .areasServedListContainer {
+    width: 90%;
+    padding: 0px;
+    margin-top: 20px;
+  }
+
+  .areasServedList {
+    padding: 20px 0px 0px 20px;
+    column-count: 2;
+    column-gap: 20px;
+  }
+
+  .areasServedList li {
+    font-size: 18px;
+  }
+
+  .areasServedListContainer p {
+    font-size: 18px;
+  }
+  .growTogetherContainer {
+    padding: 20px;
+  }
+
+  .growingTitle {
+    font-size: 20px;
+  }
+
+  .growingParagraph {
+    font-size: 18px;
+    width: 100%;
+  }
+
+  .freeQuoteAboutButton {
+    width: 100%;
+    justify-content: center;
+    height: 40px;
+    padding: 10px 10px;
+  }
+
+  .freeQuoteAboutButton p {
+    font-size: 18px;
+  }
+}

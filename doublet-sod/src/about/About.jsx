@@ -4,6 +4,7 @@ import Header from '../overlays/Header'
 import DragImage from '../home/DragImage'
 import AboutDouble from './AboutDouble'
 import OfferingAbout from './OfferingAbout'
+import Choosing from './Choosing'
 
 function About() {
 
@@ -14,6 +15,7 @@ function About() {
         <DragImage />
         <AboutDouble />
         <OfferingAbout />
+        <Choosing />
         <Footer />
       </div>
     </>
