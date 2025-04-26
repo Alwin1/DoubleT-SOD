@@ -6,8 +6,15 @@ import Tifway from "../assets/tifway.jpeg";
 import Celebration from "../assets/celebration.jpeg";
 import Fescue from "../assets/fescue.jpeg";
 import ZeroScaping from "../assets/zeroScaping.jpg";
+import { useNavigate } from "react-router-dom"; // Import the useNavigate hook
 
 const MainTypes = () => {
+  const navigate = useNavigate(); // Initialize the navigate function
+
+  const handleLearnMoreClick = (page) => {
+    navigate(`/products/${page}`);
+  };
+
   return (
     <div className="mainTypesContainer">
       <div className="mainTypesHeaderContainer">
@@ -27,7 +34,10 @@ const MainTypes = () => {
               Dense, fine-textured Bermuda with rapid growth. Tifway 419 is
               soft, durable, quick to recover, and rich green in color
             </p>
-            <button className="learnMoreTextButton">
+            <button
+              className="learnMoreTextButton"
+              onClick={() => handleLearnMoreClick("bermuda")}
+            >
               <p>Learn More</p>
               <img src={SmallArrow} alt="Arrow" />
             </button>
@@ -46,7 +56,10 @@ const MainTypes = () => {
               resistance. Low-maintenance and ideal for homes, businesses, and
               sports fields.
             </p>
-            <button className="learnMoreTextButton">
+            <button
+              className="learnMoreTextButton"
+              onClick={() => handleLearnMoreClick("bermuda")}
+            >
               <p>Learn More</p>
               <img src={SmallArrow} alt="Arrow" />
             </button>
@@ -61,7 +74,10 @@ const MainTypes = () => {
               upright growth. Perfect for a variety of soils, it provides a
               dense, high-quality lawn.
             </p>
-            <button className="learnMoreTextButton">
+            <button
+              className="learnMoreTextButton"
+              onClick={() => handleLearnMoreClick("fescue")}
+            >
               <p>Learn More</p>
               <img src={SmallArrow} alt="Arrow" />
             </button>
@@ -76,7 +92,7 @@ const MainTypes = () => {
           using durable materials like rocks, gravel, and hardy plants
         </p>
         <img src={ZeroScaping} className="zeroScapingImage" alt="ZeroScaping" />
-        <button className="learnMoreTextButton">
+        <button className="learnMoreTextButton" onClick={() => handleLearnMoreClick("zero-scaping")}>
           <p>Learn More</p>
           <img src={SmallArrow} alt="Arrow" />
         </button>

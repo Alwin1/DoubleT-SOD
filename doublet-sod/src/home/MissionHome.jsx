@@ -1,9 +1,16 @@
 import React from "react";
 import MissionStatement from "../assets/mission-statement.jpg";
 import "./MissionHome.css";
+import { useNavigate } from 'react-router-dom'; // Import the useNavigate hook
 import ArrowCircle from "../assets/arrow-circle.png";
 
 const MissionHome = () => {
+  const navigate = useNavigate(); // Initialize the navigate function
+
+  const handleLearnMoreClick = () => {
+    navigate('/about'); // Programmatically navigate to the /about route
+  };
+
   return (
     <div className="missionHomeContainer">
       <div className="missionTitleContainer">
@@ -33,7 +40,7 @@ const MissionHome = () => {
             provide high-quality sod, expert installation, and reliable service
             every step of the way.
           </p>
-          <button className="learnMoreButton">
+          <button className="learnMoreButton" onClick={handleLearnMoreClick}>
             <p>Learn More</p>
             <img src={ArrowCircle} />
           </button>

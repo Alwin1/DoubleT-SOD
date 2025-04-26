@@ -49,7 +49,7 @@ function Header() {
                 <Link to="/products/bermuda">Bermuda</Link>
               </li>
               <li>
-                <Link to="/products/bescue">Bescue</Link>
+                <Link to="/products/Fescue">Fescue</Link>
               </li>
               <li>
                 <Link to="/products/zero-scaping">Zero-Scaping</Link>
@@ -116,7 +116,7 @@ function Header() {
             </button>
             <ul className="mobileSubNavLinks">
               <li>
-                <Link to="/products/bermuda" onClick={closeMenu}>
+                <Link to="/products" onClick={closeMenu}>
                   Explore All Our Products
                 </Link>
               </li>
@@ -126,8 +126,8 @@ function Header() {
                 </Link>
               </li>
               <li>
-                <Link to="/products/bescue" onClick={closeMenu}>
-                  Bescue
+                <Link to="/products/fescue" onClick={closeMenu}>
+                  Fescue
                 </Link>
               </li>
               <li>
