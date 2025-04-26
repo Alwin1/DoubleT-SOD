@@ -28,7 +28,9 @@ function Header() {
   return (
     <div className="headerContainer">
       <div className="companyContainer">
-        <img className="companyLogo" src={Logo} alt="Company Logo" />
+        <Link to="/">
+          <img className="companyLogo" src={Logo} alt="Company Logo" />
+        </Link>
       </div>
 
       {/* Desktop Navigation */}
@@ -41,9 +43,9 @@ function Header() {
             <Link to="/about">About Us</Link>
           </li>
           <li className="dropdown">
-              <Link to="/products">
-                <span>Our Products</span>
-              </Link>
+            <Link to="/products">
+              <span>Our Products</span>
+            </Link>
             <ul className="dropdown-menu centered-dropdown">
               <li>
                 <Link to="/products/bermuda">Bermuda</Link>

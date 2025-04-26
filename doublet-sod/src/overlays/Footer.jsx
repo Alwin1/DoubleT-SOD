@@ -68,7 +68,11 @@ const Footer = () => {
           <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
         </p>
         <p>© 2025 [Double T-SOD]. All Rights Reserved.</p>
-        <a href="https://weareasite.com/">
+        <a
+          href="https://weareasite.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <p>Designed By: We Are A Site</p>
         </a>
       </div>
