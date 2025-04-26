@@ -73,7 +73,7 @@ const Footer = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <p>Designed By: We Are A Site</p>
+          <p>Designed By: We Are A Site LLC</p>
         </a>
       </div>
     </footer>
