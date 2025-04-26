@@ -1,7 +1,6 @@
 import './About.css'
 import Footer from '../overlays/Footer'
 import Header from '../overlays/Header'
-import DragImage from '../home/DragImage'
 import AboutDouble from './AboutDouble'
 import OfferingAbout from './OfferingAbout'
 import Choosing from './Choosing'
@@ -13,7 +12,6 @@ function About() {
     <>
       <div className='aboutContainer'>
         <Header />
-        {/* <DragImage /> */}
         <img src={MainTeam} className= "mainTeamPic" alt="Team Picture Main" />
         <AboutDouble />
         <OfferingAbout />

@@ -1,0 +1,196 @@
+.mainTypesContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  padding-top: 50px;
+  margin: 0;
+}
+
+.mainTypesHeaderContainer,
+.zeroScapingContainer {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mainTypesHeader {
+  color: var(--primary-color);
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0px;
+}
+
+.mainTypesParagraph {
+  color: black;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  width: 85%;
+  margin: 25px 0 0px 0;
+}
+
+.threeTypesContainer {
+  display: flex;
+  padding: 50px;
+  justify-content: space-around; /* Distributes space evenly between the sodTypes */
+}
+
+.sodType {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sodImage {
+  width: 400px;
+  height: 300px;
+  object-fit: cover; /* Ensure the image covers the area without distortion */
+}
+
+.sodTextContainer {
+  border: 3px solid var(--primary-color);
+  position: relative;
+  height: 350px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the content within the text container */
+}
+
+.sodHeader {
+  color: black; /* Darker text for the header */
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.sodParagraph {
+  color: black;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.learnMoreTextButton {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  padding: 20px 0 0 0;
+  cursor: pointer;
+  transition: text-decoration 0.3s ease;
+}
+
+.learnMoreTextButton p {
+  color: var(--primary-color);
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.learnMoreTextButton img {
+  width: 24px;
+  height: auto;
+}
+
+.learnMoreTextButton:hover p {
+  text-decoration: underline;
+}
+
+.sodTextContainer .learnMoreTextButton {
+  position: absolute;
+  bottom: 50px;
+  transform: translateY(50%);
+}
+
+.zeroScapingImage {
+  width: 800px;
+  height: auto;
+  padding: 0;
+  margin: 50px 0px 0px 0;
+}
+
+@media (max-width: 768px) {
+  .mainTypesContainer {
+    padding-top: 0px;
+  }
+
+  .mainTypesHeader {
+    font-size: 20px;
+    margin: 0;
+    padding-top: 20px;
+  }
+
+  .mainTypesParagraph {
+    font-size: 18px;
+    padding: 20px;
+    margin: 0;
+  }
+
+  .threeTypesContainer {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px; /* Adjust padding for smaller screens */
+    gap: 20px; /* Maintain gap between items */
+  }
+
+  .sodType {
+    width: 300px;
+  }
+
+  .sodImage {
+    width: 300px; 
+    height: 200px;
+    aspect-ratio: auto; /* Remove fixed aspect ratio for flexibility */
+  }
+
+  .sodTextContainer {
+    border: 2px solid var(--primary-color); /* Adjust border thickness */
+    position: relative;
+    height: 250px; 
+    padding: 20px; 
+    align-items: stretch; 
+  }
+
+  .sodHeader {
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .sodParagraph {
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 20px; 
+  }
+
+  .learnMoreTextButton {
+    padding: 10px; 
+  }
+
+  .learnMoreTextButton p {
+    font-size: 18px;
+    margin-right: 5px;
+  }
+
+  .learnMoreTextButton img {
+    width: 18px;
+  }
+
+  .sodTextContainer .learnMoreTextButton {
+    position: absolute; 
+    transform: translateX(50%) translateY(90%); 
+    margin: 0; 
+    padding: 0;
+  }
+
+  .zeroScapingImage {
+    width: 100%; /* Make image responsive */
+    height: auto;
+    margin-top: 20px; 
+  }
+}
