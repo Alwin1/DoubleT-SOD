@@ -61,12 +61,26 @@ const BermudaGrass = () => {
           name: "Planting Schedule",
           Tifway419: (
             <>
-              <span className="underLineTable">Year Round</span><br />Zone 7 South<br /><br /><span className="underLineTable">March - Sept</span><br />Zone 6
+              <span className="underLineTable">Year Round</span>
+              <br />
+              Zone 7 South
+              <br />
+              <br />
+              <span className="underLineTable">March - Sept</span>
+              <br />
+              Zone 6
             </>
           ),
           Celebration: (
             <>
-              <span className="underLineTable">Year Round</span><br />Zone 7 South<br /><br /><span className="underLineTable">March - Sept</span><br />Zone 6
+              <span className="underLineTable">Year Round</span>
+              <br />
+              Zone 7 South
+              <br />
+              <br />
+              <span className="underLineTable">March - Sept</span>
+              <br />
+              Zone 6
             </>
           ),
           icon: Scheduling,
@@ -99,7 +113,7 @@ const BermudaGrass = () => {
         </p>
         <p className="bermudaParagraph">
           There are two cultivars available:{" "}
-          <span>Tifway 419 and Celebration Bermusa</span>
+          <span>Tifway 419 and Celebration Bermuda</span>
         </p>
       </div>
       <div className="bermudaTable">
@@ -123,7 +137,14 @@ const BermudaGrass = () => {
                   <th></th>
                 </tr>
                 {categoryData.items.map((item, itemIndex) => (
-                  <tr key={itemIndex}>
+                  <tr
+                    key={itemIndex}
+                    className={
+                      item.name === "Planting Schedule"
+                        ? "plantingScheduleRow"
+                        : ""
+                    }
+                  >
                     <td>
                       {item.icon && (
                         <img

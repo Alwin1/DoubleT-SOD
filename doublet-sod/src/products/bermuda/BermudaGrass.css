@@ -35,8 +35,8 @@
 }
 
 .bermudaTable {
-    align-self: center;
-  margin: 50px;
+  margin: 25px;
+  align-self: center;
   width: fit-content;
   overflow-x: auto; /* Enable horizontal scrolling for smaller screens */
   border: 4px solid black; /* Add the border to the container div */
@@ -59,12 +59,16 @@
 }
 
 .bermudaTable tr td:first-child {
-    border-left: none;
-  }
-  
-  .bermudaTable tr td:last-child {
-    border-right: none;
-  }
+  border-left: none;
+}
+
+.bermudaTable tr td:last-child {
+  border-right: none;
+}
+
+.bermudaTable .plantingScheduleRow td {
+  border-bottom: none !important;
+}
 
 .bermudaTable .tableName th {
   padding: 8px;
@@ -103,5 +107,5 @@
 }
 
 .underLineTable {
-    text-decoration: underline;
+  text-decoration: underline;
 }
