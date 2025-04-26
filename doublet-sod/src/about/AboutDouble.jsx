@@ -8,7 +8,7 @@ const AboutDouble = () => {
       <div className="aboutImage">
         <img src={AboutTeam} className="aboutTeamPic" />
       </div>
-      <div className="aboutMissionontainer">
+      <div className="aboutMissionContainer">
         <div className="aboutParagraphContainer">
           <h2 className="aboutUsTitle">About Us</h2>
           <p className="aboutUsParagraph">

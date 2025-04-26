@@ -9,7 +9,7 @@
   font-family: "Roboto", "San-Serif";
 }
 
-.aboutMissionontainer {
+.aboutMissionContainer {
   padding: 50px;
   display: flex;
   flex-direction: column;
@@ -55,17 +55,19 @@
   .aboutDoubleContainer {
     flex-direction: column;
     gap: 0px;
-    padding: 20px 0;
+    padding: 0;
     align-items: center;
     width: 100%;
   }
 
-  .aboutMissionontainer {
+  .aboutMissionContainer {
     padding: 20px;
   }
 
   .aboutParagraphContainer,
   .ourMissionParagraphContainer {
+    padding: 0;
+    margin: 0;
     width: 100%;
     align-items: center;
   }
@@ -73,20 +75,23 @@
   .aboutUsTitle,
   .ourMissionTitle {
     font-size: 18px;
+    margin-bottom: 20px;
   }
 
   .aboutUsParagraph,
   .ourMissionParagraph {
     font-size: 16px;
+    margin-bottom: 0px;
   }
 
   .aboutImage {
     padding: 0;
     margin: 0;
     order: 1;
-    width: 90%;
+    width: calc(100% - 40px);
+    padding: 0px;
     display: block; 
-    margin: 0 auto;
+    margin: 0 20px 0 20px;
   }
 
   .aboutTeamPic {

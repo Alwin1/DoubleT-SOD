@@ -3,7 +3,7 @@
   background: url("../assets/testimonial-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 40px 20px;
+  padding: 50px 0px;
   overflow-x: hidden;
   touch-action: pan-y;
   font-family: "Roboto", "San-Serif";
@@ -98,7 +98,7 @@
 
 @media (max-width: 768px) {
   .testimonial-slider {
-    padding: 30px 15px;
+    padding: 30px 0px;
   }
 
   .testimonial-title {

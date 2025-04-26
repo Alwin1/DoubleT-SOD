@@ -4,6 +4,18 @@
   padding: 50px;
   font-family: "Roboto", "San-Serif";
   gap: 50px;
+  line-height: 1.4;
+}
+
+.missionStatementContainer {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+}
+
+.missionStatementContainer .missionTitle {
+  margin-bottom: 0px;
 }
 
 .missionTitle {
@@ -31,13 +43,6 @@
 .missionPictureContainer {
   display: flex;
   gap: 50px;
-}
-
-.missionStatementContainer {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  align-items: center;
 }
 
 .missionPicture {
@@ -101,8 +106,13 @@
     }
 
     .missionTitle {
+      padding: 0px;
+      margin: 0;
+    }
+
+    .missionTitleContainer .missionTitle{
         font-size: 18px;
-        padding: 0px 20px;
+        padding: 20px;
     }
 
     .missionParagraph {

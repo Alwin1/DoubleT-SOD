@@ -5,6 +5,7 @@ import DragImage from '../home/DragImage'
 import AboutDouble from './AboutDouble'
 import OfferingAbout from './OfferingAbout'
 import Choosing from './Choosing'
+import MainTeam from "../assets/MainTeam.jpg";
 
 function About() {
 
@@ -12,7 +13,8 @@ function About() {
     <>
       <div className='aboutContainer'>
         <Header />
-        <DragImage />
+        {/* <DragImage /> */}
+        <img src={MainTeam} className= "mainTeamPic" alt="Team Picture Main" />
         <AboutDouble />
         <OfferingAbout />
         <Choosing />

@@ -3,3 +3,15 @@
     padding: 0;
     width: 100%;
 }
+
+.mainTeamPic {
+    width: 100%;
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+    .mainTeamPic {
+        width: 100%;
+        padding: 0;
+    }
+}

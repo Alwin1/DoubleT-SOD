@@ -4,6 +4,7 @@
   background-color: var(--accent-color);
   align-items: center;
   font-family: "Roboto", "San-Serif";
+  padding: 50px;
 }
 
 .VarietiesTitle {
@@ -11,6 +12,7 @@
   text-align: center;
   color: black;
   font-weight: 700;
+  margin-bottom: 50px;
 }
 
 .VarietiesImageContainer {
@@ -69,7 +71,6 @@
   text-align: center;
   opacity: 0;
   transition: opacity 0.3s ease;
-  
 }
 
 .varietyDescription p {
@@ -87,29 +88,34 @@
 }
 
 @media (max-width: 768px) {
-    .VarietiesTitle {
-        font-size: 20px;
-    }
+  .VarietiesContainer {
+    padding: 20px;
+  }
 
-    .VarietiesImageContainer {
-        flex-direction: column;
-        gap: 20px;
-        padding: 20px;
-        padding-bottom: 50px;
-    }
+  .VarietiesTitle {
+    font-size: 20px;
+margin-bottom: 20px;
+  }
 
-    .varietyCard {
-        width: 300px;
-        height: 300px;
-    }
+  .VarietiesImageContainer {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0px;
+    padding-bottom: 50px;
+  }
 
-    .varietyLabel {
-        font-size: 16px;
-    }
+  .varietyCard {
+    width: 300px;
+    height: 300px;
+  }
 
-    .varietyDescription p {
-      font-size: 16px;
-      font-weight: 500;
-      padding: 0px 50px;
-    }
+  .varietyLabel {
+    font-size: 20px;
+  }
+
+  .varietyDescription p {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0px 50px;
+  }
 }

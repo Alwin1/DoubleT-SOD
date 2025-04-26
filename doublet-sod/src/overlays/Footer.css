@@ -109,9 +109,9 @@
 .footer-bottom {
   display: flex;
   flex-direction: column;
-  align-items: flex-end; /* Pushes everything to the right */
+  align-items: flex-end;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 100px;
 }
 
 .legal-text {
@@ -126,6 +126,15 @@
 }
 
 .legal-text a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer-bottom a:hover {
   text-decoration: underline;
 }
 
@@ -193,6 +202,10 @@
   .quick-links li,
   .footer-section a {
     font-size: 12px;
+  }
+
+  .footer-bottom {
+    margin: 0;
   }
 
   .legal-text,

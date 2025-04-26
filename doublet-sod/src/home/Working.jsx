@@ -67,8 +67,8 @@ const Working = () => {
                 Fescue & Bermuda available by square foot or full pallet (450
                 sq. ft.).
               </li>
-              <li>Full Pallet: $240 (after tax)</li>
-              <li>Per Sq. Ft.: $0.53 (after tax)</li>
+              <li>Full Pallet: $240</li>
+              <li>Per Sq. Ft.: $0.53</li>
               <li>Minimum Delivery: ½ pallet ($150 minimum order)</li>
             </ul>
           </div>

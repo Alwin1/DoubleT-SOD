@@ -35,7 +35,7 @@
   flex-direction: row;
   align-items: baseline;
   text-align: left;
-  gap: 10px;
+  gap: 0px;
 }
 
 .choosingTitle {
@@ -43,7 +43,7 @@
   font-size: 24px;
   font-weight: 700;
   color: var(--primary-color);
-  width: 300px;
+  width: 250px;
 }
 
 .choosingDescription {
@@ -52,12 +52,17 @@
   width: 100%;
 }
 
-.choosingTeamPic {
+.choosingImage {
   height: 500px;
+  padding: 50px 0px 50px 50px;
+}
+
+.choosingTeamPic {
+  max-height: 500px;
 }
 
 .areasServedContainer {
-padding: 50px;
+  padding: 0 50px;
   display: flex;
   flex-direction: column;
 }
@@ -187,7 +192,7 @@ padding: 50px;
   }
 
   .choosingTextImageContainer {
-    padding: 20px;
+    padding: 0px;
     flex-direction: column;
     gap: 20px;
     align-items: center;
@@ -195,12 +200,15 @@ padding: 50px;
   }
 
   .choosingValuesFlex {
+    padding: 0px;
+    margin: 0;
     width: 100%;
   }
 
   .choosingValuesItem {
     flex-direction: column;
     gap: 0px;
+    padding: 0 20px;
   }
 
   .choosingValuesHeader {
@@ -218,14 +226,26 @@ padding: 50px;
     padding: 0;
     margin: 0;
     order: 1;
-    display: block;
-    margin: 0 auto;
+    width: calc(100% - 40px);
+    padding: 0px;
+    display: block; 
   }
+
+  .choosingTeamPic {
+    align-self: center;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+  }
+
   .areasServedContainer {
     padding: 20px;
   }
   .areasServedHeader {
     font-size: 20px;
+    margin: 0px;
+    margin-top: 10px;
   }
 
   .areasServedParagraph {
@@ -252,16 +272,19 @@ padding: 50px;
     font-size: 18px;
   }
   .growTogetherContainer {
-    padding: 20px;
+    padding: 0px 20px;
   }
 
   .growingTitle {
     font-size: 20px;
+    margin: 10px;
   }
 
   .growingParagraph {
     font-size: 18px;
     width: 100%;
+    padding: 0;
+    margin: 10px;
   }
 
   .freeQuoteAboutButton {

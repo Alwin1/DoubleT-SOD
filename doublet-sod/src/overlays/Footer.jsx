@@ -29,46 +29,48 @@ const Footer = () => {
         </p>
       </div>
       <div className="footer-middle-row">
-      <div className="footer-section quick-links">
-        <h3>Quick Links</h3>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/about">About Us</Link>
-          </li>
-          <li>
-            <Link to="/product">Sod Types</Link>
-          </li>
-          <li>
-            <Link to="/gallery">Gallery</Link>
-          </li>
-        </ul>
-      </div>
-      <div className="footer-section social-media">
-        <div className="social-media-connections">
-          <h3>Follow Us</h3>
-          <div className="social-icons">
-            <a href="https://www.facebook.com/Doubletsod/">
-              <img src={Facebook} alt="Facebook" />
-            </a>
-            <a href="https://www.instagram.com/doublet_sod/?hl=en">
-              <img src={Instagram} alt="Instagram" />
-            </a>
-            <a href="https://www.youtube.com/@doubletsodandinstallation6346">
-              <img src={Youtube} alt="Instagram" />
-            </a>
+        <div className="footer-section quick-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/about">About Us</Link>
+            </li>
+            <li>
+              <Link to="/product">Sod Types</Link>
+            </li>
+            <li>
+              <Link to="/gallery">Gallery</Link>
+            </li>
+          </ul>
+        </div>
+        <div className="footer-section social-media">
+          <div className="social-media-connections">
+            <h3>Follow Us</h3>
+            <div className="social-icons">
+              <a href="https://www.facebook.com/Doubletsod/">
+                <img src={Facebook} alt="Facebook" />
+              </a>
+              <a href="https://www.instagram.com/doublet_sod/?hl=en">
+                <img src={Instagram} alt="Instagram" />
+              </a>
+              <a href="https://www.youtube.com/@doubletsodandinstallation6346">
+                <img src={Youtube} alt="Instagram" />
+              </a>
+            </div>
           </div>
         </div>
-      </div>
       </div>
       <div className="footer-bottom">
         <p className="legal-text">
           <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
         </p>
         <p>© 2025 [Double T-SOD]. All Rights Reserved.</p>
-        <p>Designed By: We Are A Site</p>
+        <a href="https://weareasite.com/">
+          <p>Designed By: We Are A Site</p>
+        </a>
       </div>
     </footer>
   );

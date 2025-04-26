@@ -40,7 +40,7 @@ const TestimonialSlider = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
-    }, 30000);
+    }, 5000);
 
     return () => clearInterval(interval);
   }, []);
