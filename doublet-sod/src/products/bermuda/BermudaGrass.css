@@ -45,8 +45,8 @@
 
 .bermudaTable table {
   color: black;
-  width: 850px;
-  height: 850px;
+  width: 650px;
+  height: 650px;
   border-collapse: collapse;
   overflow: hidden;
 }
@@ -55,7 +55,7 @@
   border: 2px solid #b8d9ae;
   padding: 8px;
   text-align: center;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .bermudaTable tr td:first-child {
@@ -76,7 +76,7 @@
   border: 2px solid black;
   color: white;
   font-weight: bold;
-  font-size: 36px;
+  font-size: 24px;
 }
 
 .bermudaTable .tableHeaders th {
@@ -86,17 +86,17 @@
   border-bottom: 2px solid black;
   color: black;
   font-weight: bold;
-  font-size: 32px;
+  font-size: 22px;
 }
 
 .bermudaTable .categoryRow th {
   border: 2px solid var(--primary-color);
   background-color: var(--primary-color);
   border-top: 3px solid black;
-  color: black;
+  color: white;
   font-weight: bold;
   text-align: center;
-  font-size: 32px;
+  font-size: 20px;
 }
 
 .bermudaTable .tableIcon {
@@ -108,4 +108,53 @@
 
 .underLineTable {
   text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .bermudaTitle {
+    font-size: 20px;
+  }
+
+  .bermudaParagraph {
+    font-size: 18px;
+  }
+
+  .bermudaTextContainer {
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .bermudaTable {
+    margin: 10px;
+  }
+
+  .bermudaTable table {
+    width: 100%;
+    height: auto;
+  }
+
+  .bermudaTable td {
+    font-size: 16px;
+    padding: 6px;
+  }
+
+  .bermudaTable .tableName th {
+    font-size: 18px;
+  }
+
+  .bermudaTable .tableHeaders th {
+    font-size: 16px;
+    width: 33%;
+  }
+
+  .bermudaTable .categoryRow th {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .bermudaTable .tableIcon {
+    width: 18px;
+    height: 18px;
+    margin-right: 3px;
+  }
 }
