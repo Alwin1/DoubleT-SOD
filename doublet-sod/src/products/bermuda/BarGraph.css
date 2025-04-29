@@ -85,6 +85,7 @@
   font-weight: 700;
   color: white;
   background-color: black;
+  font-family: "Roboto", "San-Serif";
 }
 
 .chart-row {
@@ -218,6 +219,7 @@
   .chart-container h3 {
     font-size: 20px;
     text-align: center;
+    font-family: "Roboto", "San-Serif";
   }
 
   .chart-row {
