@@ -1,6 +1,7 @@
 import './Fescue.css';
 import Header from '../../overlays/Header';
 import Footer from '../../overlays/Footer'
+import FescueGrass from './FescueGrass';
 
 function Fescue() {
 
@@ -8,6 +9,7 @@ function Fescue() {
     <>
       <div className='fescueContainer'>
         <Header />
+        <FescueGrass />
         <Footer />
       </div>
     </>

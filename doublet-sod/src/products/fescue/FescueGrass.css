@@ -1,0 +1,92 @@
+.fescueGrassContainer {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  flex-direction: column;
+}
+
+.fescueGrassContainer h2 {
+  color: var(--primary-color);
+  font-size: 36px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.fescueGrassImageText {
+  display: flex;
+  padding: 0 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.fescueGrassText {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  color: black;
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.fescueGrassText span,
+.fescueTipsContainer p span {
+  font-weight: 700;
+  margin: 0;
+}
+
+.fescueImage {
+  width: 30%;
+  height: auto;
+}
+
+.fescueTipsContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 0 50px;
+}
+
+.fescueTipsContainer h2 {
+  text-align: left;
+}
+
+.fescueGrassText p,
+.fescueTipsContainer p {
+  color: black;
+  font-size: 24px;
+  margin: 25px 0;
+}
+
+@media (max-width: 768px) {
+  .fescueGrassContainer h2 {
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    margin: 0;
+  }
+
+  .fescueGrassImageText {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    margin: 0;
+    gap: 20px;
+  }
+
+  .fescueGrassText p,
+  .fescueTipsContainer p {
+    margin: 25px 0;
+    gap: 0;
+    font-size: 18px;
+  }
+
+  .fescueImage {
+    width: 100%;
+    margin: 0;
+  }
+
+  .fescueTipsContainer {
+    padding: 0 20px;
+  }
+}

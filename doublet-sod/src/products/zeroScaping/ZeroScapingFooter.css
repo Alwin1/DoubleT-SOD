@@ -1,0 +1,225 @@
+.zeroFooter {
+  background-color: #9da59a;
+  color: black;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px;
+  gap: 100px;
+  font-weight: 400;
+  font-family: "Source Serif 4", serif;
+}
+
+.zeroFooter-section {
+  flex: 1;
+  min-width: fit-content;
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.zeroFooter-section h3 {
+  font-size: 18px;
+  margin: 0 0 5px 0;
+  padding: 0;
+}
+
+.zeroFooter-section p {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 5px 0;
+}
+
+.zeroFooter-section a {
+  text-decoration: none;
+  color: black;
+}
+
+.zeroFooter-section a:hover {
+  text-decoration: underline;
+}
+
+.zeroCompany-info {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.zeroFooter-middle-row {
+  display: flex;
+  gap: 100px;
+}
+
+.zeroFooterLogos {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  margin: 0;
+}
+
+.zeroQuick-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.zeroQuick-links {
+  justify-content: center;
+}
+
+.zeroQuick-links li {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 5px 0;
+}
+
+.zeroQuick-links li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.zeroQuick-links li a:hover {
+  text-decoration: underline;
+}
+
+.zeroSocial-media {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.zeroSocial-media-connections,
+.zeroSocial-newsletter {
+  display: flex;
+  flex-direction: column;
+}
+
+.zeroSocial-icons img {
+  width: 25px;
+  margin-right: 10px;
+}
+
+.zeroFooter-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.zeroLegal-text {
+  font-size: 12px;
+  margin: 0;
+}
+
+.zeroLegal-text a {
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+}
+
+.zeroLegal-text a:hover {
+  text-decoration: underline;
+}
+
+.zeroFooter-bottom a {
+  text-decoration: none;
+  color: black;
+}
+
+.zeroFooter-bottom a:hover {
+  text-decoration: underline;
+}
+
+.zeroFooter-bottom p {
+  font-size: 12px;
+  margin: 0;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+  .zeroFooter {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 10px;
+  }
+
+  .zeroFooter-section {
+    margin: 10px 0;
+    width: 100%;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .zeroCompany-info {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px;
+  }
+
+  .zeroQuick-links {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .zeroSocial-media {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .zeroSocial-icons {
+    width: 10px;
+    height: 10px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .zeroFooter-middle-row {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  .zeroFooter-section h3 {
+    font-size: 16px;
+  }
+
+  .zeroFooter-section p,
+  .zeroQuick-links li,
+  .zeroFooter-section a {
+    font-size: 12px;
+  }
+
+  .zeroFooter-bottom {
+    margin: 0;
+  }
+
+  .zeroLegal-text,
+  .zeroLegal-text a,
+  .zeroFooter-bottom p {
+    font-size: 10px;
+  }
+
+  .zeroFooterLogos {
+    width: 18px;
+    height: 18px;
+  }
+
+  .zeroSocial-icons img {
+    width: 22px;
+  }
+}

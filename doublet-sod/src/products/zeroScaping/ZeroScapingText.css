@@ -1,0 +1,65 @@
+.zeroScapingTextContainer {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.zeroScapingTextContainer h2 {
+  font-size: 36px;
+  color: black;
+  text-align: center;
+  margin: 0;
+}
+
+.zeroScapingTextImage {
+  display: flex;
+  padding: 50px;
+  gap: 50px;
+}
+
+.zeroScapeParagraph {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 0;
+  margin: 0;
+}
+
+.zeroScapeParagraph p {
+  margin: 0px;
+  color: black;
+  font-size: 24px;
+}
+
+.zeroScapingImageText {
+  width: 30%;
+  padding: 0;
+  height: auto;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .zeroScapingTextContainer h2 {
+    font-size: 20px;
+    padding: 20px;
+  }
+
+  .zeroScapingTextImage {
+    padding: 20px;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .zeroScapeParagraph {
+    gap: 20px;
+  }
+
+  .zeroScapeParagraph p {
+    font-size: 18px;
+  }
+
+  .zeroScapingImageText {
+    width: 100%;
+  }
+}

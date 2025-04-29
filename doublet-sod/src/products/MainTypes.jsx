@@ -5,7 +5,7 @@ import SmallArrow from "../assets/smallArrowImage.png";
 import Tifway from "../assets/tifway.jpeg";
 import Celebration from "../assets/celebration.jpeg";
 import Fescue from "../assets/fescue.jpeg";
-import ZeroScaping from "../assets/zeroScaping.jpg";
+import ZeroScaping from "../assets/zero-scape.png";
 import { useNavigate } from "react-router-dom"; // Import the useNavigate hook
 
 const MainTypes = () => {
