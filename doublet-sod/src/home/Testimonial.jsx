@@ -71,7 +71,7 @@ const TestimonialSlider = () => {
 
   return (
     <div className="testimonial-slider">
-      <h2 className="testimonial-title">Real Reviews. Real Results</h2>
+      <h2 className="testimonial-title">Real Reviews. Real Results.</h2>
       <div
         className="testimonial-card"
         ref={sliderRef}

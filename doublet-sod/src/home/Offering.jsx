@@ -8,7 +8,7 @@ const Offering = () => {
     {
       title: "Premium Sod",
       description:
-        "All sod varieties are sourced from local growers to ensure quality sod to match your needs",
+        "All sod varieties are sourced from local growers to ensure quality sod to match your needs.",
     },
     {
       title: "Competitive Pricing",

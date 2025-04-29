@@ -17,8 +17,8 @@
 
 .bermudaImage,
 .celebrationBermudaGrassImage {
-  width: 300px;
-  height: 300px;
+  width: 600px;
+  height: 600px;
   align-self: center;
   object-fit: cover;
 }

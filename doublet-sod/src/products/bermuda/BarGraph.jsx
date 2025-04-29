@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./BarGraph.css";
-import CelebrationImage from "../../assets/celebration.jpeg";
-import Tifway from "../../assets/tifway.jpeg";
+import CelebrationImage from "../../assets/celebrationBermuda.jpg";
+import Tifway from "../../assets/testimonial-background.jpg";
 import GrassFooter from "../../assets/grassFooter.jpeg";
 
 const data = [

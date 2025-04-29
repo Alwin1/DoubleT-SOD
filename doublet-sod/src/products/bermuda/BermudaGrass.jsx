@@ -98,22 +98,18 @@ const BermudaGrass = () => {
         <p className="bermudaParagraph">
           <span>Hybrid-Bermudas</span> has no equal for its ability to recover
           from heavy use during hot weather and it is the top choice for summer
-          sports use.
-        </p>
-        <p className="bermudaParagraph">
-          Hybrid Bermuda grass is an attractive, deep green turf grass that can
-          be mowed short, is both drought and heat tolerant and has moderate
-          water requirements.
+          sports use. This is an attractive, deep green turf grass that can be
+          mowed short, is both drought and heat tolerant and has moderate water
+          requirements.
         </p>
         <p className="bermudaParagraph">
           The Hybrid Bermuda turf grass is very dense, quick to establish and
-          adaptable to all soil conditions. Hybrid Bermuda grasses are
-          vegetatively propagated which helps to minimize any pollen production
-          thus reducing hay fever or allergy irritations.
+          adaptable to all soil conditions. These grasses are vegetatively
+          propagated which helps to minimize any pollen production thus reducing
+          hay fever or allergy irritations.
         </p>
         <p className="bermudaParagraph">
-          There are two cultivars available:{" "}
-          <span>Tifway 419 and Celebration Bermuda</span>
+          There are two cultivars available: <span>Tifway 419 and Celebration Bermuda</span>
         </p>
       </div>
       <div className="bermudaTable">

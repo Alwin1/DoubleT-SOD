@@ -91,11 +91,11 @@ const MainTypes = () => {
           Zero-scaping eliminates the need for frequent watering and upkeep by
           using durable materials like rocks, gravel, and hardy plants
         </p>
-        <img src={ZeroScaping} className="zeroScapingImage" alt="ZeroScaping" />
         <button className="learnMoreTextButton" onClick={() => handleLearnMoreClick("zero-scaping")}>
           <p>Learn More</p>
           <img src={SmallArrow} alt="Arrow" />
         </button>
+        <img src={ZeroScaping} className="zeroScapingImage" alt="ZeroScaping" />
         <img src={GrassFooter} className="grassFooter" />
       </div>
     </div>
