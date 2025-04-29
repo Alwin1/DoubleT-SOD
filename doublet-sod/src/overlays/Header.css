@@ -14,15 +14,13 @@
 .companyContainer {
   display: flex;
   align-items: center;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0 50px;
   font-family: "Source Serif 4", serif;
 }
 
 .companyLogo {
-  width: 100px;
-  height: auto;
-  margin-right: 10px;
+  width: auto;
+  height: 100px;
 }
 
 
@@ -116,7 +114,7 @@
 }
 
 .hamburger .bar {
-  width: 30px;
+  width: 0px;
   height: 4px;
   margin: 6px 0;
   background-color: var(--primary-color);
@@ -232,6 +230,14 @@
 }
 
 @media (max-width: 768px) {
+  .companyContainer {
+    padding: 0 20px;
+  }
+
+  .companyLogo {
+    height: 50px;;
+  }
+
   .navBar {
     display: none;
   }

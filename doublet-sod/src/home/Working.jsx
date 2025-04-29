@@ -2,11 +2,12 @@ import React from "react";
 import "./Working.css";
 import Step1 from "../assets/step1.png";
 import Step2 from "../assets/step2.png";
+import Step3 from "../assets/step3.png";
 import CalendarPic from "../assets/calendar.png";
 import Nomoney from "../assets/nomoney.png";
 import DeliveryPic from "../assets/deliveryPic.jpg";
 import ArrowCircle from "../assets/arrow-circle.png";
-import GrassFooter from "../assets/grassFooter.jpeg"
+import GrassFooter from "../assets/grassFooter.jpeg";
 
 const Working = () => {
   return (
@@ -31,6 +32,19 @@ const Working = () => {
           <p className="stepParagraph">
             We coordinate with local sod farms to have your order cut fresh,
             picked up, and delivered directly to you!
+          </p>
+        </div>
+        <div className="stepContainer step3Container">
+          <div className="stepTitleWrapper">
+            <img src={Step3} className="step" />
+            <h3 className="stepTitle">
+              Relax - We've Got The Heavy Lifting Covered
+            </h3>
+          </div>
+          <p className="stepParagraph">
+            We have installation crews ready to tackle any project! Schedule a
+            quote to to receive pricing on your project. Let us do the heavy
+            lifting for you!
           </p>
         </div>
       </div>
@@ -77,7 +91,11 @@ const Working = () => {
             <ul className="pricingList">
               <li>Lubbock: $75 Local Delivery Fee</li>
               <li>Outside Lubbock? Contact us for a custom delivery quote.</li>
-              <p>Please note a $120 cancellation fee per pallet will be applied to any orders canceled within 48 hours of the scheduled delivery date.</p>
+              <p>
+                Please note a $120 cancellation fee per pallet will be applied
+                to any orders canceled within 48 hours of the scheduled delivery
+                date.
+              </p>
             </ul>
           </div>
         </div>
@@ -95,7 +113,7 @@ const Working = () => {
           <img src={ArrowCircle} />
         </button>
       </div>
-      <img src={GrassFooter} className="grassFooter"/>
+      <img src={GrassFooter} className="grassFooter" />
     </div>
   );
 };

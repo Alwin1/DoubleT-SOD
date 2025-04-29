@@ -1,6 +1,6 @@
 import React from "react";
 import "./Choosing.css";
-import AboutTeam from "../assets/team.jpg";
+import AboutTeam from "../assets/team2.jpg";
 import GrassFooter from "../assets/grassfooter.jpeg";
 import ArrowCircle from "../assets/arrow-circle.png";
 
@@ -42,7 +42,7 @@ const Choosing = () => {
         </div>
       </div>
       <div className="areasServedContainer">
-        <h2 className="areasServedHeader">Areas we Serve</h2>
+        <h2 className="areasServedHeader">Areas We Serve</h2>
         <p className="areasServedParagraph">
           Double-T Sod proudly services the communities of Amarillo, Lubbock,
           Midland, Odessa, and the surrounding areas. Whether you’re in the

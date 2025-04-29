@@ -39,7 +39,7 @@ const Footer = () => {
               <Link to="/about">About Us</Link>
             </li>
             <li>
-              <Link to="/product">Sod Types</Link>
+              <Link to="/products">Sod Types</Link>
             </li>
             <li>
               <Link to="/gallery">Gallery</Link>
@@ -73,7 +73,7 @@ const Footer = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <p>Designed By: We Are A Site LLC</p>
+          <p>Made By: We Are A Site LLC</p>
         </a>
       </div>
     </footer>

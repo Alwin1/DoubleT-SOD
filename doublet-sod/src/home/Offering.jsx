@@ -8,7 +8,7 @@ const Offering = () => {
     {
       title: "Premium Sod",
       description:
-        "Hand-selected from trusted local farms for a strong, healthy lawn.",
+        "All sod varieties are sourced from local growers to ensure quality sod to match your needs",
     },
     {
       title: "Competitive Pricing",
@@ -39,12 +39,12 @@ const Offering = () => {
 
   useEffect(() => {
     const targetElement = slideInRef.current;
-  
+
     if (!targetElement) {
       console.log("slideInRef is not attached to an element!");
       return;
     }
-  
+
     const observer = new IntersectionObserver(
       (entries) => {
         const entry = entries[0];
@@ -53,10 +53,10 @@ const Offering = () => {
       },
       { threshold: 0 }
     );
-  
+
     observer.observe(targetElement);
     console.log("Intersection Observer attached to:", targetElement);
-  
+
     return () => {
       observer.unobserve(targetElement);
       console.log("Intersection Observer unobserved from:", targetElement);
