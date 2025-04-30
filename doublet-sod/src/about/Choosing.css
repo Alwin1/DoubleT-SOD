@@ -219,7 +219,7 @@
     font-size: 18px;
   }
   .choosingDescription {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .choosingImage {
@@ -249,7 +249,7 @@
   }
 
   .areasServedParagraph {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .areasServedListContainer {
@@ -265,11 +265,11 @@
   }
 
   .areasServedList li {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .areasServedListContainer p {
-    font-size: 18px;
+    font-size: 16px;
   }
   .growTogetherContainer {
     padding: 0px 20px;

@@ -73,12 +73,12 @@
   }
 
   .offerAboutTitle {
-    font-size: 20px;
+    font-size: 18px;
   }
   .offerAboutParagraph {
     padding: 10px;
   }
   .offerAboutDescription {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
