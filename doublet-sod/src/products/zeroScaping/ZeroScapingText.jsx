@@ -1,7 +1,7 @@
 import React from "react";
 import "./ZeroScapingText.css";
 import ZeroScaping from "../../assets/zero-scape.png";
-import RocksFooter from "../../assets/rocksFooter.jpg"
+import RocksFooter from "../../assets/rocksFooter.png"
 const ZeroScapingText = () => {
   return (
     <div className="zeroScapingTextContainer">
