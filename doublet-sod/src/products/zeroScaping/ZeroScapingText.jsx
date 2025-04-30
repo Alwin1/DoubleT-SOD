@@ -30,11 +30,6 @@ const ZeroScapingText = () => {
             lasting value to your landscape.
           </p>
         </div>
-        <img
-          src={ZeroScaping}
-          className="zeroScapingImageText"
-          alt="ZeroScaping"
-        />
       </div>
       <img src={RocksFooter} className="grassFooter" />
     </div>

@@ -30,13 +30,7 @@
   margin: 0px;
   color: black;
   font-size: 24px;
-}
-
-.zeroScapingImageText {
-  width: 30%;
-  padding: 0;
-  height: auto;
-  margin: 0;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
