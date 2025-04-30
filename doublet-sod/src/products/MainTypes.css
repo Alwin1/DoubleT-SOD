@@ -189,8 +189,8 @@
   }
 
   .zeroScapingImage {
-    width: 100%; /* Make image responsive */
+    width: 90%; /* Make image responsive */
     height: auto;
-    margin: 20px; 
+    margin: 10px 0 10px 0;
   }
 }
