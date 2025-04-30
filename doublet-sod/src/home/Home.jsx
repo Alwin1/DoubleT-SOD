@@ -7,9 +7,14 @@ import SodVarieties from './SodVarieties'
 import Offering from './Offering'
 import TestimonialSlider from './Testimonial'
 import Working from './Working'
+import { useEffect } from "react";
 
 function Home() {
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   return (
     <>
       <div className='homeContainer'>

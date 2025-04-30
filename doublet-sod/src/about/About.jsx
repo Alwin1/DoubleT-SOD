@@ -5,9 +5,14 @@ import AboutDouble from './AboutDouble'
 import OfferingAbout from './OfferingAbout'
 import Choosing from './Choosing'
 import MainTeam from "../assets/MainTeam.jpg";
+import { useEffect } from "react";
 
 function About() {
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   return (
     <>
       <div className='aboutContainer'>
