@@ -25,7 +25,7 @@ const Footer = () => {
         </p>
         <p>
           <img src={FormLogo} className="footerLogos" />
-          <a href="#">contact form</a>
+          <a href="/contact">contact form</a>
         </p>
       </div>
       <div className="footer-middle-row">

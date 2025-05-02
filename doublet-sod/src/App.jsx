@@ -8,6 +8,7 @@ import ProductsHome from './products/ProductsHome';
 import Bermuda from './products/bermuda/Bermuda';
 import Fescue from './products/fescue/Fescue';
 import ZeroScaping from './products/zeroScaping/ZeroScaping';
+import Contact from './contact/Contact';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -19,6 +20,7 @@ createRoot(document.getElementById('root')).render(
         <Route path='/products/bermuda' element={<Bermuda />} />        
         <Route path='/products/fescue' element={<Fescue />} />        
         <Route path='/products/zero-scaping' element={<ZeroScaping />} />        
+        <Route path='/contact' element={<Contact />} />
       </Routes>
     </Router>
   </StrictMode>
