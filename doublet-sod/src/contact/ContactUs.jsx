@@ -19,11 +19,11 @@ const ContactUs = () => {
       </p>
       <div className="contact-content">
         <form className="contact-form">
-          <input type="text" placeholder="Full Name" />
-          <input type="email" placeholder="Email address" />
-          <input type="text" placeholder="Phone Number (Optional)" />
-          <textarea placeholder="Message" rows="5"></textarea>
-          <button type="submit">Submit Now</button>
+          <input type="text"  placeholder="Full Name" required/>
+          <input type="email" placeholder="Email address" required/>
+          <input type="text" placeholder="Phone Number (Optional)"/>
+          <textarea placeholder="Message" rows="5" required></textarea>
+          <button type="submit" className="submitButton">Submit Now</button>
         </form>
         <div className="contact-info">
           <div className="contact-top-row">
@@ -77,7 +77,7 @@ const ContactUs = () => {
                 <img src={Facebook} className ="socialMediaIcon" alt="Facebook" />
               </a>
               <a href="https://www.instagram.com/doublet_sod/?hl=en">
-                <img src={Instagram} className ="socialMediaIcon" alt="Instagram" />
+                <img src={Instagram} className ="socialMediaIcon instagram" alt="Instagram" />
               </a>
               <a href="https://www.youtube.com/@doubletsodandinstallation6346">
                 <img src={Youtube} className ="socialMediaIcon" alt="Instagram" />
