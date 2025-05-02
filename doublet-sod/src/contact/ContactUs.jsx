@@ -31,14 +31,14 @@ const ContactUs = () => {
               <img className="icon" src={Phone} />
               <div className="contactInformation">
                 <h3>Text or Call</h3>
-                <p>806-577-1510</p>
+                <a href="tel:8065771510">806-577-1510</a>
               </div>
             </div>
             <div className="contact-method">
               <img className="icon" src={Email} />
               <div className="contactInformation">
                 <h3>Email</h3>
-                <p>colby@doubletsod.com</p>
+                <a href="mailto:colby@doubletsod.com">colby@doubletsod.com</a>
               </div>
             </div>
           </div>
