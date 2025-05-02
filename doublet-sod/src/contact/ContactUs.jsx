@@ -20,7 +20,7 @@ const ContactUs = () => {
       <div className="contact-content">
         <form className="contact-form">
           <input type="text"  placeholder="Full Name" required/>
-          <input type="email" placeholder="Email address" required/>
+          <input type="email" placeholder="Email Address" required/>
           <input type="text" placeholder="Phone Number (Optional)"/>
           <textarea placeholder="Message" rows="5" required></textarea>
           <button type="submit" className="submitButton">Submit Now</button>
