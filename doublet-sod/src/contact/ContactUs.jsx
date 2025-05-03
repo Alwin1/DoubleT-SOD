@@ -48,20 +48,6 @@ const ContactUs = () => {
           {submittedData ? (
             <div className="confirmation-message">
               <h3>Thank you for reaching out! We will reach out to you soon!</h3>
-              <p>
-                <strong>Name:</strong> {submittedData.name}
-              </p>
-              <p>
-                <strong>Email:</strong> {submittedData.email}
-              </p>
-              {submittedData.phone && (
-                <p>
-                  <strong>Phone:</strong> {submittedData.phone}
-                </p>
-              )}
-              <p>
-                <strong>Message:</strong> {submittedData.message}
-              </p>
             </div>
           ) : (
             <form className="contact-form" onSubmit={handleSubmit}>

@@ -38,7 +38,7 @@ const Choosing = () => {
           ))}
         </div>
         <div className="choosingImage">
-          <img src={AboutTeam} className="choosingTeamPic" />
+          <img src={AboutTeam} className="choosingTeamPic" loading="eager" />
         </div>
       </div>
       <div className="areasServedContainer">

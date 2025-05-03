@@ -28,7 +28,7 @@ const DragImage = () => {
   const handleSliderChange = (e) => {
     setSliderValue(parseFloat(e.target.value));
     manualChangeRef.current = true;
-    setIsPaused(true)
+    setIsPaused(true);
   };
 
   const handleMouseUp = () => {
@@ -46,12 +46,22 @@ const DragImage = () => {
       onTouchEnd={handleMouseUp}
     >
       <div className="slider-image-wrapper" onClick={togglePause}>
-        <img src={Before} alt="Before" className="slider-image" />
+        <img
+          src={Before}
+          alt="Before"
+          className="slider-image"
+          loading="eager"
+        />
         <div
           className="slider-image after"
           style={{ clipPath: `inset(0 ${100 - sliderValue}% 0 0)` }}
         >
-          <img src={After} alt="After" className="slider-image" />
+          <img
+            src={After}
+            alt="After"
+            className="slider-image"
+            loading="eager"
+          />
         </div>
         <div className="slider-handle" style={{ left: `${sliderValue}%` }}>
           <div className="arrow">

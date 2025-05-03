@@ -27,7 +27,12 @@ const MainTypes = () => {
       </div>
       <div className="threeTypesContainer">
         <div className="sodType">
-          <img src={Tifway} className="sodImage" alt="Tifway 419 Bermuda Sod" />
+          <img
+            src={Tifway}
+            className="sodImage"
+            alt="Tifway 419 Bermuda Sod"
+            loading="eager"
+          />
           <div className="sodTextContainer">
             <h3 className="sodHeader">Tifway 419 Bermuda</h3>
             <p className="sodParagraph">
@@ -48,6 +53,7 @@ const MainTypes = () => {
             src={Celebration}
             className="sodImage"
             alt="Celbration Bermuda Sod"
+            loading="eager"
           />
           <div className="sodTextContainer">
             <h3 className="sodHeader">Celebration Bermuda</h3>
@@ -66,7 +72,12 @@ const MainTypes = () => {
           </div>
         </div>
         <div className="sodType">
-          <img src={Fescue} className="sodImage" alt="Frontier Tall Fescue" />
+          <img
+            src={Fescue}
+            className="sodImage"
+            alt="Frontier Tall Fescue"
+            loading="eager"
+          />
           <div className="sodTextContainer">
             <h3 className="sodHeader">Frontier Tall Fescue</h3>
             <p className="sodParagraph">
@@ -91,11 +102,19 @@ const MainTypes = () => {
           Zero-scaping eliminates the need for frequent watering and upkeep by
           using durable materials like rocks, gravel, and hardy plants
         </p>
-        <button className="learnMoreTextButton" onClick={() => handleLearnMoreClick("zero-scaping")}>
+        <button
+          className="learnMoreTextButton"
+          onClick={() => handleLearnMoreClick("zero-scaping")}
+        >
           <p>Learn More</p>
           <img src={SmallArrow} alt="Arrow" />
         </button>
-        <img src={ZeroScaping} className="zeroScapingImage" alt="ZeroScaping" />
+        <img
+          src={ZeroScaping}
+          className="zeroScapingImage"
+          alt="ZeroScaping"
+          loading="eager"
+        />
         <img src={GrassFooter} className="grassFooter" />
       </div>
     </div>

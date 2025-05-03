@@ -6,7 +6,7 @@ const AboutDouble = () => {
   return (
     <div className="aboutDoubleContainer">
       <div className="aboutImage">
-        <img src={AboutTeam} className="aboutTeamPic" />
+        <img src={AboutTeam} className="aboutTeamPic" loading="eager" />
       </div>
       <div className="aboutMissionContainer">
         <div className="aboutParagraphContainer">
