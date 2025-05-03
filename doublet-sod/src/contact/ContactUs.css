@@ -25,7 +25,8 @@
   padding: 0 50px 50px 50px;
 }
 
-.contact-form {
+.contact-form,
+.confirmation-message {
   width: 600px;
   height: 550px;
   background-color: #bfe9b2;
@@ -42,7 +43,6 @@
   padding: 10px;
   border: 3px solid var(--primary-color);
   border-radius: 5px;
-  font-size: 1rem;
   background-color: white;
   font-style: italic;
   color: black;
@@ -51,6 +51,20 @@
 
 .contact-form textarea {
   height: 250px;
+}
+
+.confirmation-message h3 {
+  color: var(--primary-color);
+  margin: 25px;
+  font-size: 24px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.confirmation-message p{
+  font-size: 20px;
+  font-weight: 400;
+  color: black;
 }
 
 .icon {
@@ -103,7 +117,7 @@
 
 .contactInformation p:hover,
 .contactInformation a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .hours h3 {
@@ -234,6 +248,7 @@
   }
 
   .contactInformation p,
+  .contactInformation a,
   .hours p,
   .hours ul,
   .hours li {

@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import axios from "axios";
 import "./ContactUs.css";
 import Phone from "../assets/phoneContact.png";
 import Clock from "../assets/clockContact.png";
@@ -9,6 +10,31 @@ import Instagram from "../assets/instagram.png";
 import GrassFooter from "../assets/grassFooter.jpeg";
 
 const ContactUs = () => {
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+
+  const [submittedData, setSubmittedData] = useState(null);
+
+  const handleChange = (e) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      await axios.post("http://localhost:5001/send-contact", form);
+      setSubmittedData(form); // Save submitted data
+      setForm({ name: "", email: "", phone: "", message: "" });
+    } catch (err) {
+      console.error(err);
+      alert("Error sending email.");
+    }
+  };
+
   return (
     <div className="contact-container">
       <h2 className="contact-title">Contact Us</h2>
@@ -18,13 +44,64 @@ const ContactUs = () => {
         Contact us now for a<strong> FREE</strong> quote!
       </p>
       <div className="contact-content">
-        <form className="contact-form">
-          <input type="text"  placeholder="Full Name" required/>
-          <input type="email" placeholder="Email Address" required/>
-          <input type="text" placeholder="Phone Number (Optional)"/>
-          <textarea placeholder="Message" rows="5" required></textarea>
-          <button type="submit" className="submitButton">Submit Now</button>
-        </form>
+        <div>
+          {submittedData ? (
+            <div className="confirmation-message">
+              <h3>Thank you for reaching out! We will reach out to you soon!</h3>
+              <p>
+                <strong>Name:</strong> {submittedData.name}
+              </p>
+              <p>
+                <strong>Email:</strong> {submittedData.email}
+              </p>
+              {submittedData.phone && (
+                <p>
+                  <strong>Phone:</strong> {submittedData.phone}
+                </p>
+              )}
+              <p>
+                <strong>Message:</strong> {submittedData.message}
+              </p>
+            </div>
+          ) : (
+            <form className="contact-form" onSubmit={handleSubmit}>
+              <input
+                type="text"
+                name="name"
+                placeholder="Full Name"
+                required
+                value={form.name}
+                onChange={handleChange}
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Email Address"
+                required
+                value={form.email}
+                onChange={handleChange}
+              />
+              <input
+                type="text"
+                name="phone"
+                placeholder="Phone Number (Optional)"
+                value={form.phone}
+                onChange={handleChange}
+              />
+              <textarea
+                name="message"
+                placeholder="Message"
+                rows="5"
+                required
+                value={form.message}
+                onChange={handleChange}
+              ></textarea>
+              <button type="submit" className="submitButton">
+                Submit Now
+              </button>
+            </form>
+          )}
+        </div>
         <div className="contact-info">
           <div className="contact-top-row">
             <div className="contact-method">
@@ -74,13 +151,25 @@ const ContactUs = () => {
             <h3>Follow Us</h3>
             <div className="socialMediaIcons">
               <a href="https://www.facebook.com/Doubletsod/">
-                <img src={Facebook} className ="socialMediaIcon" alt="Facebook" />
+                <img
+                  src={Facebook}
+                  className="socialMediaIcon"
+                  alt="Facebook"
+                />
               </a>
               <a href="https://www.instagram.com/doublet_sod/?hl=en">
-                <img src={Instagram} className ="socialMediaIcon instagram" alt="Instagram" />
+                <img
+                  src={Instagram}
+                  className="socialMediaIcon instagram"
+                  alt="Instagram"
+                />
               </a>
               <a href="https://www.youtube.com/@doubletsodandinstallation6346">
-                <img src={Youtube} className ="socialMediaIcon" alt="Instagram" />
+                <img
+                  src={Youtube}
+                  className="socialMediaIcon"
+                  alt="Instagram"
+                />
               </a>
             </div>
           </div>
