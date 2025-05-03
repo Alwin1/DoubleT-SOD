@@ -26,7 +26,7 @@ const ContactUs = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5001/send-contact", form);
+      await axios.post("https://doublet-sod-backend.onrender.com/send-contact", form);
       setSubmittedData(form); // Save submitted data
       setForm({ name: "", email: "", phone: "", message: "" });
     } catch (err) {
