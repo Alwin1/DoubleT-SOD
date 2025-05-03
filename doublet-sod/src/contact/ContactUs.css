@@ -219,7 +219,8 @@
     gap: 20px;
   }
 
-  .contact-form {
+  .contact-form,
+  .confirmation-message {
     width: 90%;
     margin-bottom: 10px;
     padding: 16px;
@@ -243,7 +244,8 @@
 
   .contactInformation h3,
   .hours h3,
-  .social-media-contact h3 {
+  .social-media-contact h3,
+  .confirmation-message h3 {
     font-size: 18px;
   }
 
@@ -256,7 +258,8 @@
   }
 
   .contact-form input,
-  .contact-form textarea {
+  .contact-form textarea,
+  .confirmation-message p {
     font-size: 16px;
   }
 
