@@ -76,7 +76,7 @@ function Header() {
 
       {menuOpen && (
         <div className="mobileMenuOverlay">
-          <button className="closeButton" onClick={closeMenu}>
+          <button className="closeButtonHeader" onClick={closeMenu}>
             ×
           </button>
 
