@@ -8,7 +8,7 @@ const IMAGES_PER_PAGE = 16;
 
 const generateImageList = () => {
   return Array.from({ length: TOTAL_IMAGES }, (_, i) => ({
-    src: `https://cdn.jsdelivr.net/gh/Alwin1/DoubleT-SOD@main/doublet-sod/public/galleryImages/image${i + 1}.jpg`,
+    src: `/galleryImages/image${i + 1}.jpg`,
     id: i,
   }));
 };
@@ -55,7 +55,7 @@ const GalleryImages = () => {
       const nextIndex = modalImage.id + direction;
       if (nextIndex >= 0 && nextIndex < TOTAL_IMAGES) {
         setModalImage({
-          src: `/galleryImages/image${nextIndex + 1}.webp`,
+          src: `/galleryImages/image${nextIndex + 1}.jpg`,
           id: nextIndex,
         });
       }
