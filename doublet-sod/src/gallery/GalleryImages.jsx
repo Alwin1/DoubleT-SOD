@@ -39,6 +39,7 @@ const GalleryImages = () => {
   const goToPage = (index) => {
     if (index >= 0 && index < totalPages) {
       setCurrentPage(index);
+      window.scrollTo({ top: 0, behavior: "smooth" });
     }
   };
 
