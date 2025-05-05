@@ -106,7 +106,7 @@ const Working = () => {
             </ul>
           </div>
         </div>
-        <img src={DeliveryPic} className="deliveryPic" />
+        <img src={DeliveryPic} className="deliveryPic" alt="Bermuda Fescue Frontier" loading="lazy"/>
       </div>
       <div className="savingContainer">
         <h2 className="savingTitle">Save Time & Money with Double-T Sod</h2>

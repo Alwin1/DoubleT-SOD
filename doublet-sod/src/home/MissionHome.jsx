@@ -51,7 +51,7 @@ const MissionHome = () => {
         <img
           src={MissionStatement}
           className="missionPicture"
-          loading="eager"
+          loading="lazy"
         />
       </div>
     </div>

@@ -18,7 +18,7 @@ const SodVarieties = () => {
         </div>
 
         <div className='varietyCard'>
-          <img src={Celebration} alt='Celebration Bermuda' className='varietyImage' />
+          <img src={Celebration} alt='Celebration Bermuda' className='varietyImage' loading='lazy'/>
           <div className='varietyLabel'>Celebration Bermuda</div>
           <div className='varietyDescription'>
           <p>Soft texture, vibrant blue-green color, and excellent drought, heat, salt, and cold tolerance. Low-maintenance and perfect for homes, businesses, and sports fields.</p>
