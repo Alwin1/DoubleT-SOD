@@ -4,7 +4,7 @@
   width: 100%;
 }
 
-.grassLoadingScreen {
+/* .grassLoadingScreen {
   position: fixed;
   top: 0;
   left: 0;
@@ -14,8 +14,8 @@
   z-index: 9999;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Centers content vertically */
-  align-items: center; /* Centers content horizontally */
+  justify-content: center; 
+  align-items: center; 
   overflow: hidden;
 }
 
@@ -29,10 +29,10 @@
     position: absolute;
     bottom: 0;
   width: 100%;
-  height: 200px; /* adjust to your grass gif height */
+  height: 200px; 
   align-self: flex-end;
-  background-image: url("../assets/grassAnimation.gif"); /* adjust path as needed */
+  background-image: url("../assets/grassAnimation.gif"); 
   background-repeat: repeat-x;
   background-position: bottom;
   background-size: auto 100%;
-}
+} */

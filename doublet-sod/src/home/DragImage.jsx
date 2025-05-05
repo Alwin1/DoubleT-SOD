@@ -3,7 +3,16 @@ import "./DragImage.css";
 import Before from "../assets/before.jpg";
 import After from "../assets/after.jpg";
 
-const DragImage = () => {
+const DragImage = ({ onImagesLoaded }) => {
+  const [beforeLoaded, setBeforeLoaded] = useState(false);
+  const [afterLoaded, setAfterLoaded] = useState(false);
+
+  useEffect(() => {
+    if (beforeLoaded && afterLoaded && onImagesLoaded) {
+      onImagesLoaded();
+    }
+  }, [beforeLoaded, afterLoaded, onImagesLoaded]);
+
   const [sliderValue, setSliderValue] = useState(50);
   const [isPaused, setIsPaused] = useState(false);
   const directionRef = useRef(1);
@@ -51,6 +60,7 @@ const DragImage = () => {
           alt="Before"
           className="slider-image"
           loading="eager"
+          onLoad={() => setBeforeLoaded(true)}
         />
         <div
           className="slider-image after"
@@ -61,6 +71,7 @@ const DragImage = () => {
             alt="After"
             className="slider-image"
             loading="eager"
+            onLoad={() => setAfterLoaded(true)}
           />
         </div>
         <div className="slider-handle" style={{ left: `${sliderValue}%` }}>
