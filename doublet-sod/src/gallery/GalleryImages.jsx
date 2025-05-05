@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./GalleryImages.css";
 import GrassFooter from "../assets/grassFooter.jpeg";
-
 const TOTAL_IMAGES = 23;
 const IMAGES_PER_PAGE = 16;
 
@@ -16,7 +15,7 @@ const GalleryImages = () => {
   const [currentPage, setCurrentPage] = useState(0);
   const [revealedImages, setRevealedImages] = useState([]);
   const [pageImages, setPageImages] = useState([]);
-  const [modalImage, setModalImage] = useState(null); // For storing the image shown in the modal
+  const [modalImage, setModalImage] = useState(null);
 
   const totalPages = Math.ceil(TOTAL_IMAGES / IMAGES_PER_PAGE);
 
@@ -25,15 +24,21 @@ const GalleryImages = () => {
     const startIdx = currentPage * IMAGES_PER_PAGE;
     const current = allImages.slice(startIdx, startIdx + IMAGES_PER_PAGE);
 
-    const shuffled = shuffleArray([...current]);
-
-    setPageImages(shuffled);
+    setPageImages(current);
     setRevealedImages([]);
 
-    shuffled.forEach((img, i) => {
+    // Generate a random order of indexes just for revealing
+    const indices = Array.from(current.keys());
+    for (let i = indices.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [indices[i], indices[j]] = [indices[j], indices[i]];
+    }
+
+    indices.forEach((i, revealIndex) => {
+      const img = current[i];
       setTimeout(() => {
         setRevealedImages((prev) => [...prev, img.id]);
-      }, i * 800 + Math.random() * 300);
+      }, revealIndex * 800 + Math.random() * 300);
     });
   }, [currentPage]);
 
