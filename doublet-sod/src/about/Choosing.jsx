@@ -1,10 +1,17 @@
 import React from "react";
 import "./Choosing.css";
+import { useNavigate } from "react-router-dom"; // Import the useNavigate hook
 import AboutTeam from "../assets/team2.jpg";
 import GrassFooter from "../assets/grassfooter.jpeg";
 import ArrowCircle from "../assets/arrow-circle.png";
 
 const Choosing = () => {
+  const navigate = useNavigate(); // Initialize the navigate function
+
+  const handleLearnMoreClick = () => {
+    navigate("/contact"); // Programmatically navigate to the /about route
+  };
+
   const offerings = [
     {
       title: "Family Values:",
@@ -73,7 +80,7 @@ const Choosing = () => {
         <p className="growingParagraph">
           With Double-T Sod, greener pastures are just a call away!
         </p>
-        <button className="freeQuoteAboutButton">
+        <button className="freeQuoteAboutButton" onClick={handleLearnMoreClick}>
           <p>Get a Free Quote Now</p>
           <img src={ArrowCircle} />
         </button>

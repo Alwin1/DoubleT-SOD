@@ -1,5 +1,6 @@
 import React from "react";
 import "./Working.css";
+import { useNavigate } from "react-router-dom"; // Import the useNavigate hook
 import Step1 from "../assets/step1.png";
 import Step2 from "../assets/step2.png";
 import Step3 from "../assets/step3.png";
@@ -10,6 +11,12 @@ import ArrowCircle from "../assets/arrow-circle.png";
 import GrassFooter from "../assets/grassFooter.jpeg";
 
 const Working = () => {
+  const navigate = useNavigate(); // Initialize the navigate function
+
+  const handleLearnMoreClick = () => {
+    navigate("/contact"); // Programmatically navigate to the /about route
+  };
+
   return (
     <div className="workingContainer">
       <h2 className="workingTitle">How Does It Work?</h2>
@@ -108,7 +115,7 @@ const Working = () => {
           Choose the perfect sod for a lush, beautiful lawn—we’ll handle the
           hard work for you!
         </p>
-        <button className="freeQuoteButton">
+        <button className="freeQuoteButton" onClick={handleLearnMoreClick}>
           <p>Get a Free Quote Now</p>
           <img src={ArrowCircle} />
         </button>
