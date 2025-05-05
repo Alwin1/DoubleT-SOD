@@ -8,7 +8,7 @@ const IMAGES_PER_PAGE = 16;
 
 const generateImageList = () => {
   return Array.from({ length: TOTAL_IMAGES }, (_, i) => ({
-    src: `/galleryImages/image${i + 1}.webp`,
+    src: `https://cdn.jsdelivr.net/gh/Alwin1/DoubleT-SOD@main/doublet-sod/public/galleryImages/image${i + 1}.jpg`,
     id: i,
   }));
 };
