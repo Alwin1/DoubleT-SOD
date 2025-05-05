@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
+import { useSwipeable } from "react-swipeable";
 import "./GalleryImages.css";
 import GrassFooter from "../assets/grassFooter.jpeg";
+
 const TOTAL_IMAGES = 23;
 const IMAGES_PER_PAGE = 16;
 
@@ -27,29 +29,12 @@ const GalleryImages = () => {
     setPageImages(current);
     setRevealedImages([]);
 
-    // Generate a random order of indexes just for revealing
-    const indices = Array.from(current.keys());
-    for (let i = indices.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [indices[i], indices[j]] = [indices[j], indices[i]];
-    }
-
-    indices.forEach((i, revealIndex) => {
-      const img = current[i];
+    current.forEach((img, i) => {
       setTimeout(() => {
         setRevealedImages((prev) => [...prev, img.id]);
-      }, revealIndex * 800 + Math.random() * 300);
+      }, i * 400);
     });
   }, [currentPage]);
-
-  const shuffleArray = (arr) => {
-    const copy = [...arr];
-    for (let i = copy.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [copy[i], copy[j]] = [copy[j], copy[i]];
-    }
-    return copy;
-  };
 
   const goToPage = (index) => {
     if (index >= 0 && index < totalPages) {
@@ -69,10 +54,20 @@ const GalleryImages = () => {
     if (modalImage) {
       const nextIndex = modalImage.id + direction;
       if (nextIndex >= 0 && nextIndex < TOTAL_IMAGES) {
-        setModalImage(pageImages.find((img) => img.id === nextIndex));
+        setModalImage({
+          src: `/galleryImages/image${nextIndex + 1}.jpg`,
+          id: nextIndex,
+        });
       }
     }
   };
+
+  const handlers = useSwipeable({
+    onSwipedLeft: () => navigateModal(1),
+    onSwipedRight: () => navigateModal(-1),
+    preventScrollOnSwipe: true,
+    trackMouse: true,
+  });
 
   return (
     <div className="galleryContainer">
@@ -91,6 +86,7 @@ const GalleryImages = () => {
               className={`galleryImage ${
                 revealedImages.includes(img.id) ? "fadeIn" : "hidden"
               }`}
+              loading="lazy"
             />
           </div>
         ))}
@@ -111,38 +107,43 @@ const GalleryImages = () => {
         </button>
       </div>
 
-      {/* Modal */}
       {modalImage && (
         <div className="modalOverlay" onClick={closeModal}>
-          <div className="modalContent" onClick={(e) => e.stopPropagation()}>
+          <div
+            className="modalContent"
+            {...handlers}
+            onClick={(e) => e.stopPropagation()}
+          >
             <button className="closeButton" onClick={closeModal}>
               &#10005;
             </button>
+
+            <button
+              className="modalArrow left"
+              onClick={() => navigateModal(-1)}
+              disabled={modalImage.id === 0}
+            >
+              &#10094;
+            </button>
+
             <img
               src={modalImage.src}
               alt={`Modal Image ${modalImage.id + 1}`}
               className="modalImage"
             />
-            <div className="modalNavigation">
-              <button
-                className="modalArrow"
-                onClick={() => navigateModal(-1)}
-                disabled={modalImage.id === 0}
-              >
-                &#10094;
-              </button>
-              <button
-                className="modalArrow"
-                onClick={() => navigateModal(1)}
-                disabled={modalImage.id === TOTAL_IMAGES - 1}
-              >
-                &#10095;
-              </button>
-            </div>
+
+            <button
+              className="modalArrow right"
+              onClick={() => navigateModal(1)}
+              disabled={modalImage.id === TOTAL_IMAGES - 1}
+            >
+              &#10095;
+            </button>
           </div>
         </div>
       )}
-      <img src={GrassFooter} className="grassFooter" />
+
+      <img src={GrassFooter} className="grassFooter" alt="Grass Footer" />
     </div>
   );
 };
