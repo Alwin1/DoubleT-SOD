@@ -3,7 +3,7 @@ import { useSwipeable } from "react-swipeable";
 import "./GalleryImages.css";
 import GrassFooter from "../assets/grassFooter.jpeg";
 
-const TOTAL_IMAGES = 23;
+const TOTAL_IMAGES = 42;
 const IMAGES_PER_PAGE = 16;
 
 const generateImageList = () => {
@@ -39,7 +39,7 @@ const GalleryImages = () => {
   const goToPage = (index) => {
     if (index >= 0 && index < totalPages) {
       setCurrentPage(index);
-      window.scrollTo({ top: 0, behavior: "smooth" });
+      window.scrollTo(0, 0);
     }
   };
 
