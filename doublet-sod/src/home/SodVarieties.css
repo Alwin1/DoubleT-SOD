@@ -87,6 +87,27 @@
   opacity: 1;
 }
 
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.fade-in.in-view {
+  animation: fadeInUp 0.8s ease forwards;
+}
+
 @media (max-width: 768px) {
   .VarietiesContainer {
     padding: 20px;
@@ -94,7 +115,7 @@
 
   .VarietiesTitle {
     font-size: 20px;
-margin-bottom: 20px;
+    margin-bottom: 20px;
   }
 
   .VarietiesImageContainer {
@@ -117,5 +138,18 @@ margin-bottom: 20px;
     font-size: 16px;
     font-weight: 500;
     padding: 0px 50px;
+  }
+  .fade-in.in-view {
+    animation: fadeInUp 0.8s ease forwards;
+  }
+
+  .delay-0.in-view {
+    animation-delay: 0.2s;
+  }
+  .delay-1.in-view {
+    animation-delay: 0.6s;
+  }
+  .delay-2.in-view {
+    animation-delay: 1s;
   }
 }

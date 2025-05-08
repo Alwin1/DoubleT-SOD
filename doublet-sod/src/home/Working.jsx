@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Working.css";
-import { useNavigate } from "react-router-dom"; // Import the useNavigate hook
+import { useNavigate } from "react-router-dom";
 import Step1 from "../assets/step1.png";
 import Step2 from "../assets/step2.png";
 import Step3 from "../assets/step3.png";
@@ -11,11 +11,37 @@ import ArrowCircle from "../assets/arrow-circle.png";
 import GrassFooter from "../assets/grassFooter.jpeg";
 
 const Working = () => {
-  const navigate = useNavigate(); // Initialize the navigate function
+  const navigate = useNavigate();
 
   const handleLearnMoreClick = () => {
-    navigate("/contact"); // Programmatically navigate to the /about route
+    navigate("/contact");
   };
+
+  useEffect(() => {
+    const options = {
+      root: null, // Use the viewport as the root
+      rootMargin: "0px",
+      threshold: 0.5, // Trigger when 50% of the element is in view
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        } else {
+          entry.target.classList.remove("visible");
+        }
+      });
+    }, options);
+
+    // Observe all step containers
+    const stepContainers = document.querySelectorAll(".stepContainer");
+    stepContainers.forEach((container) => observer.observe(container));
+
+    return () => {
+      observer.disconnect(); // Cleanup observer when component unmounts
+    };
+  }, []);
 
   return (
     <div className="workingContainer">
@@ -50,7 +76,7 @@ const Working = () => {
           </div>
           <p className="stepParagraph">
             We have installation crews ready to tackle any project! Schedule a
-            quote to to receive pricing on your project. Let us do the heavy
+            quote to receive pricing on your project. Let us do the heavy
             lifting for you!
           </p>
         </div>
@@ -62,8 +88,8 @@ const Working = () => {
             <h3 className="seasonsTitle">Peak Season Notice</h3>
           </div>
           <p className="seasonsParagraph">
-            We usually are on a 2-week or more lead time. We will do
-            everything we can to get orders as fast to you as possible.
+            We usually are on a 2-week or more lead time. We will do everything
+            we can to get orders as fast to you as possible.
           </p>
         </div>
         <div className="seasonsContainer">
@@ -106,7 +132,12 @@ const Working = () => {
             </ul>
           </div>
         </div>
-        <img src={DeliveryPic} className="deliveryPic" alt="Bermuda Fescue Frontier" loading="lazy"/>
+        <img
+          src={DeliveryPic}
+          className="deliveryPic"
+          alt="Bermuda Fescue Frontier"
+          loading="lazy"
+        />
       </div>
       <div className="savingContainer">
         <h2 className="savingTitle">Save Time & Money with Double-T Sod</h2>

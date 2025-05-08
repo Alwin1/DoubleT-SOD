@@ -35,6 +35,34 @@ const Offering = () => {
     setIsVisible(entry.isIntersecting);
   };
 
+  const [visibleItems, setVisibleItems] = useState([]);
+
+  const itemRefs = useRef([]);
+
+  useEffect(() => {
+    const observers = [];
+
+    itemRefs.current.forEach((ref, index) => {
+      if (!ref) return;
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          if (entries[0].isIntersecting) {
+            setVisibleItems((prev) => [...new Set([...prev, index])]);
+          }
+        },
+        { threshold: 0.2 }
+      );
+
+      observer.observe(ref);
+      observers.push(observer);
+    });
+
+    return () => {
+      observers.forEach((observer) => observer.disconnect());
+    };
+  }, []);
+
   const debouncedHandleIntersection = debounce(handleIntersection, 100);
 
   useEffect(() => {
@@ -59,7 +87,6 @@ const Offering = () => {
 
     return () => {
       observer.unobserve(targetElement);
-      console.log("Intersection Observer unobserved from:", targetElement);
     };
   }, []); // Empty dependency array - should run only on mount and unmount
 
@@ -68,7 +95,14 @@ const Offering = () => {
       <h2 className="offer-heading">What We Offer</h2>
       <div className="offer-flex">
         {offerings.map((item, index) => (
-          <div key={index} className="offer-item">
+          <div
+            key={`${index}-${visibleItems.includes(index)}`} // forces remount
+            ref={(el) => (itemRefs.current[index] = el)}
+            className={`offer-item fade-in-varieties ${
+              visibleItems.includes(index) ? "in-view" : ""
+            }`}
+            style={{ animationDelay: `${index * 0.3}s` }}
+          >
             <div className="offer-title">
               <img src={Checkmark} className="checkmark" alt="checkmark" />
               <span>{item.title}</span>

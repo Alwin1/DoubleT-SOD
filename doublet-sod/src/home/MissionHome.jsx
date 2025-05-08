@@ -8,7 +8,7 @@ const MissionHome = () => {
   const navigate = useNavigate(); // Initialize the navigate function
 
   const handleLearnMoreClick = () => {
-    navigate("/about"); // Programmatically navigate to the /about route
+    navigate("/about-us"); // Programmatically navigate to the /about route
   };
 
   return (

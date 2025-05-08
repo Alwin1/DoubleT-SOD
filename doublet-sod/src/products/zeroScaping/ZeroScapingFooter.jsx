@@ -23,7 +23,7 @@ const ZeroScapingFooter = () => {
         </p>
         <p>
           <img src={FormLogo} className="zeroFooterLogos" />
-          <a href="#">contact form</a>
+          <a href="/contact">contact form</a>
         </p>
       </div>
       <div className="zeroFooter-middle-row">
@@ -31,9 +31,9 @@ const ZeroScapingFooter = () => {
           <h3>Quick Links</h3>
           <ul>
             <li><Link to="/">Home</Link></li>
-            <li><Link to="/about">About Us</Link></li>
+            <li><Link to="/about-us">About Us</Link></li>
             <li><Link to="/products">Sod Types</Link></li>
-            <li><Link to="/gallery">Gallery</Link></li>
+            <li><Link to="/past-installations">Past Installations</Link></li>
           </ul>
         </div>
         <div className="zeroFooter-section zeroSocial-media">
@@ -55,7 +55,7 @@ const ZeroScapingFooter = () => {
       </div>
       <div className="zeroFooter-bottom">
         <p className="zeroLegal-text">
-          <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+          <a href="/privacy-policy">Privacy Policy</a> | <a href="/terms-of-service">Terms of Service</a>
         </p>
         <p>© 2025 [Double T-SOD]. All Rights Reserved.</p>
         <a href="https://weareasite.com/" target="_blank" rel="noopener noreferrer">

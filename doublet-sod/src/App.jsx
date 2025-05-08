@@ -18,13 +18,13 @@ createRoot(document.getElementById('root')).render(
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/about-us" element={<About />} />
         <Route path='/products' element={<ProductsHome />} />
         <Route path='/products/bermuda' element={<Bermuda />} />        
         <Route path='/products/fescue' element={<Fescue />} />        
         <Route path='/products/zero-scaping' element={<ZeroScaping />} />        
         <Route path='/contact' element={<Contact />} />
-        <Route path='/gallery' element={<Gallery />} />
+        <Route path='/past-installations' element={<Gallery />} />
         <Route path='/privacy-policy' element={<PrivacyPolicy />} />
         <Route path='/terms-of-service' element={<TermsOfService />} />
       </Routes>

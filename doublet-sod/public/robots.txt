@@ -1,0 +1,24 @@
+# robots.txt for https://www.doublet-sod.web.app/
+
+# Allow all user agents to crawl everything
+User-agent: *
+Disallow: /admin/        # Disallow access to the admin panel
+Disallow: /login/        # Disallow access to the login page
+Disallow: /cart/         # Disallow access to the cart
+Disallow: /checkout/     # Disallow access to the checkout page
+Disallow: /user/         # Disallow access to user account pages
+Disallow: /search/       # Disallow access to search results pages
+
+# Allow search engines to crawl important pages
+Allow: /products/        # Allow search engines to crawl product pages
+Allow: /about-us/        # Allow search engines to crawl the about us page
+Allow: /contact/         # Allow search engines to crawl the contact page
+Allow: /privacy-policy/  # Allow search engines to crawl privacy policy page
+Allow: /terms-of-service/ # Allow search engines to crawl terms of service page
+
+# Block certain file types from being crawled
+Disallow: /*.pdf$        # Disallow PDFs from being crawled
+Disallow: /*.zip$        # Disallow ZIP files from being crawled
+
+# Sitemap location
+Sitemap: https://www.doublet-sod.web.app/sitemap.xml

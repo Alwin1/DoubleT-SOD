@@ -23,15 +23,23 @@ const ContactUs = () => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
+  const [isSending, setIsSending] = useState(false); // <-- new line
+
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsSending(true); // <-- start loading
     try {
-      await axios.post("https://doublet-sod-backend.onrender.com/send-contact", form);
-      setSubmittedData(form); // Save submitted data
+      await axios.post(
+        "https://doublet-sod-backend.onrender.com/send-contact",
+        form
+      );
+      setSubmittedData(form);
       setForm({ name: "", email: "", phone: "", message: "" });
     } catch (err) {
       console.error(err);
       alert("Error sending email.");
+    } finally {
+      setIsSending(false); // <-- stop loading
     }
   };
 
@@ -47,7 +55,9 @@ const ContactUs = () => {
         <div>
           {submittedData ? (
             <div className="confirmation-message">
-              <h3>Thank you for reaching out! We will reach out to you soon!</h3>
+              <h3>
+                Thank you for reaching out! We will reach out to you soon!
+              </h3>
             </div>
           ) : (
             <form className="contact-form" onSubmit={handleSubmit}>
@@ -82,8 +92,12 @@ const ContactUs = () => {
                 value={form.message}
                 onChange={handleChange}
               ></textarea>
-              <button type="submit" className="submitButton">
-                Submit Now
+              <button
+                type="submit"
+                className="submitButton"
+                disabled={isSending}
+              >
+                {isSending ? "Sending..." : "Submit Now"}
               </button>
             </form>
           )}

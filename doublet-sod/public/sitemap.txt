@@ -1,0 +1,12 @@
+- Home (/)
+- About Us (/about-us)
+- Products
+  - Our Products (/products)
+  - Bermuda (/products/bermuda)
+  - Fescue (/products/fescue)
+  - Zero-Scaping (/products/zero-scaping)
+- Past Installations (/past-installations)
+- Contact Us (/contact)
+- Legal
+  - Privacy Policy (/privacy-policy)
+  - Terms of Service (/terms-of-service)

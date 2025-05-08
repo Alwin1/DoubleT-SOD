@@ -40,7 +40,7 @@ function Header() {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/about">About Us</Link>
+            <Link to="/about-us">About Us</Link>
           </li>
           <li className="dropdown">
             <Link to="/products">
@@ -59,7 +59,7 @@ function Header() {
             </ul>
           </li>
           <li>
-            <Link to="/gallery">Gallery</Link>
+            <Link to="/past-installations">Past Installations</Link>
           </li>
           <li>
             <Link to="/contact">Contact Us</Link>
