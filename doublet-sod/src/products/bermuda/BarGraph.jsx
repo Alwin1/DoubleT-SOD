@@ -21,7 +21,7 @@ const BarGraph = () => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         setAnimate(entry.isIntersecting);
-      },
+      }, 
       { threshold: 0.3 }
     );
 
@@ -88,7 +88,7 @@ const BarGraph = () => {
           <h3>Rating Scale (out of 10)</h3>
           {data.map((item, index) => (
             <div className="chart-row" key={index}>
-              <div className="label">{item.label}</div>
+              <div className="barGraphLabel">{item.label}</div>
               <div className="bar-group">
                 <div
                   className={`bar tifway ${animate ? "animate" : ""}`}

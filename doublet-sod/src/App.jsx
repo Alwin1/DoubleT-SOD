@@ -13,6 +13,7 @@ import Gallery from './gallery/Gallery';
 import PrivacyPolicy from './legal/PrivacyPolicy';
 import TermsOfService from './legal/TermsOfService';
 
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Router>

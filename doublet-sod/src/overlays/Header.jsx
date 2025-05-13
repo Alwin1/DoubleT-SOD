@@ -90,14 +90,14 @@ function Header() {
                 </Link>
               </li>
               <li>
-                <Link to="/about" onClick={closeMenu}>
+                <Link to="/about-us" onClick={closeMenu}>
                   About Us
                 </Link>
               </li>
               <li onClick={() => openSubmenu("products")}>Our Products</li>
               <li>
-                <Link to="/gallery" onClick={closeMenu}>
-                  Gallery
+                <Link to="/past-installations" onClick={closeMenu}>
+                  Past Installations
                 </Link>
               </li>
               <li>
