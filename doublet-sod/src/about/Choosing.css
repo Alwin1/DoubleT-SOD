@@ -20,14 +20,15 @@
   flex-direction: column;
   width: 100%;
   margin: 0 auto;
+  gap: 0px;
 }
 
 .choosingValuesHeader {
   color: var(--primary-color);
   font-size: 36px;
   font-weight: bold;
-  margin-bottom: 20px;
   text-align: center;
+  margin: 0px;
 }
 
 .choosingValuesItem {
@@ -73,6 +74,7 @@
   font-weight: bold;
   margin-bottom: 20px;
   text-align: center;
+  margin: 0;
 }
 
 .areasServedParagraph {
@@ -134,6 +136,7 @@
   font-size: 36px;
   color: var(--primary-color);
   text-align: center;
+  margin: 0;
 }
 
 .growingParagraph {
@@ -142,6 +145,8 @@
   font-weight: 700;
   text-align: center;
   color: black;
+  margin-top: 25px;
+  padding: 0;
 }
 
 .freeQuoteAboutButton {
