@@ -15,8 +15,8 @@
 
 .zeroScapingTextImage {
   display: flex;
-  padding: 50px;
-  gap: 50px;
+  padding: 25px 50px;
+  gap: 100px;
 }
 
 .zeroScapeParagraph {

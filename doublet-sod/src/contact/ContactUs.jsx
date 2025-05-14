@@ -56,7 +56,9 @@ const ContactUs = () => {
           {submittedData ? (
             <div className="confirmation-message">
               <h3>
-                Thank you for reaching out! We will reach out to you soon!
+                Thank you for reaching out
+                <br />
+                We will reach out to you soon!
               </h3>
             </div>
           ) : (

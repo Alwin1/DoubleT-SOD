@@ -24,10 +24,11 @@
 }
 
 .bermuda419TextContainer,
-.celebrationTextContainer {
+.celebrationTextContainer,
+.tipsContainer {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 25px;
 }
 
 .bermuda419TextContainer h2,
@@ -48,7 +49,7 @@
 }
 
 .tipsContainer h2 {
-  margin-bottom: 50px;
+  margin: 0;
 }
 
 .bermuda419TextContainer p,
