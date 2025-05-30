@@ -8,7 +8,7 @@
   color: var(--primary-color);
   font-size: 36px;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .offerAboutFlex {
@@ -43,14 +43,15 @@
   font-size: 30px;
   font-weight: bold;
   color: black;
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 .offerAboutParagraph {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 25px;
+  margin-bottom: 25px;
 }
 
 .tinyGrass {

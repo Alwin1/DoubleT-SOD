@@ -40,7 +40,7 @@ const ZeroScapingFooter = () => {
           <div className="zeroSocial-media-connections">
             <h3>Follow Us</h3>
             <div className="zeroSocial-icons">
-              <a href="https://www.facebook.com/Doubletsod/">
+              <a href="https://www.facebook.com/share/19GXABBdjo/?mibextid=wwXIfr">
                 <img src={Facebook} alt="Facebook" />
               </a>
               <a href="https://www.instagram.com/doublet_sod/?hl=en">

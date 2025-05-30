@@ -152,7 +152,7 @@ const ContactUs = () => {
           <div className="social-media-contact">
             <h3>Follow Us</h3>
             <div className="socialMediaIcons">
-              <a href="https://www.facebook.com/Doubletsod/">
+              <a href="https://www.facebook.com/share/19GXABBdjo/?mibextid=wwXIfr">
                 <img
                   src={Facebook}
                   className="socialMediaIcon"
