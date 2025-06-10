@@ -120,6 +120,17 @@ const Working = () => {
             </ul>
           </div>
           <div className="orderParagraph">
+            <h3 className="pricingTitle">
+              Special Order Only - Ironcut Bermuda
+            </h3>
+            <ul className="pricingList">
+              <li>
+              Ironcut Bermuda available by full pallet (600 sq. ft.).
+              </li>
+              <li>Full Pallet: $340</li>
+            </ul>
+          </div>
+          <div className="orderParagraph">
             <h3 className="pricingTitle">Delivery Pricing</h3>
             <ul className="pricingList">
               <li>Lubbock: $75 Local Delivery Fee</li>

@@ -6,7 +6,8 @@
 }
 
 .bermuda419Container,
-.celebrationBermudaContainer {
+.celebrationBermudaContainer,
+.ironCutContainer {
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -23,9 +24,18 @@
   object-fit: cover;
 }
 
+.ironCutBermudaImage {
+  width: 400px;
+  height: 300px;
+  align-self: center;
+  object-fit: cover;
+  flex-shrink: 0; /* prevent shrinking */
+}
+
 .bermuda419TextContainer,
 .celebrationTextContainer,
-.tipsContainer {
+.tipsContainer,
+.ironCutTextContainer {
   display: flex;
   flex-direction: column;
   gap: 25px;
@@ -33,7 +43,8 @@
 
 .bermuda419TextContainer h2,
 .celebrationTextContainer h2,
-.tipsContainer h2 {
+.tipsContainer h2,
+.ironCutContainer h2 {
   color: var(--primary-color);
   font-size: 36px;
   font-weight: 700;
@@ -54,7 +65,8 @@
 
 .bermuda419TextContainer p,
 .celebrationTextContainer p,
-.tipsContainer p {
+.tipsContainer p,
+.ironCutTextContainer p{
   color: black;
   font-size: 24px;
   font-weight: 400;
@@ -169,7 +181,8 @@
 @media (max-width: 768px) {
   /* TEXT + IMAGE SECTION STYLING */
   .bermuda419Container,
-  .celebrationBermudaContainer {
+  .celebrationBermudaContainer,
+  .ironCutContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -178,7 +191,8 @@
   }
 
   .bermuda419TextContainer,
-  .celebrationTextContainer {
+  .celebrationTextContainer,
+  .ironCutTextContainer {
     padding: 0;
     max-width: 100%;
     text-align: left;
@@ -190,13 +204,15 @@
   }
 
   .bermuda419TextContainer h2,
-  .celebrationTextContainer h2 {
+  .celebrationTextContainer h2,
+  .ironCutContainer h2 {
     font-size: 20px;
     text-align: center;
   }
 
   .bermuda419TextContainer p,
-  .celebrationTextContainer p {
+  .celebrationTextContainer p,
+  .ironCutTextContainer p {
     font-size: 16px;
   }
 
@@ -205,6 +221,13 @@
     width: 100%;
     max-width: 100%;
     height: auto;
+    object-fit: cover;
+  }
+
+  .ironCutBermudaImage {
+    width: 100%;
+    max-width: 100%;
+    height: 200px;
     object-fit: cover;
   }
 
@@ -267,11 +290,12 @@
 
   .tipsContainer {
     padding: 20px;
-    text-align: center;
+    text-align: left;
   }
 
   .tipsContainer h2 {
     font-size: 20px;
+    text-align: center;
   }
 
   .tipsContainer p {

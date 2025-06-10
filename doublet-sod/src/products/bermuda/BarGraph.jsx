@@ -3,6 +3,7 @@ import "./BarGraph.css";
 import CelebrationImage from "../../assets/celebrationBermuda.jpg";
 import Tifway from "../../assets/testimonial-background.jpg";
 import GrassFooter from "../../assets/grassFooter.jpeg";
+import IronCut from "../../assets/ironcutBermuda.jpg";
 
 const data = [
   { label: "Drought Resistance", tifway: 6.0, celebration: 6.5 },
@@ -21,7 +22,7 @@ const BarGraph = () => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         setAnimate(entry.isIntersecting);
-      }, 
+      },
       { threshold: 0.3 }
     );
 
@@ -131,7 +132,24 @@ const BarGraph = () => {
           competitive weed growth from your fertilizer application.
         </p>
       </div>
-      <img src={GrassFooter} className="grassFooter"/>
+      <div className="ironCutContainer">
+        <div className="ironCutTextContainer">
+          <h2>Ironcut Bermuda</h2>
+          <p>
+            Fine leaf texture, dark green color, and the production of a dense,
+            low-growing canopy make IronCutter the ideal turf for homeowners and
+            athletic fields alike. Early green-up make for a higher appealing
+            golf courses. Unmatched drought tolerance and recoverability
+            compared to existing Bermudas.
+          </p>
+        </div>
+        <img
+          src={IronCut}
+          className="ironCutBermudaImage"
+          alt="Ironcut Bermuda Grass"
+        />
+      </div>
+      <img src={GrassFooter} className="grassFooter" />
     </div>
   );
 };

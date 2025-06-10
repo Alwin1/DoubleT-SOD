@@ -6,6 +6,7 @@ import Tifway from "../assets/tifway.jpeg";
 import Celebration from "../assets/celebration.jpeg";
 import Fescue from "../assets/fescue.jpeg";
 import ZeroScaping from "../assets/zero-scape.png";
+import TopDressingImage from "../assets/topDressing.jpg";
 import { useNavigate } from "react-router-dom"; // Import the useNavigate hook
 
 const MainTypes = () => {
@@ -94,29 +95,52 @@ const MainTypes = () => {
             </button>
           </div>
         </div>
+        <div className="sodType">
+          <img
+            src={TopDressingImage}
+            className="sodImage"
+            alt="Top Dressing & Sand Leveling"
+            loading="eager"
+          />
+          <div className="sodTextContainer">
+            <h3 className="sodHeader">Top Dressing and Sand Leveling</h3>
+            <p className="sodParagraph">
+              Improve lawn health and appearance by enhancing soil quality,
+              smoothing uneven surfaces, and promoting stronger grass growth.
+            </p>
+            <button
+              className="learnMoreTextButton"
+              onClick={() => handleLearnMoreClick("top-dressing-sand-leveling")}
+            >
+              <p>Learn More</p>
+              <img src={SmallArrow} alt="Arrow" />
+            </button>
+          </div>
+        </div>
+        <div className="sodType">
+          <img
+            src={ZeroScaping}
+            className="sodImage"
+            alt="ZeroScaping"
+            loading="eager"
+          />
+          <div className="sodTextContainer">
+            <h3 className="sodHeader">Zero-Scaping</h3>
+            <p className="sodParagraph">
+              Eliminates the need for frequent watering and upkeep by using
+              durable materials like rocks, gravel, and hardy plants
+            </p>
+            <button
+              className="learnMoreTextButton"
+              onClick={() => handleLearnMoreClick("fescue")}
+            >
+              <p>Learn More</p>
+              <img src={SmallArrow} alt="Arrow" />
+            </button>
+          </div>
+        </div>
       </div>
-      <div className="zeroScapingContainer">
-        <h2 className="mainTypesHeader">Now Offering Zero-Scaping! </h2>
-        <p className="mainTypesParagraph">
-          Transform your outdoor space with a clean, low-maintenance design.
-          Zero-scaping eliminates the need for frequent watering and upkeep by
-          using durable materials like rocks, gravel, and hardy plants
-        </p>
-        <button
-          className="learnMoreTextButton"
-          onClick={() => handleLearnMoreClick("zero-scaping")}
-        >
-          <p>Learn More</p>
-          <img src={SmallArrow} alt="Arrow" />
-        </button>
-        <img
-          src={ZeroScaping}
-          className="zeroScapingImage"
-          alt="ZeroScaping"
-          loading="eager"
-        />
-        <img src={GrassFooter} className="grassFooter" />
-      </div>
+      <img src={GrassFooter} className="grassFooter" />
     </div>
   );
 };

@@ -8,6 +8,7 @@ import ProductsHome from './products/ProductsHome';
 import Bermuda from './products/bermuda/Bermuda';
 import Fescue from './products/fescue/Fescue';
 import ZeroScaping from './products/zeroScaping/ZeroScaping';
+import TopDressing from './products/top-dressing/TopDressing';
 import Contact from './contact/Contact';
 import Gallery from './gallery/Gallery';
 import PrivacyPolicy from './legal/PrivacyPolicy';
@@ -24,6 +25,7 @@ createRoot(document.getElementById('root')).render(
         <Route path='/products/bermuda' element={<Bermuda />} />        
         <Route path='/products/fescue' element={<Fescue />} />        
         <Route path='/products/zero-scaping' element={<ZeroScaping />} />        
+        <Route path='/products/top-dressing-sand-leveling' element={<TopDressing />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/past-installations' element={<Gallery />} />
         <Route path='/privacy-policy' element={<PrivacyPolicy />} />
