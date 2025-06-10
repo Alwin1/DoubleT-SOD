@@ -35,7 +35,7 @@
   flex-flow: row wrap;
   gap: 50px;
   padding: 50px;
-  justify-content: space-around; /* Distributes space evenly between the sodTypes */
+  justify-content: center; /* Distributes space evenly between the sodTypes */
 }
 
 .sodType {
