@@ -2,7 +2,7 @@ import './Contact.css'
 import Footer from '../overlays/Footer'
 import Header from '../overlays/Header'
 import { useEffect } from "react";
-import ContactUs from './ContactUs';
+import ContactUs from './ContactUsNew';
 import SEO from '../overlays/SEO';
 
 function Contact() {

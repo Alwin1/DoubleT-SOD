@@ -24,4 +24,6 @@ dist-ssr
 *.sw?
 .env
 
+functions
+
 firebase-service-account.json
