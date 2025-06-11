@@ -1,4 +1,4 @@
-# robots.txt for https://www.doublet-sod.web.app/
+# robots.txt for https://doubletsod.com/
 
 # Allow all user agents to crawl everything
 User-agent: *
@@ -21,4 +21,4 @@ Disallow: /*.pdf$        # Disallow PDFs from being crawled
 Disallow: /*.zip$        # Disallow ZIP files from being crawled
 
 # Sitemap location
-Sitemap: https://www.doublet-sod.web.app/sitemap.xml
+Sitemap: https://doubletsod.com/sitemap.xml

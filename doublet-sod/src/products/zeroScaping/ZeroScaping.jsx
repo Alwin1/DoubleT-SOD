@@ -18,7 +18,7 @@ function ZeroScaping() {
         title="ZeroScaping | Double T-Sod"
         description="Learn more about zero-scaping which is offered by Double T-Sod. For home owners that want to reduce upkeep and water usage."
         keywords="bermuda sod, grass installation, texas landscaping, products, bermuda, zero-scaping, xeri-scaping, fescue, tifway, celebration, frontier, family-oriented, businesses, cost-effective, New Mexico"
-        url="https://doublet-sod.web.app/products/zero-scaping"
+        url="https://doubletsod.com/products/zero-scaping"
       />
         <Header />
         <ZeroScapingText />

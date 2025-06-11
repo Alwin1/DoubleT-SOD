@@ -25,7 +25,7 @@ function About() {
         title="About | Double T-Sod "
         description="Meet the professionals and learn more about DoubleT-Sod and its offerings."
         keywords="bermuda sod, grass installation, texas landscaping, products, bermuda, zero-scaping, xeri-scaping, fescue, tifway, celebration, frontier, family-oriented, businesses, cost-effective, New Mexico"
-        url="https://doublet-sod.web.app/about-us"
+        url="https://doubletsod.com/about-us"
       />
       <Header />
       <img
