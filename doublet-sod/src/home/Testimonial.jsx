@@ -78,8 +78,8 @@ const TestimonialSlider = () => {
         onTouchStart={handleTouchStart}
         onTouchMove={handleTouchMove}
       >
-        <img src={QuoteLeft} className="quoteLeft"/>
-        <img src={QuoteLeft} className="quoteRight"/>
+        <img src={QuoteLeft} className="quoteLeft" alt="Quote Left"/>
+        <img src={QuoteLeft} className="quoteRight" alt="Quote Right"/>
         <p className="testimonial-text">{testimonials[currentIndex].text}</p>
         <h3 className="testimonial-name">{testimonials[currentIndex].name}</h3>
         <p className="testimonial-location">

@@ -52,6 +52,7 @@ const MissionHome = () => {
           src={MissionStatement}
           className="missionPicture"
           loading="lazy"
+          alt="Mission Statement Picture"
         />
       </div>
     </div>

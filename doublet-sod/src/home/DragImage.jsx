@@ -63,6 +63,7 @@ const DragImage = ({ onImagesLoaded }) => {
           alt="Before"
           className="slider-image"
           loading="eager"
+          fetchpriority="high"
           onLoad={() => setBeforeLoaded(true)}
         />
         <div
@@ -74,6 +75,7 @@ const DragImage = ({ onImagesLoaded }) => {
             alt="After"
             className="slider-image"
             loading="eager"
+            fetchpriority="high"
             onLoad={() => setAfterLoaded(true)}
           />
         </div>

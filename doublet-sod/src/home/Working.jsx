@@ -49,7 +49,7 @@ const Working = () => {
       <div className="stepsContainer">
         <div className="stepContainer step1Container">
           <div className="stepTitleWrapper">
-            <img src={Step1} className="step" />
+            <img src={Step1} className="step" alt="Step Number"/>
             <h3 className="stepTitle">Tell Us What You Need</h3>
           </div>
           <p className="stepParagraph">
@@ -59,7 +59,7 @@ const Working = () => {
         </div>
         <div className="stepContainer step2Container">
           <div className="stepTitleWrapper">
-            <img src={Step2} className="step" />
+            <img src={Step2} className="step" alt="Step Number"/>
             <h3 className="stepTitle">We Handle The Rest</h3>
           </div>
           <p className="stepParagraph">
@@ -69,7 +69,7 @@ const Working = () => {
         </div>
         <div className="stepContainer step3Container">
           <div className="stepTitleWrapper">
-            <img src={Step3} className="step" />
+            <img src={Step3} className="step" alt="Step Number"/>
             <h3 className="stepTitle">
               Relax - We've Got The Heavy Lifting Covered
             </h3>
