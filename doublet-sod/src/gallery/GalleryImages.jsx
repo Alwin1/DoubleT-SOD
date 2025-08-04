@@ -144,8 +144,8 @@ const GalleryImages = () => {
         </div>
       )}
 
-      <img src={GrassFooter} className="grassFooter" alt="Grass Footer" />
-    </div>
+<img src={GrassFooter} className="grassFooter" alt="Grass Footer Image"/>
+</div>
   );
 };
 

@@ -177,7 +177,7 @@ const ContactUs = () => {
           </div>
         </div>
       </div>
-      <img src={GrassFooter} className="grassFooter" />
+      <img src={GrassFooter} className="grassFooter" alt="Grass Footer Image"/>
     </div>
   );
 };

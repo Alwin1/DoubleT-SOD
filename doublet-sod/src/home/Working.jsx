@@ -84,7 +84,7 @@ const Working = () => {
       <div className="noticesContainer">
         <div className="seasonsContainer">
           <div className="seasonsTitleContainer">
-            <img src={CalendarPic} className="seasonsPic" />
+            <img src={CalendarPic} className="seasonsPic" alt="Calendar"/>
             <h3 className="seasonsTitle">Peak Season Notice</h3>
           </div>
           <p className="seasonsParagraph">
@@ -94,7 +94,7 @@ const Working = () => {
         </div>
         <div className="seasonsContainer">
           <div className="seasonsTitleContainer">
-            <img src={Nomoney} className="seasonsPic" />
+            <img src={Nomoney} className="seasonsPic" alt="No Money"/>
             <h3 className="seasonsTitle">No Upfront Payment</h3>
           </div>
           <p className="seasonsParagraph">
@@ -159,10 +159,10 @@ const Working = () => {
         </p>
         <button className="freeQuoteButton" onClick={handleLearnMoreClick}>
           <p>Get a Free Quote Now</p>
-          <img src={ArrowCircle} />
+          <img src={ArrowCircle} alt="Arrow"/>
         </button>
       </div>
-      <img src={GrassFooter} className="grassFooter" />
+      <img src={GrassFooter} className="grassFooter" alt="Grass Footer Image"/>
     </div>
   );
 };

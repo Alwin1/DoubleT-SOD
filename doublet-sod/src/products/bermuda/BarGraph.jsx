@@ -149,7 +149,7 @@ const BarGraph = () => {
           alt="Ironcut Bermuda Grass"
         />
       </div>
-      <img src={GrassFooter} className="grassFooter" />
+      <img src={GrassFooter} className="grassFooter" alt="Grass Footer Image"/>
     </div>
   );
 };

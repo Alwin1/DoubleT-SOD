@@ -45,7 +45,7 @@ const MissionHome = () => {
           </p>
           <button className="learnMoreButton" onClick={handleLearnMoreClick}>
             <p>Learn More</p>
-            <img src={ArrowCircle} />
+            <img src={ArrowCircle} alt="Arrow"/>
           </button>
         </div>
         <img

@@ -56,7 +56,7 @@ const FescueGrass = () => {
           healthier plant.
         </p>
       </div>
-      <img src={GrassFooter} className="grassFooter" />
+      <img src={GrassFooter} className="grassFooter" alt="Grass Footer Image"/>
     </div>
   );
 };

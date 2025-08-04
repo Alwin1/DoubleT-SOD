@@ -31,7 +31,7 @@ const ZeroScapingText = () => {
           </p>
         </div>
       </div>
-      <img src={RocksFooter} className="grassFooter" />
+      <img src={RocksFooter} className="grassFooter" alt="Rocks Footer Image"/>
     </div>
   );
 };

@@ -85,7 +85,7 @@ const Choosing = () => {
           <img src={ArrowCircle} />
         </button>
       </div>
-      <img src={GrassFooter} className="grassFooter" />
+      <img src={GrassFooter} className="grassFooter" alt="Grass Footer Image"/>
     </div>
   );
 };
