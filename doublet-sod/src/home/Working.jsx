@@ -49,7 +49,7 @@ const Working = () => {
       <div className="stepsContainer">
         <div className="stepContainer step1Container">
           <div className="stepTitleWrapper">
-            <img src={Step1} className="step" alt="Step Number"/>
+            <img src={Step1} className="step" alt="Step Number" />
             <h3 className="stepTitle">Tell Us What You Need</h3>
           </div>
           <p className="stepParagraph">
@@ -59,7 +59,7 @@ const Working = () => {
         </div>
         <div className="stepContainer step2Container">
           <div className="stepTitleWrapper">
-            <img src={Step2} className="step" alt="Step Number"/>
+            <img src={Step2} className="step" alt="Step Number" />
             <h3 className="stepTitle">We Handle The Rest</h3>
           </div>
           <p className="stepParagraph">
@@ -69,7 +69,7 @@ const Working = () => {
         </div>
         <div className="stepContainer step3Container">
           <div className="stepTitleWrapper">
-            <img src={Step3} className="step" alt="Step Number"/>
+            <img src={Step3} className="step" alt="Step Number" />
             <h3 className="stepTitle">
               Relax - We've Got The Heavy Lifting Covered
             </h3>
@@ -84,7 +84,7 @@ const Working = () => {
       <div className="noticesContainer">
         <div className="seasonsContainer">
           <div className="seasonsTitleContainer">
-            <img src={CalendarPic} className="seasonsPic" alt="Calendar"/>
+            <img src={CalendarPic} className="seasonsPic" alt="Calendar" />
             <h3 className="seasonsTitle">Peak Season Notice</h3>
           </div>
           <p className="seasonsParagraph">
@@ -94,7 +94,7 @@ const Working = () => {
         </div>
         <div className="seasonsContainer">
           <div className="seasonsTitleContainer">
-            <img src={Nomoney} className="seasonsPic" alt="No Money"/>
+            <img src={Nomoney} className="seasonsPic" alt="No Money" />
             <h3 className="seasonsTitle">No Upfront Payment</h3>
           </div>
           <p className="seasonsParagraph">
@@ -124,9 +124,7 @@ const Working = () => {
               Special Order Only - Ironcut Bermuda
             </h3>
             <ul className="pricingList">
-              <li>
-              Ironcut Bermuda available by full pallet (600 sq. ft.).
-              </li>
+              <li>Ironcut Bermuda available by full pallet (600 sq. ft.).</li>
               <li>Full Pallet: $340</li>
             </ul>
           </div>
@@ -135,11 +133,11 @@ const Working = () => {
             <ul className="pricingList">
               <li>Lubbock: $75 Local Delivery Fee</li>
               <li>Outside Lubbock? Contact us for a custom delivery quote.</li>
-              <p>
+              <li className="noBullet">
                 Please note a $120 cancellation fee per pallet will be applied
                 to any orders canceled within 48 hours of the scheduled delivery
                 date.
-              </p>
+              </li>
             </ul>
           </div>
         </div>
@@ -159,10 +157,10 @@ const Working = () => {
         </p>
         <button className="freeQuoteButton" onClick={handleLearnMoreClick}>
           <p>Get a Free Quote Now</p>
-          <img src={ArrowCircle} alt="Arrow"/>
+          <img src={ArrowCircle} alt="Arrow" />
         </button>
       </div>
-      <img src={GrassFooter} className="grassFooter" alt="Grass Footer Image"/>
+      <img src={GrassFooter} className="grassFooter" alt="Grass Footer Image" />
     </div>
   );
 };

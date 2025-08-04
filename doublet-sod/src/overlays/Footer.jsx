@@ -16,15 +16,15 @@ const Footer = () => {
       <div className="footer-section company-info">
         <h3 className="">Contact</h3>
         <p>
-          <img src={Phone} className="footerLogos" />
+          <img src={Phone} className="footerLogos" alt="phone"/>
           <a href="tel:8065771510">806-577-1510</a>
         </p>
         <p>
-          <img src={Email} className="footerLogos" />
+          <img src={Email} className="footerLogos" alt="email"/>
           <a href="mailto:colby@doubletsod.com">colby@doubletsod.com</a>
         </p>
         <p>
-          <img src={FormLogo} className="footerLogos" />
+          <img src={FormLogo} className="footerLogos" alt="form"/>
           <a href="/contact">contact form</a>
         </p>
       </div>

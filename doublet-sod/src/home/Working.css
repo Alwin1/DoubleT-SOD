@@ -150,10 +150,11 @@
   width: 80%;
 }
 
-.pricingList p {
+.pricingList .noBullet {
   font-size: 20px;
   text-align: left;
   font-style: italic;
+  list-style-type: none;
 }
 
 .deliveryPic {
@@ -323,7 +324,7 @@
     font-size: 16px;
   }
 
-  .pricingList p {
+  .pricingList .noBullet {
     font-size: 14px;
   }
 

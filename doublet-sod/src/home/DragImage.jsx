@@ -94,7 +94,11 @@ const DragImage = ({ onImagesLoaded }) => {
           </div>
         </div>
       </div>
+      <label htmlFor="before-after-slider" className="visually-hidden">
+        Before and After Image Slider
+      </label>
       <input
+        id="before-after-slider" // Added a unique ID
         type="range"
         min="0"
         max="100"
