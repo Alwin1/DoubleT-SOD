@@ -14,6 +14,26 @@
     ],
     "predeploy": [ 
       "npm --prefix . run build"
+    ],
+    "headers": [
+      {
+        "source": "**/*.@(jpg|jpeg|gif|png|svg|webp|js|css|eot|otf|ttf|woff|woff2)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "max-age=31536000, public"
+          }
+        ]
+      },
+      {
+        "source": "/index.html",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "no-cache"
+          }
+        ]
+      }
     ]
   },
   "functions": [
@@ -26,17 +46,6 @@
         "firebase-debug.log",
         "firebase-debug.*.log",
         "*.local"
-      ]
-    }
-  ],
-  "headers": [
-    {
-      "source": "**/*.@(jpg|jpeg|gif|png|svg|webp|js|css|eot|otf|ttf|woff|woff2)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "max-age=31536000, public"
-        }
       ]
     }
   ]
