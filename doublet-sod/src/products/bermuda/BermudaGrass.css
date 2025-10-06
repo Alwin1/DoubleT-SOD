@@ -161,7 +161,7 @@
   }
 
   .bermudaTable td {
-    font-size: 12px;
+    font-size: 10px;
     padding: 6px;
     text-align: center;             /* keep others centered */
   }
@@ -171,12 +171,12 @@
   }
 
   .bermudaTable .tableName th {
-    font-size: 12px;
+    font-size: 11px;
   }
 
   .bermudaTable .tableHeaders th {
-    font-size: 12px;
-    width: 33%;
+    font-size: 8px;
+    width: 25%;
   }
 
   .bermudaTable .categoryRow th {
