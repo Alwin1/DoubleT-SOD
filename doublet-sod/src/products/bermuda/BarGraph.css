@@ -84,6 +84,7 @@
   align-items: center;
   padding: 50px;
   margin: 0;
+  height: max-content;
 }
 
 .chart-container {
@@ -91,7 +92,7 @@
   border: 4px solid black;
   border-radius: 10px;
   width: 650px;
-  height: 650px;
+  height: max-content;
   font-family: "Roboto Mono", monospace;
 }
 
@@ -169,8 +170,11 @@
 .legend {
   margin-top: 50px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 50px;
+  row-gap: 50px;
+  column-gap: 100px;
+  padding-bottom: 20px;
   color: black;
   font-size: 20px;
 }

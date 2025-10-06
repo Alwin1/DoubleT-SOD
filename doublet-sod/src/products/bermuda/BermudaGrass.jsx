@@ -145,11 +145,19 @@ const BermudaGrass = () => {
           hay fever or allergy irritations.
         </p>
         <p className="bermudaParagraph">
-          There are four cultivars available: <span>Tifway 419, Celebration, Tahoma 31, and Iron Cutter.</span>
+          There are four cultivars available:{" "}
+          <span>Tifway 419, Celebration, Tahoma 31, and Iron Cutter.</span>
         </p>
       </div>
       <div className="bermudaTable">
         <table>
+          <colgroup>
+            <col className="col-item" />
+            <col className="col-var" />
+            <col className="col-var" />
+            <col className="col-var" />
+            <col className="col-var" />
+          </colgroup>
           <thead>
             <tr className="tableName">
               <th colSpan="5">Warm Season Grasses Comparison</th>

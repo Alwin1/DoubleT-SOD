@@ -45,10 +45,19 @@
 
 .bermudaTable table {
   color: black;
-  width: 650px;
-  height: 650px;
+  width: 700px;
+  height: 700px;
   border-collapse: collapse;
   overflow: hidden;
+  table-layout: fixed;              /* 1) respect column widths */
+}
+
+.bermudaTable col.col-item {        /* 2) first column width */
+  width: 220px;                     /* tweak as you like */
+}
+
+.bermudaTable col.col-var {         /* 3) each cultivar column */
+  width: calc((100% - 220px) / 4);  /* evenly split the rest */
 }
 
 .bermudaTable td {
@@ -64,6 +73,11 @@
 
 .bermudaTable tr td:last-child {
   border-right: none;
+}
+
+.bermudaTable td:first-child,
+.bermudaTable th:first-child {
+  text-align: left;                 /* left align “headers” column */
 }
 
 .bermudaTable .plantingScheduleRow td {
@@ -95,15 +109,24 @@
   border-top: 3px solid black;
   color: white;
   font-weight: bold;
-  text-align: center;
+  text-align: left;                 /* match left alignment */
   font-size: 20px;
 }
 
+.bermudaTable .rowHeader .cellLabel {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;      /* = flex-start */
+  gap: 8px;
+  min-width: 0;
+}
+
+/* Optional: ensure icons don’t shift the text */
 .bermudaTable .tableIcon {
   width: 24px;
   height: 24px;
-  vertical-align: middle;
-  margin-right: 5px;
+  flex: 0 0 24px;                   /* fixed space for icon */
+  margin-right: 0;                  /* gap handles spacing */
 }
 
 .underLineTable {
@@ -112,11 +135,11 @@
 
 @media (max-width: 768px) {
   .bermudaTitle {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .bermudaParagraph {
-    font-size: 16px;
+    font-size: 12px;
   }
 
   .bermudaTextContainer {
@@ -133,22 +156,31 @@
     height: auto;
   }
 
+  .bermudaTable col.col-item {
+    width: 180px;                   /* narrower first column on mobile */
+  }
+
   .bermudaTable td {
-    font-size: 16px;
+    font-size: 12px;
     padding: 6px;
+    text-align: center;             /* keep others centered */
+  }
+
+  .bermudaTable td:first-child {
+    text-align: left;               /* but first column stays left */
   }
 
   .bermudaTable .tableName th {
-    font-size: 18px;
+    font-size: 12px;
   }
 
   .bermudaTable .tableHeaders th {
-    font-size: 16px;
+    font-size: 12px;
     width: 33%;
   }
 
   .bermudaTable .categoryRow th {
-    font-size: 16px;
+    font-size: 12px;
     width: 100%;
   }
 

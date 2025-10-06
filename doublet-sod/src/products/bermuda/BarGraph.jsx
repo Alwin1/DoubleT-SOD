@@ -122,6 +122,23 @@ const BarGraph = () => {
       <div className="barChartContainer">
         <div className="chart-container" ref={containerRef}>
           <h3>Rating Scale (out of 10)</h3>
+          <div className="legend">
+            <div>
+              <span className="legend-color tifway-color"></span> Tifway 419
+            </div>
+            <div>
+              <span className="legend-color celebration-color"></span>{" "}
+              Celebration
+            </div>
+            <div>
+              <span className="legend-color tahoma-color"></span>{" "}
+              Tahoma 31
+            </div>
+            <div>
+              <span className="legend-color iron-color"></span>{" "}
+              Iron Cutter
+            </div>
+          </div>
           {data.map((item, index) => (
             <div className="chart-row" key={index}>
               <div className="barGraphLabel">{item.label}</div>
@@ -153,23 +170,7 @@ const BarGraph = () => {
               </div>
             </div>
           ))}
-          <div className="legend">
-            <div>
-              <span className="legend-color tifway-color"></span> Tifway 419
-            </div>
-            <div>
-              <span className="legend-color celebration-color"></span>{" "}
-              Celebration
-            </div>
-            <div>
-              <span className="legend-color tahoma-color"></span>{" "}
-              Tahoma 31
-            </div>
-            <div>
-              <span className="legend-color iron-color"></span>{" "}
-              Iron Cutter
-            </div>
-          </div>
+          
         </div>
       </div>
       <div className="tipsContainer">
