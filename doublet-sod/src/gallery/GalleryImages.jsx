@@ -3,7 +3,7 @@ import { useSwipeable } from "react-swipeable";
 import "./GalleryImages.css";
 import GrassFooter from "../assets/grassFooter.jpeg";
 
-const TOTAL_IMAGES = 42;
+const TOTAL_IMAGES = 50;
 const IMAGES_PER_PAGE = 16;
 
 const generateImageList = () => {

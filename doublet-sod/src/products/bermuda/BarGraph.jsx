@@ -4,6 +4,7 @@ import CelebrationImage from "../../assets/celebrationBermuda.jpg";
 import Tifway from "../../assets/testimonial-background.jpg";
 import GrassFooter from "../../assets/grassFooter.jpeg";
 import IronCut from "../../assets/ironcutBermuda.jpg";
+import Tahoma from "../../assets/tahoma.png";
 
 const data = [
   { label: "Drought Resistance", tifway: 6.0, celebration: 6.5 },
@@ -84,6 +85,40 @@ const BarGraph = () => {
           alt="Celebration Bermuda Grass"
         />
       </div>
+      <div className="tahomaBermudaContainer">
+        <div className="tahomaTextContainer">
+          <h2>Tahoma 31 Bermuda</h2>
+          <p>
+            Tahoma 31 is a next-generation turf grass known for its superior
+            drought tolerance, requiring significantly less water than most
+            other varieties while maintaining its color and quality through long
+            dry spells. With an ultra-dense, fine-bladed texture, it creates a
+            lush, carpet-like appearance that not only looks premium but also
+            helps naturally resist weeds.
+            <br />
+            <br />
+            Unlike many warm-season grasses, Tahoma 31 is one of the most
+            cold-hardy turf grasses available, thriving in regions with harsher
+            winters such as West Texas. It’s also built to withstand heavy use,
+            recovering quickly from foot traffic and making it ideal for sports
+            fields, home lawns, and high-use areas. Trusted by professionals,
+            Tahoma 31 has been installed on NFL and NCAA athletic fields thanks
+            to its durability, fast recovery, and striking visual appeal.
+          </p>
+        </div>
+      </div>
+      <div className="ironCutContainer">
+        <div className="ironCutTextContainer">
+          <h2>Iron Cutter Bermuda</h2>
+          <p>
+            Fine leaf texture, dark green color, and the production of a dense,
+            low-growing canopy make Iron Cutter the ideal turf for homeowners
+            and athletic fields alike. Early green-up make for a higher
+            appealing golf courses. Unmatched drought tolerance and
+            recoverability compared to existing Bermudas.
+          </p>
+        </div>
+      </div>
       <div className="barChartContainer">
         <div className="chart-container" ref={containerRef}>
           <h3>Rating Scale (out of 10)</h3>
@@ -132,24 +167,8 @@ const BarGraph = () => {
           competitive weed growth from your fertilizer application.
         </p>
       </div>
-      <div className="ironCutContainer">
-        <div className="ironCutTextContainer">
-          <h2>Ironcut Bermuda</h2>
-          <p>
-            Fine leaf texture, dark green color, and the production of a dense,
-            low-growing canopy make IronCutter the ideal turf for homeowners and
-            athletic fields alike. Early green-up make for a higher appealing
-            golf courses. Unmatched drought tolerance and recoverability
-            compared to existing Bermudas.
-          </p>
-        </div>
-        <img
-          src={IronCut}
-          className="ironCutBermudaImage"
-          alt="Ironcut Bermuda Grass"
-        />
-      </div>
-      <img src={GrassFooter} className="grassFooter" alt="Grass Footer Image"/>
+      
+      <img src={GrassFooter} className="grassFooter" alt="Grass Footer Image" />
     </div>
   );
 };

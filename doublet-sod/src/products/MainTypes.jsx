@@ -5,8 +5,10 @@ import SmallArrow from "../assets/smallArrowImage.png";
 import Tifway from "../assets/tifway.jpeg";
 import Celebration from "../assets/celebration.jpeg";
 import Fescue from "../assets/fescue.jpeg";
-import ZeroScaping from "../assets/zero-scape.png";
+import Tahoma from "../assets/tahoma.png";
+import ZeroScaping from "../assets/zeroScaping.jpg";
 import TopDressingImage from "../assets/topDressing.jpg";
+import IronCutter from "../assets/ironcutBermuda.jpg"
 import { useNavigate } from "react-router-dom"; // Import the useNavigate hook
 
 const MainTypes = () => {
@@ -72,6 +74,54 @@ const MainTypes = () => {
             </button>
           </div>
         </div>
+
+        <div className="sodType">
+          <img
+            src={Tahoma}
+            className="sodImage"
+            alt="Tahoma 31 Bermuda Sod"
+            loading="eager"
+          />
+          <div className="sodTextContainer">
+            <h3 className="sodHeader">Tahoma 31 Bermuda</h3>
+            <p className="sodParagraph">
+              A hardy Bermuda with fine texture, deep green color, and
+              exceptional cold and wear tolerance — perfect for lasting beauty
+              in any lawn.
+            </p>
+            <button
+              className="learnMoreTextButton"
+              onClick={() => handleLearnMoreClick("bermuda")}
+            >
+              <p>Learn More</p>
+              <img src={SmallArrow} alt="Arrow" />
+            </button>
+          </div>
+        </div>
+        <div className="sodType">
+          <img
+            src={IronCutter}
+            className="sodImage"
+            alt="Iron Cutter Bermuda"
+            loading="eager"
+          />
+          <div className="sodTextContainer">
+            <h3 className="sodHeader">Iron Cutter Bermuda</h3>
+            <p className="sodParagraph">
+              Dense, fine-bladed Bermuda with a rich green color, strong drough
+              and quick recovery from heavy use — ideal for both residential and
+              athletic turf.
+            </p>
+            <button
+              className="learnMoreTextButton"
+              onClick={() => handleLearnMoreClick("fescue")}
+            >
+              <p>Learn More</p>
+              <img src={SmallArrow} alt="Arrow" />
+            </button>
+          </div>
+        </div>
+
         <div className="sodType">
           <img
             src={Fescue}
@@ -140,7 +190,7 @@ const MainTypes = () => {
           </div>
         </div>
       </div>
-      <img src={GrassFooter} className="grassFooter" alt="Grass Footer Image"/>
+      <img src={GrassFooter} className="grassFooter" alt="Grass Footer Image" />
     </div>
   );
 };

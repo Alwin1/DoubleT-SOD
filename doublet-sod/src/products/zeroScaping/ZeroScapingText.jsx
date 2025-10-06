@@ -1,7 +1,7 @@
 import React from "react";
 import "./ZeroScapingText.css";
-import ZeroScaping from "../../assets/zero-scape.png";
-import RocksFooter from "../../assets/rocksFooter.png"
+import ZeroScaping from "../../assets/zeroScaping.jpg";
+import RocksFooter from "../../assets/rocksFooter.png";
 const ZeroScapingText = () => {
   return (
     <div className="zeroScapingTextContainer">
@@ -29,9 +29,15 @@ const ZeroScapingText = () => {
             a layout that matches your vision, complements your home, and adds
             lasting value to your landscape.
           </p>
+          Test
+          <img
+            src={ZeroScaping}
+            className="zeroScapeImage"
+            alt="Fontier Tall Fescue Image"
+          />
         </div>
       </div>
-      <img src={RocksFooter} className="grassFooter" alt="Rocks Footer Image"/>
+      <img src={RocksFooter} className="grassFooter" alt="Rocks Footer Image" />
     </div>
   );
 };

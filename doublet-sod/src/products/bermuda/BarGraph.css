@@ -7,6 +7,7 @@
 
 .bermuda419Container,
 .celebrationBermudaContainer,
+.tahomaBermudaContainer,
 .ironCutContainer {
   display: flex;
   align-items: center;
@@ -17,7 +18,8 @@
 }
 
 .bermudaImage,
-.celebrationBermudaGrassImage {
+.celebrationBermudaGrassImage,
+.tahomaImage {
   width: 600px;
   height: 600px;
   align-self: center;
@@ -35,6 +37,7 @@
 .bermuda419TextContainer,
 .celebrationTextContainer,
 .tipsContainer,
+.tahomaTextContainer,
 .ironCutTextContainer {
   display: flex;
   flex-direction: column;
@@ -44,6 +47,7 @@
 .bermuda419TextContainer h2,
 .celebrationTextContainer h2,
 .tipsContainer h2,
+.tahomaTextContainer h2,
 .ironCutContainer h2 {
   color: var(--primary-color);
   font-size: 36px;
@@ -66,6 +70,7 @@
 .bermuda419TextContainer p,
 .celebrationTextContainer p,
 .tipsContainer p,
+.tahomaTextContainer p,
 .ironCutTextContainer p{
   color: black;
   font-size: 24px;
@@ -182,7 +187,8 @@
   /* TEXT + IMAGE SECTION STYLING */
   .bermuda419Container,
   .celebrationBermudaContainer,
-  .ironCutContainer {
+  .ironCutContainer,
+  .tahomaBermudaContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -192,7 +198,8 @@
 
   .bermuda419TextContainer,
   .celebrationTextContainer,
-  .ironCutTextContainer {
+  .ironCutTextContainer,
+  .tahomaTextContainer {
     padding: 0;
     max-width: 100%;
     text-align: left;
@@ -205,19 +212,22 @@
 
   .bermuda419TextContainer h2,
   .celebrationTextContainer h2,
-  .ironCutContainer h2 {
+  .ironCutContainer h2,
+  .tahomaTextContainer h2 {
     font-size: 20px;
     text-align: center;
   }
 
   .bermuda419TextContainer p,
   .celebrationTextContainer p,
-  .ironCutTextContainer p {
+  .ironCutTextContainer p,
+  .tahomaTextContainer p {
     font-size: 16px;
   }
 
   .bermudaImage,
-  .celebrationBermudaGrassImage {
+  .celebrationBermudaGrassImage
+  .tahomaImage {
     width: 100%;
     max-width: 100%;
     height: auto;
