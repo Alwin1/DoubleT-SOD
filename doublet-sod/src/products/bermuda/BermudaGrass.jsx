@@ -145,7 +145,7 @@ const BermudaGrass = () => {
           hay fever or allergy irritations.
         </p>
         <p className="bermudaParagraph">
-          There are four cultivars available: <span>Tifway 419, Celebration Bermuda, Tahoma 31, and Iron Cutter</span>
+          There are four cultivars available: <span>Tifway 419, Celebration, Tahoma 31, and Iron Cutter.</span>
         </p>
       </div>
       <div className="bermudaTable">

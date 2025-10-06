@@ -158,6 +158,14 @@
   background-color: #499a2f;
 }
 
+.tahoma {
+  background-color: #20550e;
+}
+
+.iron {
+  background-color: #144404;
+}
+
 .legend {
   margin-top: 50px;
   display: flex;
@@ -181,6 +189,14 @@
 
 .celebration-color {
   background-color: #499a2f;
+}
+
+.tahoma-color {
+  background-color: #20550e;
+}
+
+.iron-color {
+  background-color: #144404;
 }
 
 @media (max-width: 768px) {

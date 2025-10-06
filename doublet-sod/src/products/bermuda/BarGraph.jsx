@@ -7,12 +7,12 @@ import IronCut from "../../assets/ironcutBermuda.jpg";
 import Tahoma from "../../assets/tahoma.png";
 
 const data = [
-  { label: "Drought Resistance", tifway: 6.0, celebration: 6.5 },
-  { label: "Heat Tolerance", tifway: 6.0, celebration: 6.0 },
-  { label: "Cold Tolerance", tifway: 4.0, celebration: 4.0 },
-  { label: "Reparability", tifway: 7.0, celebration: 7.0 },
-  { label: "Disease Resistance", tifway: 7.0, celebration: 7.0 },
-  { label: "Shade Resistance", tifway: 3.0, celebration: 5.0 },
+  { label: "Drought Resistance", tifway: 6.0, celebration: 6.5, tahoma: 8.0, iron: 8.5 },
+  { label: "Heat Tolerance", tifway: 6.0, celebration: 6.0, tahoma: 7.0, iron: 7.5  },
+  { label: "Cold Tolerance", tifway: 4.0, celebration: 4.0, tahoma: 7.0, iron: 5.0  },
+  { label: "Reparability", tifway: 7.0, celebration: 7.0, tahoma: 8.0, iron: 7.5  },
+  { label: "Disease Resistance", tifway: 7.0, celebration: 7.0, tahoma: 7.5, iron: 8.0  },
+  { label: "Shade Resistance", tifway: 3.0, celebration: 5.0, tahoma: 6.0, iron: 5.0  },
 ];
 
 const BarGraph = () => {
@@ -138,6 +138,18 @@ const BarGraph = () => {
                 >
                   <span>{item.celebration.toFixed(1)}</span>
                 </div>
+                <div
+                  className={`bar tahoma ${animate ? "animate" : ""}`}
+                  style={{ "--target-width": `${item.tahoma * 10}%` }}
+                >
+                  <span>{item.tahoma.toFixed(1)}</span>
+                </div>
+                <div
+                  className={`bar iron ${animate ? "animate" : ""}`}
+                  style={{ "--target-width": `${item.iron * 10}%` }}
+                >
+                  <span>{item.iron.toFixed(1)}</span>
+                </div>
               </div>
             </div>
           ))}
@@ -148,6 +160,14 @@ const BarGraph = () => {
             <div>
               <span className="legend-color celebration-color"></span>{" "}
               Celebration
+            </div>
+            <div>
+              <span className="legend-color tahoma-color"></span>{" "}
+              Tahoma 31
+            </div>
+            <div>
+              <span className="legend-color iron-color"></span>{" "}
+              Iron Cutter
             </div>
           </div>
         </div>

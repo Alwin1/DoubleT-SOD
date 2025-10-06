@@ -1,49 +1,71 @@
-import React from 'react';
-import './SodVarieties.css';
-import Tifway from '../assets/tifway.jpeg';
-import Celebration from '../assets/celebration.jpeg';
-import Fescue from '../assets/fescue.jpeg';
-import { useInView } from 'react-intersection-observer';
+import React from "react";
+import "./SodVarieties.css";
+import Tifway from "../assets/tifway.jpeg";
+import Celebration from "../assets/celebration.jpeg";
+import Fescue from "../assets/fescue.jpeg";
+import Tahoma from "../assets/tahoma.png";
+import IronCutter from "../assets/ironcutBermuda.jpg"
+import { useInView } from "react-intersection-observer";
 
 const sodData = [
   {
     img: Tifway,
-    alt: 'Tifway 19 Bermuda',
-    label: 'Tifway 19 Bermuda',
-    desc: 'Dense, fine-textured hybrid Bermuda with aggressive growth. Tifway 419 is soft yet durable, ideal for sports and golf, with quick recovery, good cold tolerance, and a rich green color.',
+    alt: "Tifway 19 Bermuda",
+    label: "Tifway 19 Bermuda",
+    desc: "Dense, fine-textured hybrid Bermuda with aggressive growth. Tifway 419 is soft yet durable, ideal for sports and golf, with quick recovery, good cold tolerance, and a rich green color.",
   },
   {
     img: Celebration,
-    alt: 'Celebration Bermuda',
-    label: 'Celebration Bermuda',
-    desc: 'Soft texture, vibrant blue-green color, and excellent drought, heat, salt, and cold tolerance. Low-maintenance and perfect for homes, businesses, and sports fields.',
+    alt: "Celebration Bermuda",
+    label: "Celebration Bermuda",
+    desc: "Soft texture, vibrant blue-green color, and excellent drought, heat, salt, and cold tolerance. Low-maintenance and perfect for homes, businesses, and sports fields.",
+  },
+  {
+    img: Tahoma,
+    alt: "Tahoma 31 Bermuda",
+    label: "Tahoma 31 Bermuda",
+    desc: "One of the most cold-tolerant Bermudas with excellent drought resistance and a fine, dense texture. Tahoma 31 offers superior wear tolerance, quick recovery, and a deep green color ideal for lawns, sports fields, and golf courses.",
+  },
+  {
+    img: IronCutter,
+    alt: "Iron Cutter Bermuda",
+    label: "Iron Cutter Bermuda",
+    desc: "High-performance hybrid Bermuda known for its fine texture, rich dark green color, and exceptional wear and drought tolerance. Iron Cutter delivers fast establishment, durability, and beautiful year-round performance for both residential and commercial use.",
   },
   {
     img: Fescue,
-    alt: 'Frontier Tall Fescue',
-    label: 'Frontier Tall Fescue',
-    desc: 'Heat and drought-resistant grass with dark green, fine blades and upright growth. It’s ideal for various soils and offers a dense, high-quality lawn.',
+    alt: "Frontier Tall Fescue",
+    label: "Frontier Tall Fescue",
+    desc: "Heat and drought-resistant grass with dark green, fine blades and upright growth. It’s ideal for various soils and offers a dense, high-quality lawn.",
   },
 ];
 
 const SodVarieties = () => {
   return (
-    <div className='VarietiesContainer'>
-      <h2 className='VarietiesTitle'>Our Sod Varieties</h2>
-      <div className='VarietiesImageContainer'>
+    <div className="VarietiesContainer">
+      <h2 className="VarietiesTitle">Our Sod Varieties</h2>
+      <div className="VarietiesImageContainer">
         {sodData.map((item, index) => {
-          const [ref, inView] = useInView({ triggerOnce: false, threshold: 0.2 });
+          const [ref, inView] = useInView({
+            triggerOnce: false,
+            threshold: 0.2,
+          });
 
           return (
             <div
               ref={ref}
-              className={`varietyCard fade-in ${inView ? 'in-view' : ''}`}
+              className={`varietyCard fade-in ${inView ? "in-view" : ""}`}
               style={{ animationDelay: `${index * 0.3}s` }}
               key={index}
             >
-              <img src={item.img} alt={item.alt} className='varietyImage' loading='lazy' />
-              <div className='varietyLabel'>{item.label}</div>
-              <div className='varietyDescription'>
+              <img
+                src={item.img}
+                alt={item.alt}
+                className="varietyImage"
+                loading="lazy"
+              />
+              <div className="varietyLabel">{item.label}</div>
+              <div className="varietyDescription">
                 <p>{item.desc}</p>
               </div>
             </div>
