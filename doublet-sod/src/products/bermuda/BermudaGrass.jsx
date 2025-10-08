@@ -138,11 +138,10 @@ const BermudaGrass = () => {
             <col className="col-var" />
             <col className="col-var" />
             <col className="col-var" />
-            <col className="col-var" />
           </colgroup>
           <thead>
             <tr className="tableName">
-              <th colSpan="5">Warm Season Grasses Comparison</th>
+              <th colSpan="4">Warm Season Grasses Comparison</th>
             </tr>
             <tr className="tableHeaders">
               <th></th>
@@ -156,7 +155,6 @@ const BermudaGrass = () => {
               <React.Fragment key={index}>
                 <tr className="categoryRow">
                   <th colSpan="1">{categoryData.category}</th>
-                  <th></th>
                   <th></th>
                   <th></th>
                   <th></th>
