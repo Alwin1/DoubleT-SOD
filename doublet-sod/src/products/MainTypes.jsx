@@ -6,7 +6,7 @@ import Tifway from "../assets/tifway.jpeg";
 import Celebration from "../assets/celebration.jpeg";
 import Fescue from "../assets/fescue.jpeg";
 import Tahoma from "../assets/tahoma.png";
-import IronCutter from "../assets/ironcutBermuda.jpg"
+// import IronCutter from "../assets/ironcutBermuda.jpg"
 import ZeroScaping from "../assets/zeroScaping.jpg";
 import TopDressingImage from "../assets/topDressing.jpg";
 
@@ -99,7 +99,7 @@ const MainTypes = () => {
             </button>
           </div>
         </div>
-        <div className="sodType">
+        {/* <div className="sodType">
           <img
             src={IronCutter}
             className="sodImage"
@@ -121,7 +121,7 @@ const MainTypes = () => {
               <img src={SmallArrow} alt="Arrow" />
             </button>
           </div>
-        </div>
+        </div> */}
 
         <div className="sodType">
           <img

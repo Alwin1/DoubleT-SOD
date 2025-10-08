@@ -4,7 +4,6 @@ import Tifway from "../assets/tifway.jpeg";
 import Celebration from "../assets/celebration.jpeg";
 import Fescue from "../assets/fescue.jpeg";
 import Tahoma from "../assets/tahoma.png";
-import IronCutter from "../assets/ironcutBermuda.jpg"
 import { useInView } from "react-intersection-observer";
 
 const sodData = [
@@ -25,12 +24,6 @@ const sodData = [
     alt: "Tahoma 31 Bermuda",
     label: "Tahoma 31 Bermuda",
     desc: "One of the most cold-tolerant Bermudas with excellent drought resistance and a fine, dense texture. Tahoma 31 offers superior wear tolerance, quick recovery, and a deep green color ideal for lawns, sports fields, and golf courses.",
-  },
-  {
-    img: IronCutter,
-    alt: "Iron Cutter Bermuda",
-    label: "Iron Cutter Bermuda",
-    desc: "High-performance hybrid Bermuda known for its fine texture, rich dark green color, and exceptional wear and drought tolerance. Iron Cutter delivers fast establishment, durability, and beautiful year-round performance for both residential and commercial use.",
   },
   {
     img: Fescue,

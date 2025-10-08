@@ -16,7 +16,6 @@ const BermudaGrass = () => {
           Tifway419: "Fine",
           Celebration: "Soft",
           Tahoma: "Fine to Medium",
-          Iron: "Fine",
           icon: Leaf,
         },
         {
@@ -24,7 +23,6 @@ const BermudaGrass = () => {
           Tifway419: "Dark Green",
           Celebration: "Dark Blue Green",
           Tahoma: "Bright Green",
-          Iron: "Bright Green",
           icon: Leaf,
         },
       ],
@@ -37,7 +35,6 @@ const BermudaGrass = () => {
           Tifway419: "Fair",
           Celebration: "Excellent",
           Tahoma: "Good",
-          Iron: "Good",
           icon: Sun,
         },
         {
@@ -45,7 +42,6 @@ const BermudaGrass = () => {
           Tifway419: "Very Good",
           Celebration: "Excellent",
           Tahoma: "Excellent",
-          Iron: "Excellent",
           icon: Drought,
         },
       ],
@@ -58,7 +54,6 @@ const BermudaGrass = () => {
           Tifway419: "Medium",
           Celebration: "Low",
           Tahoma: "Medium",
-          Iron: "Medium",
           icon: Mower,
         },
         {
@@ -66,7 +61,6 @@ const BermudaGrass = () => {
           Tifway419: '1/4" - 2"',
           Celebration: '1/2" - 2"',
           Tahoma: '1/2" - 2"',
-          Iron: '1/2" - 1 1/2"',
           icon: Mower,
         },
         {
@@ -107,18 +101,6 @@ const BermudaGrass = () => {
               Zone 6
             </>
           ),
-          Iron: (
-            <>
-              <span className="underLineTable">Year Round</span>
-              <br />
-              Zone 7 South
-              <br />
-              <br />
-              <span className="underLineTable">March - Sept</span>
-              <br />
-              Zone 6
-            </>
-          ),
           icon: Scheduling,
         },
       ],
@@ -146,7 +128,7 @@ const BermudaGrass = () => {
         </p>
         <p className="bermudaParagraph">
           There are four cultivars available:{" "}
-          <span>Tifway 419, Celebration, Tahoma 31, and Iron Cutter.</span>
+          <span>Tifway 419, Celebration, and Tahoma 31</span>
         </p>
       </div>
       <div className="bermudaTable">
@@ -167,7 +149,6 @@ const BermudaGrass = () => {
               <th>Tifway 419</th>
               <th>Celebration</th>
               <th>Tahoma 31</th>
-              <th>Iron Cutter</th>
             </tr>
           </thead>
           <tbody>
@@ -202,7 +183,6 @@ const BermudaGrass = () => {
                     <td>{item.Tifway419}</td>
                     <td>{item.Celebration}</td>
                     <td>{item.Tahoma}</td>
-                    <td>{item.Iron}</td>
                   </tr>
                 ))}
               </React.Fragment>

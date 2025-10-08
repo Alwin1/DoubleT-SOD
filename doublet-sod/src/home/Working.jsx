@@ -119,7 +119,7 @@ const Working = () => {
               <li>Minimum Delivery: ½ pallet ($150 minimum order)</li>
             </ul>
           </div>
-          <div className="orderParagraph">
+          {/* <div className="orderParagraph">
             <h3 className="pricingTitle">
               Special Order Only - Iron Cutter Bermuda
             </h3>
@@ -127,7 +127,7 @@ const Working = () => {
               <li>Iron Cutter Bermuda available by full pallet (600 sq. ft.).</li>
               <li>Full Pallet: $340</li>
             </ul>
-          </div>
+          </div> */}
           <div className="orderParagraph">
             <h3 className="pricingTitle">Delivery Pricing</h3>
             <ul className="pricingList">
