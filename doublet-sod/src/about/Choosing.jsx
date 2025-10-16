@@ -52,8 +52,8 @@ const Choosing = () => {
         <h2 className="areasServedHeader">Areas We Serve</h2>
         <p className="areasServedParagraph">
           Double-T Sod proudly services the communities of Amarillo, Lubbock,
-          Midland, Odessa, and the surrounding areas. Whether you’re in the
-          heart of West Texas or a neighboring town, we’re here to meet your sod
+          Midland, Odessa, Hobbs, and the surrounding areas. Whether you’re in the
+          heart of West Texas, New Mexico, or a neighboring town, we’re here to meet your sod
           needs.
         </p>
         <div className="areasServedListContainer">
@@ -66,6 +66,7 @@ const Choosing = () => {
             <li>Lovington</li>
             <li>Roswell</li>
             <li>Alamogordo</li>
+            <li>Hobbs</li>
           </ul>
           <p>...And surrounding areas!</p>
         </div>

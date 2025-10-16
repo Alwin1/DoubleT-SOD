@@ -9,6 +9,7 @@ import Offering from "./Offering";
 import TestimonialSlider from "./Testimonial";
 import Working from "./Working";
 import SEO from "../overlays/SEO";
+import Banner from "./Banner";
 
 function Home() {
   const [imagesLoaded, setImagesLoaded] = useState(false);
@@ -26,6 +27,7 @@ function Home() {
         url="https://doubletsod.com/"
       />
       <Header />
+      <Banner />
       <DragImage onImagesLoaded={() => setImagesLoaded(true)} />
       {imagesLoaded && (
         <>
