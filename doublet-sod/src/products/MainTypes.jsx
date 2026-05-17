@@ -9,6 +9,7 @@ import Tahoma from "../assets/tahoma.png";
 // import IronCutter from "../assets/ironcutBermuda.jpg"
 import ZeroScaping from "../assets/zeroScaping.jpg";
 import TopDressingImage from "../assets/topDressing.jpg";
+import ArtificialTurf from "../assets/artificialTurf.jpg";
 
 import { useNavigate } from "react-router-dom"; // Import the useNavigate hook
 
@@ -183,7 +184,29 @@ const MainTypes = () => {
             </p>
             <button
               className="learnMoreTextButton"
-              onClick={() => handleLearnMoreClick("fescue")}
+              onClick={() => handleLearnMoreClick("zero-scaping")}
+            >
+              <p>Learn More</p>
+              <img src={SmallArrow} alt="Arrow" />
+            </button>
+          </div>
+        </div>
+        <div className="sodType">
+          <img
+            src={ArtificialTurf}
+            className="sodImage"
+            alt="ArtificialTurf"
+            loading="eager"
+          />
+          <div className="sodTextContainer">
+            <h3 className="sodHeader">Artificial Turf</h3>
+            <p className="sodParagraph">
+              Low-maintenance, year-round green lawn that looks natural without
+              the need for watering, mowing, or chemicals.
+            </p>
+            <button
+              className="learnMoreTextButton"
+              onClick={() => handleLearnMoreClick("artificial-turf")}
             >
               <p>Learn More</p>
               <img src={SmallArrow} alt="Arrow" />

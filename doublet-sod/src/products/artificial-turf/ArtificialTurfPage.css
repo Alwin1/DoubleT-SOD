@@ -1,0 +1,136 @@
+.artificialTurfPageContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+.artificialTurfPageContainer h2 {
+  color: var(--primary-color);
+  font-size: 36px;
+  text-align: center;
+  font-weight: 700;
+  padding: 50px 0 0 0;
+  margin: 0;
+}
+
+.artificialTurfPageText {
+  color: black;
+  font-size: 24px;
+  padding: 0 50px;
+}
+
+.artificialTurfPageText p {
+  margin-bottom: 25px;
+}
+
+.artificialTurfItalics {
+  margin-top: 0;
+  font-style: italic;
+}
+
+.artificialTurfOptionsContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 0 50px;
+  gap: 25px;
+}
+
+.artificialTurfOptionsContainer span {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.artificialTurfOptionsContainer p {
+  color: black;
+  font-size: 24px;
+  margin: 0;
+}
+
+.artificialTurfInstallationContainer {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 50px;
+}
+
+.artificialTurfInstallationContainer ol {
+  padding-left: 50px;
+  margin-bottom: 25px;
+}
+
+.artificialTurfInstallationContainer li {
+  margin-bottom: 25px;
+}
+
+.artificialTurfInstallationContainer ul {
+  list-style-type: disc;
+  margin-top: 25px;
+  margin-left: 25px;
+}
+
+.artificialTurfImageWrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 40px 0;
+}
+
+.artificialTurfTextImage {
+  width: 90vw;
+}
+
+.artificialTurfInstallationImage {
+  width: 40vw;
+  height: auto;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .artificialTurfPageContainer h2 {
+    font-size: 20px;
+    padding: 20px;
+  }
+
+  .artificialTurfPageText {
+    padding: 0 20px;
+    font-size: 16px;
+  }
+
+  .artificialTurfInstallationContainer ol {
+    padding-left: 20px;
+    margin-bottom: 10px;
+  }
+
+  .artificialTurfInstallationContainer li {
+    margin-bottom: 10px;
+  }
+  .artificialTurfInstallationContainer ul {
+    padding-left: 20px;
+    margin-top: 10px;
+  }
+
+  .artificialTurfOptionsContainer {
+    margin: 10px 0;
+    gap: 0;
+    font-size: 16px;
+    padding: 0 0px;
+  }
+
+  .artificialTurfInstallationContainer {
+    margin-top: 20px;
+    align-items: center;
+  }
+
+  .artificialTurfOptionsContainer p {
+    margin: 10px 0;
+    gap: 0;
+    font-size: 16px;
+  }
+
+  .artificialTurfTextImage {
+    width: 90vw;
+  }
+}

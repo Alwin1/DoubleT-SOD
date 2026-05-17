@@ -12,6 +12,7 @@ import Bermuda from './products/bermuda/Bermuda';
 import Fescue from './products/fescue/Fescue';
 import ZeroScaping from './products/zeroScaping/ZeroScaping';
 import TopDressing from './products/top-dressing/TopDressing';
+import ArtificialTurf from './products/artificial-turf/ArtificialTurf';
 import Contact from './contact/Contact';
 import Gallery from './gallery/Gallery';
 import PrivacyPolicy from './legal/PrivacyPolicy';
@@ -41,6 +42,7 @@ const AppRoutes = () => (
       <Route path="/products/fescue" element={<Fescue />} />
       <Route path="/products/zero-scaping" element={<ZeroScaping />} />
       <Route path="/products/top-dressing-sand-leveling" element={<TopDressing />} />
+      <Route path="/products/artificial-turf" element={<ArtificialTurf />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/past-installations" element={<Gallery />} />
       <Route path="/privacy-policy" element={<PrivacyPolicy />} />

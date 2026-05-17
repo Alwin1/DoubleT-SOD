@@ -16,6 +16,7 @@ const ContactUs = () => {
     phone: "",
     message: "",
     location: "", // NEW
+    service: "",
   });
 
   const [submittedData, setSubmittedData] = useState(null);
@@ -93,7 +94,14 @@ const ContactUs = () => {
     try {
       await axios.post(functionUrl, form);
       setSubmittedData(form);
-      setForm({ name: "", email: "", phone: "", message: "", location: "" });
+      setForm({
+        name: "",
+        email: "",
+        phone: "",
+        message: "",
+        location: "",
+        service: "",
+      });
     } catch (err) {
       console.error("Error sending email:", err);
       setErrorMessage("Error sending your message. Please try again later.");
@@ -125,7 +133,10 @@ const ContactUs = () => {
           ) : (
             <form className="contact-form" onSubmit={handleSubmit}>
               {errorMessage && (
-                <p className="error-message" style={{ color: "red", marginBottom: 10 }}>
+                <p
+                  className="error-message"
+                  style={{ color: "red", marginBottom: 10 }}
+                >
                   {errorMessage}
                 </p>
               )}
@@ -136,7 +147,9 @@ const ContactUs = () => {
                 required
                 value={form.location}
                 onChange={handleChange}
-                className={`contact-select ${!form.location ? "placeholder" : ""}`}
+                className={`contact-select ${
+                  !form.location ? "placeholder" : ""
+                }`}
                 aria-label="Location"
               >
                 <option value="" disabled>
@@ -144,6 +157,30 @@ const ContactUs = () => {
                 </option>
                 <option value="Texas">Texas</option>
                 <option value="New Mexico">New Mexico</option>
+              </select>
+
+              <select
+                name="service"
+                required
+                value={form.service}
+                onChange={handleChange}
+                className={`contact-select ${
+                  !form.service ? "placeholder" : ""
+                }`}
+                aria-label="Service"
+              >
+                <option value="" disabled>
+                  Pick a Service
+                </option>
+                <option value="Bermuda">Bermuda Installation</option>
+                <option value="Fescue">Fescue Installation</option>
+                <option value="Top-Dressing & Sand Leveling">
+                  Top-Dressing & Sand Leveling
+                </option>
+                <option value="Zero-Scaping">Zero-Scaping</option>
+                <option value="Artificial Turf">
+                  Artificial Turf Installation
+                </option>
               </select>
 
               <input
@@ -177,7 +214,11 @@ const ContactUs = () => {
                 value={form.message}
                 onChange={handleChange}
               />
-              <button type="submit" className="submitButton" disabled={isSending}>
+              <button
+                type="submit"
+                className="submitButton"
+                disabled={isSending}
+              >
                 {isSending ? "Sending..." : "Submit Now"}
               </button>
             </form>
@@ -207,12 +248,24 @@ const ContactUs = () => {
             <div className="contactInformation">
               <h3>Hours of Operation</h3>
               <ul>
-                <li><strong>Monday:</strong> 8:00 AM - 5:00 PM</li>
-                <li><strong>Tuesday:</strong> 8:00 PM - 5:00 PM</li>
-                <li><strong>Wednesday:</strong> 8:00 AM - 5:00 PM</li>
-                <li><strong>Thursday:</strong> 8:00 AM - 5:00 PM</li>
-                <li><strong>Friday:</strong> 8:00 AM - 5:00 PM</li>
-                <li><strong>Saturday & Sunday:</strong> CLOSED</li>
+                <li>
+                  <strong>Monday:</strong> 8:00 AM - 5:00 PM
+                </li>
+                <li>
+                  <strong>Tuesday:</strong> 8:00 AM - 5:00 PM
+                </li>
+                <li>
+                  <strong>Wednesday:</strong> 8:00 AM - 5:00 PM
+                </li>
+                <li>
+                  <strong>Thursday:</strong> 8:00 AM - 5:00 PM
+                </li>
+                <li>
+                  <strong>Friday:</strong> 8:00 AM - 5:00 PM
+                </li>
+                <li>
+                  <strong>Saturday & Sunday:</strong> CLOSED
+                </li>
               </ul>
             </div>
           </div>
@@ -221,10 +274,18 @@ const ContactUs = () => {
             <h3>Follow Us</h3>
             <div className="socialMediaIcons">
               <a href="https://www.facebook.com/share/19GXABBdjo/?mibextid=wwXIfr">
-                <img src={Facebook} className="socialMediaIcon" alt="Facebook" />
+                <img
+                  src={Facebook}
+                  className="socialMediaIcon"
+                  alt="Facebook"
+                />
               </a>
               <a href="https://www.instagram.com/doublet_sod/?hl=en">
-                <img src={Instagram} className="socialMediaIcon instagram" alt="Instagram" />
+                <img
+                  src={Instagram}
+                  className="socialMediaIcon instagram"
+                  alt="Instagram"
+                />
               </a>
               <a href="https://www.youtube.com/@doubletsodandinstallation6346">
                 <img src={Youtube} className="socialMediaIcon" alt="Youtube" />

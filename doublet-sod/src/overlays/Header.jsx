@@ -59,6 +59,9 @@ function Header() {
               <li>
                 <Link to="/products/zero-scaping">Zero-Scaping</Link>
               </li>
+              <li>
+                <Link to="/products/artificial-turf">Artificial Turf</Link>
+              </li>
             </ul>
           </li>
           <li>
@@ -143,6 +146,11 @@ function Header() {
               <li>
                 <Link to="/products/zero-scaping" onClick={closeMenu}>
                   Zero-Scaping
+                </Link>
+              </li>
+              <li>
+                <Link to="/products/artificial-turf" onClick={closeMenu}>
+                  Artificial Turf
                 </Link>
               </li>
             </ul>
