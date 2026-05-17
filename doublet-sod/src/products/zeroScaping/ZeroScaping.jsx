@@ -17,7 +17,7 @@ function ZeroScaping() {
       <SEO
         title="ZeroScaping | Double T-Sod"
         description="Learn more about zero-scaping which is offered by Double T-Sod. For home owners that want to reduce upkeep and water usage."
-        keywords="bermuda sod, grass installation, texas landscaping, products, bermuda, zero-scaping, xeri-scaping, fescue, tifway, celebration, frontier, family-oriented, businesses, cost-effective, New Mexico"
+        keywords="artificial turf, Artificial Turf Installation in Lubbock, Synthetic Grass Installation, Turf Installers in West Texas, Artificial Grass for Homes, Pet Turf Installation, Backyard Turf Installation, bermuda sod, grass installation, texas landscaping, products, bermuda, zero-scaping, xeri-scaping, fescue, tifway, celebration, frontier, family-oriented, businesses, cost-effective, New Mexico"
         url="https://doubletsod.com/products/zero-scaping"
       />
         <Header />

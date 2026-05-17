@@ -17,8 +17,8 @@ function ArtificialTurf() {
       <SEO
         title="Artificial Turf | Double T-Sod"
         description="Learn more about Artificial Turf which is offered by Double T-Sod. Learn also some tips and tricks about frontier tall fescue."
-        keywords="bermuda sod, artificial turf, top-dressing, sand leveling, precision lawn care, soil, grass installation, texas landscaping, products, bermuda, zero-scaping, xeri-scaping, fescue, tifway, celebration, frontier, family-oriented, businesses, cost-effective, New Mexico"
-        url="https://doubletsod.com/products/fescue"
+        keywords="artificial turf, Artificial Turf Installation in Lubbock, Synthetic Grass Installation, Turf Installers in West Texas, Artificial Grass for Homes, Pet Turf Installation, Backyard Turf Installation, bermuda sod, grass installation, texas landscaping, products, bermuda, zero-scaping, xeri-scaping, fescue, tifway, celebration, frontier, family-oriented, businesses, cost-effective, New Mexico"
+        url="https://doubletsod.com/products/artificial-turf"
       />
         <Header />
         <ArtificialTurfPage />
