@@ -5,7 +5,7 @@ const Banner = () => {
   return (
     <div className='BannerContainer'>
         <div className='BannerWrapper'>
-            <p className='BannerWrapperText'>NOW SERVING TWO LOCATIONS: TEXAS & NEW MEXICO</p>
+            <p className='BannerWrapperText'>NOW OFFERING ARTIFICIAL TURF INSTALLATION</p>
         </div>
     </div>
   )
