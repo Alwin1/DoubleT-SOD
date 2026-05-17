@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "doublet-sod",
     "public": "dist",
     "ignore": [
       "firebase.json",
