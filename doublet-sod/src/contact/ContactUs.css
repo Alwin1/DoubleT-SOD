@@ -240,9 +240,6 @@
   border-color: #165a01;     
 }
 
-.contact-form .contact-select:invalid {
-}
-
 .contact-form .contact-select {
   margin-bottom: 0;          /* adjust if you want more/less space */
 }

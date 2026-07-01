@@ -21,7 +21,7 @@ function Home() {
   return (
     <div className="homeContainer">
       <SEO
-        title="Home | Double T-Sod"
+        title="Double T-Sod: Trusted Artificial Turf & Sod Installation Experts"
         description="Homepage of DoubleT-Sod. Offering high-quality different sod installation services for homes and businesses across Texas and New Mexico Regions."
         keywords="artificial turf, Artificial Turf Installation in Lubbock, Synthetic Grass Installation, Turf Installers in West Texas, Artificial Grass for Homes, Pet Turf Installation, Backyard Turf Installation, bermuda sod, grass installation, texas landscaping, products, bermuda, zero-scaping, xeri-scaping, fescue, tifway, celebration, frontier, family-oriented, businesses, cost-effective, New Mexico"
         url="https://doubletsod.com/"
